@@ -47,3 +47,68 @@
 [Info  - 1:29:25 PM] Searching file:///home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/no%20sandbox/User/globalStorage/github.copilot-chat/logContextRecordings for files to index.
 [Info  - 1:29:25 PM] Searching file:///home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/no%20sandbox/User/globalStorage/github.vscode-pull-request-github/assignableUsers for files to index.
 [Info  - 1:29:25 PM] Searching file:///home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/no%20sandbox/User/globalStorage/github.vscode-pull-request-github/assignableUsers/Drak-01 for files to index.
+[Info  - 2:35:57 PM] Searching file:///home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/resources/views/layouts for files to index.
+[Info  - 2:36:18 PM] Indexing started.
+[Info  - 2:36:18 PM] Indexing ended. 1 files indexed in 0s.
+[Info  - 2:37:02 PM] Searching file:///home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/no%20sandbox/User/History/6347e50d for files to index.
+[Info  - 2:37:02 PM] Indexing started.
+[Info  - 2:37:03 PM] Indexing ended. 3 files indexed in 0s.
+[Info  - 2:37:14 PM] Searching file:///home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/resources/views/partials for files to index.
+[Info  - 2:38:02 PM] Indexing started.
+[Info  - 2:38:02 PM] Indexing ended. 1 files indexed in 0s.
+[Warn  - 2:38:11 PM] Error: ENOENT: no such file or directory, stat '/home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/no sandbox/Backups/aafafb34dd19ed880a1f94015ed6fcf4/file/-5255a9ea'
+[Info  - 2:38:11 PM] Searching file:///home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/no%20sandbox/User/History/20f8376a for files to index.
+[Info  - 2:38:11 PM] Indexing started.
+[Info  - 2:38:12 PM] Indexing ended. 3 files indexed in 0s.
+[Info  - 2:38:45 PM] Indexing started.
+[Info  - 2:38:46 PM] Indexing ended. 1 files indexed in 0s.
+[Info  - 2:38:58 PM] Searching file:///home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/no%20sandbox/User/History/30b52c1c for files to index.
+[Info  - 2:38:58 PM] Indexing started.
+[Info  - 2:38:58 PM] Indexing ended. 2 files indexed in 0s.
+[Info  - 2:39:34 PM] Indexing started.
+[Info  - 2:39:34 PM] Indexing ended. 1 files indexed in 0s.
+[Info  - 2:40:01 PM] Indexing started.
+[Info  - 2:40:01 PM] Indexing ended. 2 files indexed in 0s.
+[Info  - 2:40:03 PM] Searching file:///home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/no%20sandbox/User/History/-40dc949b for files to index.
+[Info  - 2:40:03 PM] Indexing started.
+[Info  - 2:40:03 PM] Indexing ended. 3 files indexed in 0s.
+[Info  - 2:40:39 PM] Indexing started.
+[Info  - 2:40:39 PM] Indexing ended. 1 files indexed in 0s.
+[Info  - 2:40:45 PM] Searching file:///home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/no%20sandbox/User/History/-45cd949c for files to index.
+[Info  - 2:40:45 PM] Indexing started.
+[Info  - 2:40:46 PM] Indexing ended. 3 files indexed in 0s.
+[Info  - 2:41:39 PM] Indexing started.
+[Info  - 2:41:40 PM] Indexing ended. 1 files indexed in 0s.
+[Info  - 2:41:45 PM] Searching file:///home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/no%20sandbox/User/History/12963b15 for files to index.
+[Info  - 2:41:45 PM] Indexing started.
+[Info  - 2:41:45 PM] Indexing ended. 3 files indexed in 0s.
+[Info  - 2:42:15 PM] Indexing started.
+[Info  - 2:42:15 PM] Indexing ended. 1 files indexed in 0s.
+[Info  - 2:42:17 PM] Searching file:///home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/no%20sandbox/User/History/-71fb7c91 for files to index.
+[Info  - 2:42:17 PM] Indexing started.
+[Info  - 2:42:17 PM] Indexing ended. 3 files indexed in 0s.
+[Info  - 2:42:45 PM] Searching file:///home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/no%20sandbox/User/History/51ec6770 for files to index.
+[Info  - 2:42:45 PM] Indexing started.
+[Info  - 2:42:45 PM] Indexing ended. 2 files indexed in 0s.
+[Info  - 2:43:08 PM] Searching file:///home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/no%20sandbox/logs/20250504T130756/window1/exthost/vscode.typescript-language-features for files to index.
+[Info  - 2:43:38 PM] Searching file:///home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/no%20sandbox/User/History/594f1d19 for files to index.
+[Info  - 2:44:11 PM] Searching file:///home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/resources/images for files to index.
+[Info  - 2:44:30 PM] Searching file:///home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/no%20sandbox/Service%20Worker for files to index.
+[Info  - 2:44:30 PM] Searching file:///home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/no%20sandbox/Service%20Worker/Database for files to index.
+[Info  - 2:44:30 PM] Searching file:///home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/no%20sandbox/WebStorage for files to index.
+[Info  - 2:44:30 PM] Searching file:///home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/no%20sandbox/WebStorage/1 for files to index.
+[Info  - 2:45:21 PM] Searching file:///home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/no%20sandbox/User/History/6db57559 for files to index.
+[Info  - 2:46:44 PM] Indexing started.
+[Info  - 2:46:44 PM] Indexing ended. 2 files indexed in 0s.
+[Info  - 2:46:47 PM] Indexing started.
+[Info  - 2:46:47 PM] Indexing ended. 6 files indexed in 0s.
+[Info  - 2:47:24 PM] Searching file:///home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/no%20sandbox/User/History/4cad3844 for files to index.
+[Info  - 2:49:18 PM] Searching file:///home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/no%20sandbox/User/History/dfe07b7 for files to index.
+[Info  - 2:52:08 PM] Searching file:///home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/public/css for files to index.
+[Info  - 2:52:13 PM] Searching file:///home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/no%20sandbox/User/History/67c91b2 for files to index.
+[Info  - 2:52:22 PM] Searching file:///home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/public/js for files to index.
+[Info  - 2:52:27 PM] Searching file:///home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/no%20sandbox/User/History/-604fa279 for files to index.
+[Info  - 2:55:40 PM] Searching file:///home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/public/images for files to index.
+[Info  - 2:55:40 PM] Searching file:///home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/no%20sandbox/User/History/-71e623f7 for files to index.
+[Info  - 2:58:10 PM] Indexing started.
+[Info  - 2:58:10 PM] Indexing ended. 1 files indexed in 0s.

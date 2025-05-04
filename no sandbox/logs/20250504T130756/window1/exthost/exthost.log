@@ -29,3 +29,7 @@
     at Object.readdirSync (node:fs:1509:26)
     at Object.t.readdirSync (node:electron/js2c/node_init:2:13703)
     at /root/.vscode/extensions/amiralizadeh9480.laravel-extra-intellisense-0.7.2/dist/extension.js:1:141340
+2025-05-04 14:36:17.368 [info] ExtensionService#_doActivateExtension onecentlin.laravel-blade, startup: false, activationEvent: 'onLanguage:blade'
+2025-05-04 14:36:17.404 [info] ExtensionService#_doActivateExtension shufo.vscode-blade-formatter, startup: false, activationEvent: 'onLanguage:blade'
+2025-05-04 14:44:29.920 [info] ExtensionService#_doActivateExtension vscode.media-preview, startup: false, activationEvent: 'onCustomEditor:imagePreview.previewEditor'
+2025-05-04 14:45:05.947 [info] ExtensionService#_doActivateExtension vscode.css-language-features, startup: false, activationEvent: 'onLanguage:css'

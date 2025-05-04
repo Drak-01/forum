@@ -22,3 +22,15 @@
 2025-05-04 13:29:23.791 [info] [FolderRepositoryManager+0] Found GitHub remote for folder /home/nika/Documents/ENSIASD/tec_web/miniprojet/forum
 2025-05-04 13:29:24.532 [info] [FolderRepositoryManager+0] Trying to use globalState for assignableUsers.
 2025-05-04 13:29:24.587 [info] [FolderRepositoryManager+0] GlobalState does not exist for assignableUsers.
+2025-05-04 13:32:18.935 [info] [Review+0] Validate state in progress
+2025-05-04 13:32:18.935 [info] [Review+0] Validating state...
+2025-05-04 13:32:19.112 [info] [FolderRepositoryManager+0] Found GitHub remote for folder /home/nika/Documents/ENSIASD/tec_web/miniprojet/forum
+2025-05-04 13:32:19.113 [info] [FolderRepositoryManager+0] Using in-memory cached assignable users.
+2025-05-04 13:32:19.147 [info] [Review+0] No matching pull request metadata found locally for current branch main
+2025-05-04 13:32:20.973 [info] [Review+0] No matching pull request metadata found on GitHub for current branch main
+2025-05-04 13:37:24.719 [info] [Review+0] Validate state in progress
+2025-05-04 13:37:24.719 [info] [Review+0] Validating state...
+2025-05-04 13:37:24.776 [info] [FolderRepositoryManager+0] Found GitHub remote for folder /home/nika/Documents/ENSIASD/tec_web/miniprojet/forum
+2025-05-04 13:37:24.777 [info] [FolderRepositoryManager+0] Using in-memory cached assignable users.
+2025-05-04 13:37:24.806 [info] [Review+0] No matching pull request metadata found locally for current branch main
+2025-05-04 13:37:26.510 [info] [Review+0] No matching pull request metadata found on GitHub for current branch main
