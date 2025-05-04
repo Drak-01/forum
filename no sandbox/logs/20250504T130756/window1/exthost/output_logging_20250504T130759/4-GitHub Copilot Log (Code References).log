@@ -1,3 +1,22 @@
 2025-05-04 16:16:04.475 [info] file:///home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/routes/web.php Similar code at  [Ln 6, Col 46] '); }); Route::get('/register', function () {  return view('auth.register'); })->name('register')...
 2025-05-04 16:16:04.475 [info] License: unknown, URL: https://github.com/Stoorny/AhmedRedaEx/blob/0615eced3c702f69af3ab58fe458962e5f317c20/routes/web.php
 2025-05-04 16:16:04.475 [info] License: unknown, URL: https://github.com/ZygenUEU/Test-Pemweb/blob/9b17915a787b5cf3f594b19fb5b3dc9dd21fb56e/TA_Lamda/src/routes/web.php
+2025-05-04 17:08:40.447 [info] file:///home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/app/Http/Controllers/RegisterController.php Similar code at  [Ln 12, Col 32] uest) {  // Validate the request data  $request->validate([  'name' => 'req...
+2025-05-04 17:08:40.447 [info] License: GPL-2.0, URL: https://github.com/khaivngo/QuickEval/blob/dab30b5c995b76b5fac8c1029c946ae8c4ceba63/app/Http/Controllers/AuthController.php
+2025-05-04 17:08:40.447 [info] License: unknown, URL: https://github.com/webdevmatics/vue-laravel-spa/blob/6e02929c671f7a365bd7b9462ed33cedf7f4399a/app/Http/Controllers/UserController.php
+2025-05-04 17:08:40.447 [info] License: unknown, URL: https://github.com/mushzak/keep-Laravel-VueJs/blob/d82b5e966b0f2c530d4491238727f2eb2ad9e066/app/Http/Controllers/StoreMemberController.php
+2025-05-04 17:08:40.447 [info] License: unknown, URL: https://github.com/nbagonoc/lara-rest-passport/blob/8c63e85368e3ac55f5fd3652bcc57767a4151aaf/app/Http/Controllers/Api/AuthController.php
+2025-05-04 17:08:40.447 [info] License: unknown, URL: https://github.com/beovan/WEB2041_DuAnMau/blob/26550d091ce3985086df6d5e2e5689fb34138b1b/app/Http/Controllers/Admin/Users/RegisterController.php
+2025-05-04 17:08:40.447 [info] License: unknown, URL: https://github.com/SalmaElmarhoumi/laravel-lab2/blob/069ed7dac69b53566106a844a9243f18de2f2ffb/app/Http/Controllers/UserController.php
+2025-05-04 17:08:40.447 [info] License: unknown, URL: https://github.com/wanrizamie/ozttest/blob/cc23bb2f5de2f0fdafd9206ce7146b91e32123bc/app/Http/Controllers/RegisterController.php
+2025-05-04 17:09:42.556 [info] file:///home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/routes/web.php Similar code at  [Ln 8, Col 1] Route::get('/register', [RegisterController::class, 'index'])->name('register');  Route::post('/reg...
+2025-05-04 17:09:42.556 [info] License: unknown, URL: https://github.com/Olouge-Enterprises/tournament/blob/865c74430d907e11ebdba4d8771948aea161b37a/routes/web.php
+2025-05-04 17:11:58.733 [info] file:///home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/routes/web.php Similar code at  [Ln 8, Col 22] ', [RegisterController::class, 'index'])->name('register.index');  Route::post('/register', [Registe...
+2025-05-04 17:11:58.733 [info] License: unknown, URL: https://github.com/HusniFadhilah/latihan-laravel-8/blob/7fbc3dcafeff6575458683db189b9d59da8496c5/routes/web.php
+2025-05-04 17:12:01.233 [info] file:///home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/routes/web.php Similar code at  [Ln 9, Col 13] '/register', [RegisterController::class, 'store'])->name('register.store'); Route::get('/login', [L...
+2025-05-04 17:12:01.233 [info] License: unknown, URL: https://github.com/HusniFadhilah/latihan-laravel-8/blob/7fbc3dcafeff6575458683db189b9d59da8496c5/routes/web.php
+2025-05-04 17:12:01.233 [info] License: unknown, URL: https://github.com/IndraW01/pemesanan-tiket/blob/0e235c125c419266d3deb7bd0ecfc82f8b43b3ba/routes/web.php
+2025-05-04 17:12:01.233 [info] License: unknown, URL: https://github.com/KDragonic/ARMOGEN_Laravel/blob/116d525512fe63a638a6ed98c1f436dc8c456cc3/routes/web.php
+2025-05-04 17:12:01.233 [info] License: unknown, URL: https://github.com/gpalacios26/laravel-devstagram/blob/3fa3cdfaaa12786a858ac13373f7e6ba291acd8a/routes/web.php
+2025-05-04 19:00:06.525 [info] file:///home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/app/Models/Reponse.php Similar code at  [Ln 11, Col 9] ic function question()  {  return $this->belongsTo(Question::class);  }  public fun...
+2025-05-04 19:00:06.525 [info] License: unknown, URL: https://github.com/izzanka/luora/blob/aba5acef795775c053cf83bb0df67017c6cdeffc/app/Models/Answer.php

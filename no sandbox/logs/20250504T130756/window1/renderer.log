@@ -10,3 +10,85 @@
 2025-05-04 13:29:24.632 [error] No registered selector for ID: copilot-chat.generateCommitMessage
 2025-05-04 13:29:24.657 [error] No registered selector for ID: copilot-chat.terminalToDebugging
 2025-05-04 13:29:24.657 [error] No registered selector for ID: copilot-chat.terminalToDebuggingSuccess
+2025-05-04 17:44:07.302 [error] [Extension Host] [ghostText] Error on ghost text request: FetchError: Stream closed with error code NGHTTP2_REFUSED_STREAM
+    at fetch (/root/.vscode/extensions/github.copilot-1.312.0/node_modules/@adobe/helix-fetch/src/fetch/index.js:99:11)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at cachingFetch (/root/.vscode/extensions/github.copilot-1.312.0/node_modules/@adobe/helix-fetch/src/fetch/index.js:288:16)
+    at HB.fetch (/root/.vscode/extensions/github.copilot-1.312.0/lib/src/network/helix.ts:94:22)
+    at HE.fetchWithParameters (/root/.vscode/extensions/github.copilot-1.312.0/lib/src/openai/fetch.ts:811:26)
+    at HE.fetchAndStreamCompletions (/root/.vscode/extensions/github.copilot-1.312.0/lib/src/openai/fetch.ts:516:26)
+    at genericGetCompletionsFromNetwork (/root/.vscode/extensions/github.copilot-1.312.0/lib/src/ghostText/ghostText.ts:152:21) {
+  type: 'system',
+  _name: 'FetchError',
+  code: 'ERR_HTTP2_STREAM_ERROR',
+  errno: undefined,
+  erroredSysCall: undefined
+}
+2025-05-04 18:10:58.212 [error] [Extension Host] [AsyncCompletionManager] [a44d488a-f963-4b89-b0cc-ebecbab466ed] Request errored with AbortError: The operation was aborted.
+    at EventEmitter.abortHandler (/root/.vscode/extensions/github.copilot-1.312.0/node_modules/@adobe/helix-fetch/src/fetch/index.js:106:17)
+    at EventEmitter.emit (node:events:518:28)
+    at GB.dispatchEvent (/root/.vscode/extensions/github.copilot-1.312.0/node_modules/@adobe/helix-fetch/src/fetch/abort.js:67:41)
+    at GB.fire (/root/.vscode/extensions/github.copilot-1.312.0/node_modules/@adobe/helix-fetch/src/fetch/abort.js:72:10)
+    at H7.abort (/root/.vscode/extensions/github.copilot-1.312.0/node_modules/@adobe/helix-fetch/src/fetch/abort.js:137:39)
+    at /root/.vscode/extensions/github.copilot-1.312.0/lib/src/networking.ts:253:19
+    at sZ.invoke (/root/.vscode/extensions/github.copilot-1.312.0/node_modules/vscode-jsonrpc/lib/common/events.js:55:39)
+    at e.fire (/root/.vscode/extensions/github.copilot-1.312.0/node_modules/vscode-jsonrpc/lib/common/events.js:117:36)
+    at yT.cancel (/root/.vscode/extensions/github.copilot-1.312.0/node_modules/vscode-jsonrpc/lib/common/cancellation.js:41:31)
+    at lZ.cancel (/root/.vscode/extensions/github.copilot-1.312.0/node_modules/vscode-jsonrpc/lib/common/cancellation.js:82:25)
+    at Ml.cancelRequest (/root/.vscode/extensions/github.copilot-1.312.0/lib/src/ghostText/asyncCompletions.ts:270:41)
+    at Ml.getFirstMatchingRequest (/root/.vscode/extensions/github.copilot-1.312.0/lib/src/ghostText/asyncCompletions.ts:247:22)
+    at /root/.vscode/extensions/github.copilot-1.312.0/lib/src/ghostText/ghostText.ts:921:54 {
+  type: 'aborted',
+  _name: 'AbortError'
+}
+2025-05-04 18:10:59.225 [error] [Extension Host] [AsyncCompletionManager] [0b44aec0-dddf-4eae-ac4f-531ab441c4ac] Request errored with AbortError: The operation was aborted.
+    at EventEmitter.abortHandler (/root/.vscode/extensions/github.copilot-1.312.0/node_modules/@adobe/helix-fetch/src/fetch/index.js:106:17)
+    at EventEmitter.emit (node:events:518:28)
+    at GB.dispatchEvent (/root/.vscode/extensions/github.copilot-1.312.0/node_modules/@adobe/helix-fetch/src/fetch/abort.js:67:41)
+    at GB.fire (/root/.vscode/extensions/github.copilot-1.312.0/node_modules/@adobe/helix-fetch/src/fetch/abort.js:72:10)
+    at H7.abort (/root/.vscode/extensions/github.copilot-1.312.0/node_modules/@adobe/helix-fetch/src/fetch/abort.js:137:39)
+    at /root/.vscode/extensions/github.copilot-1.312.0/lib/src/networking.ts:253:19
+    at sZ.invoke (/root/.vscode/extensions/github.copilot-1.312.0/node_modules/vscode-jsonrpc/lib/common/events.js:55:39)
+    at e.fire (/root/.vscode/extensions/github.copilot-1.312.0/node_modules/vscode-jsonrpc/lib/common/events.js:117:36)
+    at yT.cancel (/root/.vscode/extensions/github.copilot-1.312.0/node_modules/vscode-jsonrpc/lib/common/cancellation.js:41:31)
+    at lZ.cancel (/root/.vscode/extensions/github.copilot-1.312.0/node_modules/vscode-jsonrpc/lib/common/cancellation.js:82:25)
+    at Ml.cancelRequest (/root/.vscode/extensions/github.copilot-1.312.0/lib/src/ghostText/asyncCompletions.ts:270:41)
+    at Ml.getFirstMatchingRequest (/root/.vscode/extensions/github.copilot-1.312.0/lib/src/ghostText/asyncCompletions.ts:247:22)
+    at /root/.vscode/extensions/github.copilot-1.312.0/lib/src/ghostText/ghostText.ts:921:54 {
+  type: 'aborted',
+  _name: 'AbortError'
+}
+2025-05-04 18:11:01.988 [error] [Extension Host] [AsyncCompletionManager] [506a7db9-a14b-4a1a-a833-795810f79afc] Request errored with AbortError: The operation was aborted.
+    at EventEmitter.abortHandler (/root/.vscode/extensions/github.copilot-1.312.0/node_modules/@adobe/helix-fetch/src/fetch/index.js:106:17)
+    at EventEmitter.emit (node:events:518:28)
+    at GB.dispatchEvent (/root/.vscode/extensions/github.copilot-1.312.0/node_modules/@adobe/helix-fetch/src/fetch/abort.js:67:41)
+    at GB.fire (/root/.vscode/extensions/github.copilot-1.312.0/node_modules/@adobe/helix-fetch/src/fetch/abort.js:72:10)
+    at H7.abort (/root/.vscode/extensions/github.copilot-1.312.0/node_modules/@adobe/helix-fetch/src/fetch/abort.js:137:39)
+    at /root/.vscode/extensions/github.copilot-1.312.0/lib/src/networking.ts:253:19
+    at sZ.invoke (/root/.vscode/extensions/github.copilot-1.312.0/node_modules/vscode-jsonrpc/lib/common/events.js:55:39)
+    at e.fire (/root/.vscode/extensions/github.copilot-1.312.0/node_modules/vscode-jsonrpc/lib/common/events.js:117:36)
+    at yT.cancel (/root/.vscode/extensions/github.copilot-1.312.0/node_modules/vscode-jsonrpc/lib/common/cancellation.js:41:31)
+    at lZ.cancel (/root/.vscode/extensions/github.copilot-1.312.0/node_modules/vscode-jsonrpc/lib/common/cancellation.js:82:25)
+    at Ml.cancelRequest (/root/.vscode/extensions/github.copilot-1.312.0/lib/src/ghostText/asyncCompletions.ts:270:41)
+    at Ml.getFirstMatchingRequest (/root/.vscode/extensions/github.copilot-1.312.0/lib/src/ghostText/asyncCompletions.ts:247:22)
+    at /root/.vscode/extensions/github.copilot-1.312.0/lib/src/ghostText/ghostText.ts:921:54 {
+  type: 'aborted',
+  _name: 'AbortError'
+}
+2025-05-04 18:11:01.989 [error] [Extension Host] [AsyncCompletionManager] [fe1050e4-b8a9-492f-9d7a-a85ce00b1477] Request errored with AbortError: The operation was aborted.
+    at EventEmitter.abortHandler (/root/.vscode/extensions/github.copilot-1.312.0/node_modules/@adobe/helix-fetch/src/fetch/index.js:106:17)
+    at EventEmitter.emit (node:events:518:28)
+    at GB.dispatchEvent (/root/.vscode/extensions/github.copilot-1.312.0/node_modules/@adobe/helix-fetch/src/fetch/abort.js:67:41)
+    at GB.fire (/root/.vscode/extensions/github.copilot-1.312.0/node_modules/@adobe/helix-fetch/src/fetch/abort.js:72:10)
+    at H7.abort (/root/.vscode/extensions/github.copilot-1.312.0/node_modules/@adobe/helix-fetch/src/fetch/abort.js:137:39)
+    at /root/.vscode/extensions/github.copilot-1.312.0/lib/src/networking.ts:253:19
+    at sZ.invoke (/root/.vscode/extensions/github.copilot-1.312.0/node_modules/vscode-jsonrpc/lib/common/events.js:55:39)
+    at e.fire (/root/.vscode/extensions/github.copilot-1.312.0/node_modules/vscode-jsonrpc/lib/common/events.js:117:36)
+    at yT.cancel (/root/.vscode/extensions/github.copilot-1.312.0/node_modules/vscode-jsonrpc/lib/common/cancellation.js:41:31)
+    at lZ.cancel (/root/.vscode/extensions/github.copilot-1.312.0/node_modules/vscode-jsonrpc/lib/common/cancellation.js:82:25)
+    at Ml.cancelRequest (/root/.vscode/extensions/github.copilot-1.312.0/lib/src/ghostText/asyncCompletions.ts:270:41)
+    at Ml.getFirstMatchingRequest (/root/.vscode/extensions/github.copilot-1.312.0/lib/src/ghostText/asyncCompletions.ts:247:22)
+    at /root/.vscode/extensions/github.copilot-1.312.0/lib/src/ghostText/ghostText.ts:921:54 {
+  type: 'aborted',
+  _name: 'AbortError'
+}
