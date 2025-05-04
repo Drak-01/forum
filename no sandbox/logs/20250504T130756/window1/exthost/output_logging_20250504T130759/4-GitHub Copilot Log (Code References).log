@@ -1,0 +1,3 @@
+2025-05-04 16:16:04.475 [info] file:///home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/routes/web.php Similar code at  [Ln 6, Col 46] '); }); Route::get('/register', function () {  return view('auth.register'); })->name('register')...
+2025-05-04 16:16:04.475 [info] License: unknown, URL: https://github.com/Stoorny/AhmedRedaEx/blob/0615eced3c702f69af3ab58fe458962e5f317c20/routes/web.php
+2025-05-04 16:16:04.475 [info] License: unknown, URL: https://github.com/ZygenUEU/Test-Pemweb/blob/9b17915a787b5cf3f594b19fb5b3dc9dd21fb56e/TA_Lamda/src/routes/web.php
