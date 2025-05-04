@@ -92,3 +92,820 @@
   type: 'aborted',
   _name: 'AbortError'
 }
+2025-05-04 19:49:12.680 [error] [Extension Host] [AsyncCompletionManager] [a7bf983d-67a1-4ae6-bd70-9a3844e862b6] Request errored with AbortError: The operation was aborted.
+    at EventEmitter.abortHandler (/root/.vscode/extensions/github.copilot-1.312.0/node_modules/@adobe/helix-fetch/src/fetch/index.js:106:17)
+    at EventEmitter.emit (node:events:518:28)
+    at GB.dispatchEvent (/root/.vscode/extensions/github.copilot-1.312.0/node_modules/@adobe/helix-fetch/src/fetch/abort.js:67:41)
+    at GB.fire (/root/.vscode/extensions/github.copilot-1.312.0/node_modules/@adobe/helix-fetch/src/fetch/abort.js:72:10)
+    at H7.abort (/root/.vscode/extensions/github.copilot-1.312.0/node_modules/@adobe/helix-fetch/src/fetch/abort.js:137:39)
+    at /root/.vscode/extensions/github.copilot-1.312.0/lib/src/networking.ts:253:19
+    at sZ.invoke (/root/.vscode/extensions/github.copilot-1.312.0/node_modules/vscode-jsonrpc/lib/common/events.js:55:39)
+    at e.fire (/root/.vscode/extensions/github.copilot-1.312.0/node_modules/vscode-jsonrpc/lib/common/events.js:117:36)
+    at yT.cancel (/root/.vscode/extensions/github.copilot-1.312.0/node_modules/vscode-jsonrpc/lib/common/cancellation.js:41:31)
+    at lZ.cancel (/root/.vscode/extensions/github.copilot-1.312.0/node_modules/vscode-jsonrpc/lib/common/cancellation.js:82:25)
+    at Ml.cancelRequest (/root/.vscode/extensions/github.copilot-1.312.0/lib/src/ghostText/asyncCompletions.ts:270:41)
+    at Ml.getFirstMatchingRequest (/root/.vscode/extensions/github.copilot-1.312.0/lib/src/ghostText/asyncCompletions.ts:247:22)
+    at /root/.vscode/extensions/github.copilot-1.312.0/lib/src/ghostText/ghostText.ts:921:54 {
+  type: 'aborted',
+  _name: 'AbortError'
+}
+2025-05-04 20:01:00.820 [error] [Extension Host] [AsyncCompletionManager] [8b48d8f5-f9c9-4fbe-bf1d-210551ab5c02] Request errored with AbortError: The operation was aborted.
+    at EventEmitter.abortHandler (/root/.vscode/extensions/github.copilot-1.312.0/node_modules/@adobe/helix-fetch/src/fetch/index.js:106:17)
+    at EventEmitter.emit (node:events:518:28)
+    at GB.dispatchEvent (/root/.vscode/extensions/github.copilot-1.312.0/node_modules/@adobe/helix-fetch/src/fetch/abort.js:67:41)
+    at GB.fire (/root/.vscode/extensions/github.copilot-1.312.0/node_modules/@adobe/helix-fetch/src/fetch/abort.js:72:10)
+    at H7.abort (/root/.vscode/extensions/github.copilot-1.312.0/node_modules/@adobe/helix-fetch/src/fetch/abort.js:137:39)
+    at /root/.vscode/extensions/github.copilot-1.312.0/lib/src/networking.ts:253:19
+    at sZ.invoke (/root/.vscode/extensions/github.copilot-1.312.0/node_modules/vscode-jsonrpc/lib/common/events.js:55:39)
+    at e.fire (/root/.vscode/extensions/github.copilot-1.312.0/node_modules/vscode-jsonrpc/lib/common/events.js:117:36)
+    at yT.cancel (/root/.vscode/extensions/github.copilot-1.312.0/node_modules/vscode-jsonrpc/lib/common/cancellation.js:41:31)
+    at lZ.cancel (/root/.vscode/extensions/github.copilot-1.312.0/node_modules/vscode-jsonrpc/lib/common/cancellation.js:82:25)
+    at Ml.cancelRequest (/root/.vscode/extensions/github.copilot-1.312.0/lib/src/ghostText/asyncCompletions.ts:270:41)
+    at Ml.getFirstMatchingRequest (/root/.vscode/extensions/github.copilot-1.312.0/lib/src/ghostText/asyncCompletions.ts:247:22)
+    at /root/.vscode/extensions/github.copilot-1.312.0/lib/src/ghostText/ghostText.ts:921:54 {
+  type: 'aborted',
+  _name: 'AbortError'
+}
+2025-05-04 21:06:53.738 [error] [Extension Host] [default] Error sending telemetry FetchError: read ECONNRESET
+    at fetch (/root/.vscode/extensions/github.copilot-1.312.0/node_modules/@adobe/helix-fetch/src/fetch/index.js:99:11)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at cachingFetch (/root/.vscode/extensions/github.copilot-1.312.0/node_modules/@adobe/helix-fetch/src/fetch/index.js:288:16)
+    at HB.fetch (/root/.vscode/extensions/github.copilot-1.312.0/lib/src/network/helix.ts:94:22) {
+  type: 'system',
+  _name: 'FetchError',
+  code: 'ECONNRESET',
+  errno: -104,
+  erroredSysCall: 'read'
+}
+2025-05-04 21:33:31.102 [error] [Extension Host] [AsyncCompletionManager] [49f9552f-324c-4fdd-ad1e-ba6f3f731d49] Request errored with AbortError: The operation was aborted.
+    at EventEmitter.abortHandler (/root/.vscode/extensions/github.copilot-1.312.0/node_modules/@adobe/helix-fetch/src/fetch/index.js:106:17)
+    at EventEmitter.emit (node:events:518:28)
+    at GB.dispatchEvent (/root/.vscode/extensions/github.copilot-1.312.0/node_modules/@adobe/helix-fetch/src/fetch/abort.js:67:41)
+    at GB.fire (/root/.vscode/extensions/github.copilot-1.312.0/node_modules/@adobe/helix-fetch/src/fetch/abort.js:72:10)
+    at H7.abort (/root/.vscode/extensions/github.copilot-1.312.0/node_modules/@adobe/helix-fetch/src/fetch/abort.js:137:39)
+    at /root/.vscode/extensions/github.copilot-1.312.0/lib/src/networking.ts:253:19
+    at sZ.invoke (/root/.vscode/extensions/github.copilot-1.312.0/node_modules/vscode-jsonrpc/lib/common/events.js:55:39)
+    at e.fire (/root/.vscode/extensions/github.copilot-1.312.0/node_modules/vscode-jsonrpc/lib/common/events.js:117:36)
+    at yT.cancel (/root/.vscode/extensions/github.copilot-1.312.0/node_modules/vscode-jsonrpc/lib/common/cancellation.js:41:31)
+    at lZ.cancel (/root/.vscode/extensions/github.copilot-1.312.0/node_modules/vscode-jsonrpc/lib/common/cancellation.js:82:25)
+    at Ml.cancelRequest (/root/.vscode/extensions/github.copilot-1.312.0/lib/src/ghostText/asyncCompletions.ts:270:41)
+    at Ml.getFirstMatchingRequest (/root/.vscode/extensions/github.copilot-1.312.0/lib/src/ghostText/asyncCompletions.ts:247:22)
+    at /root/.vscode/extensions/github.copilot-1.312.0/lib/src/ghostText/ghostText.ts:921:54 {
+  type: 'aborted',
+  _name: 'AbortError'
+}
+2025-05-04 21:33:32.241 [error] [Extension Host] [AsyncCompletionManager] [5f3fa420-1e09-44ae-b21e-e239581dfbbd] Request errored with AbortError: The operation was aborted.
+    at EventEmitter.abortHandler (/root/.vscode/extensions/github.copilot-1.312.0/node_modules/@adobe/helix-fetch/src/fetch/index.js:106:17)
+    at EventEmitter.emit (node:events:518:28)
+    at GB.dispatchEvent (/root/.vscode/extensions/github.copilot-1.312.0/node_modules/@adobe/helix-fetch/src/fetch/abort.js:67:41)
+    at GB.fire (/root/.vscode/extensions/github.copilot-1.312.0/node_modules/@adobe/helix-fetch/src/fetch/abort.js:72:10)
+    at H7.abort (/root/.vscode/extensions/github.copilot-1.312.0/node_modules/@adobe/helix-fetch/src/fetch/abort.js:137:39)
+    at /root/.vscode/extensions/github.copilot-1.312.0/lib/src/networking.ts:253:19
+    at sZ.invoke (/root/.vscode/extensions/github.copilot-1.312.0/node_modules/vscode-jsonrpc/lib/common/events.js:55:39)
+    at e.fire (/root/.vscode/extensions/github.copilot-1.312.0/node_modules/vscode-jsonrpc/lib/common/events.js:117:36)
+    at yT.cancel (/root/.vscode/extensions/github.copilot-1.312.0/node_modules/vscode-jsonrpc/lib/common/cancellation.js:41:31)
+    at lZ.cancel (/root/.vscode/extensions/github.copilot-1.312.0/node_modules/vscode-jsonrpc/lib/common/cancellation.js:82:25)
+    at Ml.cancelRequest (/root/.vscode/extensions/github.copilot-1.312.0/lib/src/ghostText/asyncCompletions.ts:270:41)
+    at Ml.getFirstMatchingRequest (/root/.vscode/extensions/github.copilot-1.312.0/lib/src/ghostText/asyncCompletions.ts:247:22)
+    at /root/.vscode/extensions/github.copilot-1.312.0/lib/src/ghostText/ghostText.ts:921:54 {
+  type: 'aborted',
+  _name: 'AbortError'
+}
+2025-05-04 21:34:25.252 [error] [Extension Host] [AsyncCompletionManager] [22e0d865-7380-4c19-a06b-4e59609e4c7f] Request errored with AbortError: The operation was aborted.
+    at EventEmitter.abortHandler (/root/.vscode/extensions/github.copilot-1.312.0/node_modules/@adobe/helix-fetch/src/fetch/index.js:106:17)
+    at EventEmitter.emit (node:events:518:28)
+    at GB.dispatchEvent (/root/.vscode/extensions/github.copilot-1.312.0/node_modules/@adobe/helix-fetch/src/fetch/abort.js:67:41)
+    at GB.fire (/root/.vscode/extensions/github.copilot-1.312.0/node_modules/@adobe/helix-fetch/src/fetch/abort.js:72:10)
+    at H7.abort (/root/.vscode/extensions/github.copilot-1.312.0/node_modules/@adobe/helix-fetch/src/fetch/abort.js:137:39)
+    at /root/.vscode/extensions/github.copilot-1.312.0/lib/src/networking.ts:253:19
+    at sZ.invoke (/root/.vscode/extensions/github.copilot-1.312.0/node_modules/vscode-jsonrpc/lib/common/events.js:55:39)
+    at e.fire (/root/.vscode/extensions/github.copilot-1.312.0/node_modules/vscode-jsonrpc/lib/common/events.js:117:36)
+    at yT.cancel (/root/.vscode/extensions/github.copilot-1.312.0/node_modules/vscode-jsonrpc/lib/common/cancellation.js:41:31)
+    at lZ.cancel (/root/.vscode/extensions/github.copilot-1.312.0/node_modules/vscode-jsonrpc/lib/common/cancellation.js:82:25)
+    at Ml.cancelRequest (/root/.vscode/extensions/github.copilot-1.312.0/lib/src/ghostText/asyncCompletions.ts:270:41)
+    at Ml.getFirstMatchingRequest (/root/.vscode/extensions/github.copilot-1.312.0/lib/src/ghostText/asyncCompletions.ts:247:22)
+    at /root/.vscode/extensions/github.copilot-1.312.0/lib/src/ghostText/ghostText.ts:921:54 {
+  type: 'aborted',
+  _name: 'AbortError'
+}
+2025-05-04 22:04:57.993 [error] [Extension Host] [AsyncCompletionManager] [97d19fb6-2c2a-41a3-8170-a3989cc3584b] Request errored with AbortError: The operation was aborted.
+    at EventEmitter.abortHandler (/root/.vscode/extensions/github.copilot-1.312.0/node_modules/@adobe/helix-fetch/src/fetch/index.js:106:17)
+    at EventEmitter.emit (node:events:518:28)
+    at GB.dispatchEvent (/root/.vscode/extensions/github.copilot-1.312.0/node_modules/@adobe/helix-fetch/src/fetch/abort.js:67:41)
+    at GB.fire (/root/.vscode/extensions/github.copilot-1.312.0/node_modules/@adobe/helix-fetch/src/fetch/abort.js:72:10)
+    at H7.abort (/root/.vscode/extensions/github.copilot-1.312.0/node_modules/@adobe/helix-fetch/src/fetch/abort.js:137:39)
+    at /root/.vscode/extensions/github.copilot-1.312.0/lib/src/networking.ts:253:19
+    at sZ.invoke (/root/.vscode/extensions/github.copilot-1.312.0/node_modules/vscode-jsonrpc/lib/common/events.js:55:39)
+    at e.fire (/root/.vscode/extensions/github.copilot-1.312.0/node_modules/vscode-jsonrpc/lib/common/events.js:117:36)
+    at yT.cancel (/root/.vscode/extensions/github.copilot-1.312.0/node_modules/vscode-jsonrpc/lib/common/cancellation.js:41:31)
+    at lZ.cancel (/root/.vscode/extensions/github.copilot-1.312.0/node_modules/vscode-jsonrpc/lib/common/cancellation.js:82:25)
+    at Ml.cancelRequest (/root/.vscode/extensions/github.copilot-1.312.0/lib/src/ghostText/asyncCompletions.ts:270:41)
+    at Ml.getFirstMatchingRequest (/root/.vscode/extensions/github.copilot-1.312.0/lib/src/ghostText/asyncCompletions.ts:247:22)
+    at /root/.vscode/extensions/github.copilot-1.312.0/lib/src/ghostText/ghostText.ts:921:54 {
+  type: 'aborted',
+  _name: 'AbortError'
+}
+2025-05-04 22:05:08.255 [error] 
+   Illuminate\Contracts\Container\BindingResolutionException 
+
+  Target class [view] does not exist.
+
+  at vendor/laravel/framework/src/Illuminate/Container/Container.php:1019
+    1015▕ 
+    1016▕         try {
+    1017▕             $reflector = new ReflectionClass($concrete);
+    1018▕         } catch (ReflectionException $e) {
+  ➜ 1019▕             throw new BindingResolutionException("Target class [$concrete] does not exist.", 0, $e);
+    1020▕         }
+    1021▕ 
+    1022▕         // If the type is not instantiable, the developer is attempting to resolve
+    1023▕         // an abstract type such as an Interface or Abstract Class and there is
+
+  1   [internal]:0
+      Illuminate\Foundation\Application::{closure:Illuminate\Foundation\Application::boot():1130}()
+      [2m+10 vendor frames [22m
+
+  12  app/Providers/SidebarServiceProvider.php:24
+      Illuminate\Support\Facades\Facade::__callStatic()
+
+
+2025-05-04 22:05:20.855 [error] [Extension Host] 
+   Illuminate\Contracts\Container\BindingResolutionException 
+
+  Target class [view] does not exist.
+
+  at vendor/laravel/framework/src/Illuminate/Container/Container.php:1019
+    1015▕ 
+    1016▕         try {
+    1017▕             $reflector = new ReflectionClass($concrete);
+    1018▕         } catch (ReflectionException $e) {
+  ➜ 1019▕             throw new BindingResolutionException("Target class [$concrete] does not exist.", 0, $e);
+    1020▕         }
+    1021▕ 
+    1022▕         // If the type is not instantiable, the developer is attempting to resolve
+    1023▕         // an abstract type such as an Interface or Abstract Class and there is
+
+  1   [internal]:0
+      Illuminate\Foundation\Application::{closure:Illuminate\Foundation\Application::boot():1130}()
+      [2m+10 vendor frames [22m
+
+  12  app/Providers/SidebarServiceProvider.php:24
+      Illuminate\Support\Facades\Facade::__callStatic()
+
+
+2025-05-04 22:05:21.857 [error] 
+   Illuminate\Contracts\Container\BindingResolutionException 
+
+  Target class [view] does not exist.
+
+  at vendor/laravel/framework/src/Illuminate/Container/Container.php:1019
+    1015▕ 
+    1016▕         try {
+    1017▕             $reflector = new ReflectionClass($concrete);
+    1018▕         } catch (ReflectionException $e) {
+  ➜ 1019▕             throw new BindingResolutionException("Target class [$concrete] does not exist.", 0, $e);
+    1020▕         }
+    1021▕ 
+    1022▕         // If the type is not instantiable, the developer is attempting to resolve
+    1023▕         // an abstract type such as an Interface or Abstract Class and there is
+
+  1   [internal]:0
+      Illuminate\Foundation\Application::{closure:Illuminate\Foundation\Application::boot():1130}()
+      [2m+10 vendor frames [22m
+
+  12  app/Providers/SidebarServiceProvider.php:24
+      Illuminate\Support\Facades\Facade::__callStatic()
+
+
+2025-05-04 22:06:20.872 [error] [Extension Host] 
+   Illuminate\Contracts\Container\BindingResolutionException 
+
+  Target class [view] does not exist.
+
+  at vendor/laravel/framework/src/Illuminate/Container/Container.php:1019
+    1015▕ 
+    1016▕         try {
+    1017▕             $reflector = new ReflectionClass($concrete);
+    1018▕         } catch (ReflectionException $e) {
+  ➜ 1019▕             throw new BindingResolutionException("Target class [$concrete] does not exist.", 0, $e);
+    1020▕         }
+    1021▕ 
+    1022▕         // If the type is not instantiable, the developer is attempting to resolve
+    1023▕         // an abstract type such as an Interface or Abstract Class and there is
+
+  1   [internal]:0
+      Illuminate\Foundation\Application::{closure:Illuminate\Foundation\Application::boot():1130}()
+      [2m+10 vendor frames [22m
+
+  12  app/Providers/SidebarServiceProvider.php:24
+      Illuminate\Support\Facades\Facade::__callStatic()
+
+
+2025-05-04 22:06:21.863 [error] 
+   Illuminate\Contracts\Container\BindingResolutionException 
+
+  Target class [view] does not exist.
+
+  at vendor/laravel/framework/src/Illuminate/Container/Container.php:1019
+    1015▕ 
+    1016▕         try {
+    1017▕             $reflector = new ReflectionClass($concrete);
+    1018▕         } catch (ReflectionException $e) {
+  ➜ 1019▕             throw new BindingResolutionException("Target class [$concrete] does not exist.", 0, $e);
+    1020▕         }
+    1021▕ 
+    1022▕         // If the type is not instantiable, the developer is attempting to resolve
+    1023▕         // an abstract type such as an Interface or Abstract Class and there is
+
+  1   [internal]:0
+      Illuminate\Foundation\Application::{closure:Illuminate\Foundation\Application::boot():1130}()
+      [2m+10 vendor frames [22m
+
+  12  app/Providers/SidebarServiceProvider.php:24
+      Illuminate\Support\Facades\Facade::__callStatic()
+
+
+2025-05-04 22:07:05.823 [error] 
+   Illuminate\Contracts\Container\BindingResolutionException 
+
+  Target class [view] does not exist.
+
+  at vendor/laravel/framework/src/Illuminate/Container/Container.php:1019
+    1015▕ 
+    1016▕         try {
+    1017▕             $reflector = new ReflectionClass($concrete);
+    1018▕         } catch (ReflectionException $e) {
+  ➜ 1019▕             throw new BindingResolutionException("Target class [$concrete] does not exist.", 0, $e);
+    1020▕         }
+    1021▕ 
+    1022▕         // If the type is not instantiable, the developer is attempting to resolve
+    1023▕         // an abstract type such as an Interface or Abstract Class and there is
+
+  1   [internal]:0
+      Illuminate\Foundation\Application::{closure:Illuminate\Foundation\Application::boot():1130}()
+      [2m+10 vendor frames [22m
+
+  12  app/Providers/SidebarServiceProvider.php:24
+      Illuminate\Support\Facades\Facade::__callStatic()
+
+
+2025-05-04 22:07:20.914 [error] [Extension Host] 
+   Illuminate\Contracts\Container\BindingResolutionException 
+
+  Target class [view] does not exist.
+
+  at vendor/laravel/framework/src/Illuminate/Container/Container.php:1019
+    1015▕ 
+    1016▕         try {
+    1017▕             $reflector = new ReflectionClass($concrete);
+    1018▕         } catch (ReflectionException $e) {
+  ➜ 1019▕             throw new BindingResolutionException("Target class [$concrete] does not exist.", 0, $e);
+    1020▕         }
+    1021▕ 
+    1022▕         // If the type is not instantiable, the developer is attempting to resolve
+    1023▕         // an abstract type such as an Interface or Abstract Class and there is
+
+  1   [internal]:0
+      Illuminate\Foundation\Application::{closure:Illuminate\Foundation\Application::boot():1130}()
+      [2m+10 vendor frames [22m
+
+  12  app/Providers/SidebarServiceProvider.php:24
+      Illuminate\Support\Facades\Facade::__callStatic()
+
+
+2025-05-04 22:07:21.908 [error] 
+   Illuminate\Contracts\Container\BindingResolutionException 
+
+  Target class [view] does not exist.
+
+  at vendor/laravel/framework/src/Illuminate/Container/Container.php:1019
+    1015▕ 
+    1016▕         try {
+    1017▕             $reflector = new ReflectionClass($concrete);
+    1018▕         } catch (ReflectionException $e) {
+  ➜ 1019▕             throw new BindingResolutionException("Target class [$concrete] does not exist.", 0, $e);
+    1020▕         }
+    1021▕ 
+    1022▕         // If the type is not instantiable, the developer is attempting to resolve
+    1023▕         // an abstract type such as an Interface or Abstract Class and there is
+
+  1   [internal]:0
+      Illuminate\Foundation\Application::{closure:Illuminate\Foundation\Application::boot():1130}()
+      [2m+10 vendor frames [22m
+
+  12  app/Providers/SidebarServiceProvider.php:24
+      Illuminate\Support\Facades\Facade::__callStatic()
+
+
+2025-05-04 22:08:20.868 [error] [Extension Host] 
+   Illuminate\Contracts\Container\BindingResolutionException 
+
+  Target class [view] does not exist.
+
+  at vendor/laravel/framework/src/Illuminate/Container/Container.php:1019
+    1015▕ 
+    1016▕         try {
+    1017▕             $reflector = new ReflectionClass($concrete);
+    1018▕         } catch (ReflectionException $e) {
+  ➜ 1019▕             throw new BindingResolutionException("Target class [$concrete] does not exist.", 0, $e);
+    1020▕         }
+    1021▕ 
+    1022▕         // If the type is not instantiable, the developer is attempting to resolve
+    1023▕         // an abstract type such as an Interface or Abstract Class and there is
+
+  1   [internal]:0
+      Illuminate\Foundation\Application::{closure:Illuminate\Foundation\Application::boot():1130}()
+      [2m+10 vendor frames [22m
+
+  12  app/Providers/SidebarServiceProvider.php:24
+      Illuminate\Support\Facades\Facade::__callStatic()
+
+
+2025-05-04 22:08:21.864 [error] 
+   Illuminate\Contracts\Container\BindingResolutionException 
+
+  Target class [view] does not exist.
+
+  at vendor/laravel/framework/src/Illuminate/Container/Container.php:1019
+    1015▕ 
+    1016▕         try {
+    1017▕             $reflector = new ReflectionClass($concrete);
+    1018▕         } catch (ReflectionException $e) {
+  ➜ 1019▕             throw new BindingResolutionException("Target class [$concrete] does not exist.", 0, $e);
+    1020▕         }
+    1021▕ 
+    1022▕         // If the type is not instantiable, the developer is attempting to resolve
+    1023▕         // an abstract type such as an Interface or Abstract Class and there is
+
+  1   [internal]:0
+      Illuminate\Foundation\Application::{closure:Illuminate\Foundation\Application::boot():1130}()
+      [2m+10 vendor frames [22m
+
+  12  app/Providers/SidebarServiceProvider.php:24
+      Illuminate\Support\Facades\Facade::__callStatic()
+
+
+2025-05-04 22:09:20.870 [error] [Extension Host] 
+   Illuminate\Contracts\Container\BindingResolutionException 
+
+  Target class [view] does not exist.
+
+  at vendor/laravel/framework/src/Illuminate/Container/Container.php:1019
+    1015▕ 
+    1016▕         try {
+    1017▕             $reflector = new ReflectionClass($concrete);
+    1018▕         } catch (ReflectionException $e) {
+  ➜ 1019▕             throw new BindingResolutionException("Target class [$concrete] does not exist.", 0, $e);
+    1020▕         }
+    1021▕ 
+    1022▕         // If the type is not instantiable, the developer is attempting to resolve
+    1023▕         // an abstract type such as an Interface or Abstract Class and there is
+
+  1   [internal]:0
+      Illuminate\Foundation\Application::{closure:Illuminate\Foundation\Application::boot():1130}()
+      [2m+10 vendor frames [22m
+
+  12  app/Providers/SidebarServiceProvider.php:24
+      Illuminate\Support\Facades\Facade::__callStatic()
+
+
+2025-05-04 22:09:21.868 [error] 
+   Illuminate\Contracts\Container\BindingResolutionException 
+
+  Target class [view] does not exist.
+
+  at vendor/laravel/framework/src/Illuminate/Container/Container.php:1019
+    1015▕ 
+    1016▕         try {
+    1017▕             $reflector = new ReflectionClass($concrete);
+    1018▕         } catch (ReflectionException $e) {
+  ➜ 1019▕             throw new BindingResolutionException("Target class [$concrete] does not exist.", 0, $e);
+    1020▕         }
+    1021▕ 
+    1022▕         // If the type is not instantiable, the developer is attempting to resolve
+    1023▕         // an abstract type such as an Interface or Abstract Class and there is
+
+  1   [internal]:0
+      Illuminate\Foundation\Application::{closure:Illuminate\Foundation\Application::boot():1130}()
+      [2m+10 vendor frames [22m
+
+  12  app/Providers/SidebarServiceProvider.php:24
+      Illuminate\Support\Facades\Facade::__callStatic()
+
+
+2025-05-04 22:10:20.819 [error] [Extension Host] 
+   Illuminate\Contracts\Container\BindingResolutionException 
+
+  Target class [view] does not exist.
+
+  at vendor/laravel/framework/src/Illuminate/Container/Container.php:1019
+    1015▕ 
+    1016▕         try {
+    1017▕             $reflector = new ReflectionClass($concrete);
+    1018▕         } catch (ReflectionException $e) {
+  ➜ 1019▕             throw new BindingResolutionException("Target class [$concrete] does not exist.", 0, $e);
+    1020▕         }
+    1021▕ 
+    1022▕         // If the type is not instantiable, the developer is attempting to resolve
+    1023▕         // an abstract type such as an Interface or Abstract Class and there is
+
+  1   [internal]:0
+      Illuminate\Foundation\Application::{closure:Illuminate\Foundation\Application::boot():1130}()
+      [2m+10 vendor frames [22m
+
+  12  app/Providers/SidebarServiceProvider.php:24
+      Illuminate\Support\Facades\Facade::__callStatic()
+
+
+2025-05-04 22:10:21.838 [error] 
+   Illuminate\Contracts\Container\BindingResolutionException 
+
+  Target class [view] does not exist.
+
+  at vendor/laravel/framework/src/Illuminate/Container/Container.php:1019
+    1015▕ 
+    1016▕         try {
+    1017▕             $reflector = new ReflectionClass($concrete);
+    1018▕         } catch (ReflectionException $e) {
+  ➜ 1019▕             throw new BindingResolutionException("Target class [$concrete] does not exist.", 0, $e);
+    1020▕         }
+    1021▕ 
+    1022▕         // If the type is not instantiable, the developer is attempting to resolve
+    1023▕         // an abstract type such as an Interface or Abstract Class and there is
+
+  1   [internal]:0
+      Illuminate\Foundation\Application::{closure:Illuminate\Foundation\Application::boot():1130}()
+      [2m+10 vendor frames [22m
+
+  12  app/Providers/SidebarServiceProvider.php:24
+      Illuminate\Support\Facades\Facade::__callStatic()
+
+
+2025-05-04 22:11:20.882 [error] [Extension Host] 
+   Illuminate\Contracts\Container\BindingResolutionException 
+
+  Target class [view] does not exist.
+
+  at vendor/laravel/framework/src/Illuminate/Container/Container.php:1019
+    1015▕ 
+    1016▕         try {
+    1017▕             $reflector = new ReflectionClass($concrete);
+    1018▕         } catch (ReflectionException $e) {
+  ➜ 1019▕             throw new BindingResolutionException("Target class [$concrete] does not exist.", 0, $e);
+    1020▕         }
+    1021▕ 
+    1022▕         // If the type is not instantiable, the developer is attempting to resolve
+    1023▕         // an abstract type such as an Interface or Abstract Class and there is
+
+  1   [internal]:0
+      Illuminate\Foundation\Application::{closure:Illuminate\Foundation\Application::boot():1130}()
+      [2m+10 vendor frames [22m
+
+  12  app/Providers/SidebarServiceProvider.php:24
+      Illuminate\Support\Facades\Facade::__callStatic()
+
+
+2025-05-04 22:11:21.864 [error] 
+   Illuminate\Contracts\Container\BindingResolutionException 
+
+  Target class [view] does not exist.
+
+  at vendor/laravel/framework/src/Illuminate/Container/Container.php:1019
+    1015▕ 
+    1016▕         try {
+    1017▕             $reflector = new ReflectionClass($concrete);
+    1018▕         } catch (ReflectionException $e) {
+  ➜ 1019▕             throw new BindingResolutionException("Target class [$concrete] does not exist.", 0, $e);
+    1020▕         }
+    1021▕ 
+    1022▕         // If the type is not instantiable, the developer is attempting to resolve
+    1023▕         // an abstract type such as an Interface or Abstract Class and there is
+
+  1   [internal]:0
+      Illuminate\Foundation\Application::{closure:Illuminate\Foundation\Application::boot():1130}()
+      [2m+10 vendor frames [22m
+
+  12  app/Providers/SidebarServiceProvider.php:24
+      Illuminate\Support\Facades\Facade::__callStatic()
+
+
+2025-05-04 22:12:20.834 [error] [Extension Host] 
+   Illuminate\Contracts\Container\BindingResolutionException 
+
+  Target class [view] does not exist.
+
+  at vendor/laravel/framework/src/Illuminate/Container/Container.php:1019
+    1015▕ 
+    1016▕         try {
+    1017▕             $reflector = new ReflectionClass($concrete);
+    1018▕         } catch (ReflectionException $e) {
+  ➜ 1019▕             throw new BindingResolutionException("Target class [$concrete] does not exist.", 0, $e);
+    1020▕         }
+    1021▕ 
+    1022▕         // If the type is not instantiable, the developer is attempting to resolve
+    1023▕         // an abstract type such as an Interface or Abstract Class and there is
+
+  1   [internal]:0
+      Illuminate\Foundation\Application::{closure:Illuminate\Foundation\Application::boot():1130}()
+      [2m+10 vendor frames [22m
+
+  12  app/Providers/SidebarServiceProvider.php:24
+      Illuminate\Support\Facades\Facade::__callStatic()
+
+
+2025-05-04 22:12:21.157 [error] 
+   Illuminate\Contracts\Container\BindingResolutionException 
+
+  Target class [view] does not exist.
+
+  at vendor/laravel/framework/src/Illuminate/Container/Container.php:1019
+    1015▕ 
+    1016▕         try {
+    1017▕             $reflector = new ReflectionClass($concrete);
+    1018▕         } catch (ReflectionException $e) {
+  ➜ 1019▕             throw new BindingResolutionException("Target class [$concrete] does not exist.", 0, $e);
+    1020▕         }
+    1021▕ 
+    1022▕         // If the type is not instantiable, the developer is attempting to resolve
+    1023▕         // an abstract type such as an Interface or Abstract Class and there is
+
+  1   [internal]:0
+      Illuminate\Foundation\Application::{closure:Illuminate\Foundation\Application::boot():1130}()
+      [2m+10 vendor frames [22m
+
+  12  app/Providers/SidebarServiceProvider.php:24
+      Illuminate\Support\Facades\Facade::__callStatic()
+
+
+2025-05-04 22:13:20.877 [error] [Extension Host] 
+   Illuminate\Contracts\Container\BindingResolutionException 
+
+  Target class [view] does not exist.
+
+  at vendor/laravel/framework/src/Illuminate/Container/Container.php:1019
+    1015▕ 
+    1016▕         try {
+    1017▕             $reflector = new ReflectionClass($concrete);
+    1018▕         } catch (ReflectionException $e) {
+  ➜ 1019▕             throw new BindingResolutionException("Target class [$concrete] does not exist.", 0, $e);
+    1020▕         }
+    1021▕ 
+    1022▕         // If the type is not instantiable, the developer is attempting to resolve
+    1023▕         // an abstract type such as an Interface or Abstract Class and there is
+
+  1   [internal]:0
+      Illuminate\Foundation\Application::{closure:Illuminate\Foundation\Application::boot():1130}()
+      [2m+10 vendor frames [22m
+
+  12  app/Providers/SidebarServiceProvider.php:24
+      Illuminate\Support\Facades\Facade::__callStatic()
+
+
+2025-05-04 22:13:21.862 [error] 
+   Illuminate\Contracts\Container\BindingResolutionException 
+
+  Target class [view] does not exist.
+
+  at vendor/laravel/framework/src/Illuminate/Container/Container.php:1019
+    1015▕ 
+    1016▕         try {
+    1017▕             $reflector = new ReflectionClass($concrete);
+    1018▕         } catch (ReflectionException $e) {
+  ➜ 1019▕             throw new BindingResolutionException("Target class [$concrete] does not exist.", 0, $e);
+    1020▕         }
+    1021▕ 
+    1022▕         // If the type is not instantiable, the developer is attempting to resolve
+    1023▕         // an abstract type such as an Interface or Abstract Class and there is
+
+  1   [internal]:0
+      Illuminate\Foundation\Application::{closure:Illuminate\Foundation\Application::boot():1130}()
+      [2m+10 vendor frames [22m
+
+  12  app/Providers/SidebarServiceProvider.php:24
+      Illuminate\Support\Facades\Facade::__callStatic()
+
+
+2025-05-04 22:14:20.841 [error] [Extension Host] 
+   Illuminate\Contracts\Container\BindingResolutionException 
+
+  Target class [view] does not exist.
+
+  at vendor/laravel/framework/src/Illuminate/Container/Container.php:1019
+    1015▕ 
+    1016▕         try {
+    1017▕             $reflector = new ReflectionClass($concrete);
+    1018▕         } catch (ReflectionException $e) {
+  ➜ 1019▕             throw new BindingResolutionException("Target class [$concrete] does not exist.", 0, $e);
+    1020▕         }
+    1021▕ 
+    1022▕         // If the type is not instantiable, the developer is attempting to resolve
+    1023▕         // an abstract type such as an Interface or Abstract Class and there is
+
+  1   [internal]:0
+      Illuminate\Foundation\Application::{closure:Illuminate\Foundation\Application::boot():1130}()
+      [2m+10 vendor frames [22m
+
+  12  app/Providers/SidebarServiceProvider.php:24
+      Illuminate\Support\Facades\Facade::__callStatic()
+
+
+2025-05-04 22:14:21.861 [error] 
+   Illuminate\Contracts\Container\BindingResolutionException 
+
+  Target class [view] does not exist.
+
+  at vendor/laravel/framework/src/Illuminate/Container/Container.php:1019
+    1015▕ 
+    1016▕         try {
+    1017▕             $reflector = new ReflectionClass($concrete);
+    1018▕         } catch (ReflectionException $e) {
+  ➜ 1019▕             throw new BindingResolutionException("Target class [$concrete] does not exist.", 0, $e);
+    1020▕         }
+    1021▕ 
+    1022▕         // If the type is not instantiable, the developer is attempting to resolve
+    1023▕         // an abstract type such as an Interface or Abstract Class and there is
+
+  1   [internal]:0
+      Illuminate\Foundation\Application::{closure:Illuminate\Foundation\Application::boot():1130}()
+      [2m+10 vendor frames [22m
+
+  12  app/Providers/SidebarServiceProvider.php:24
+      Illuminate\Support\Facades\Facade::__callStatic()
+
+
+2025-05-04 22:15:20.873 [error] [Extension Host] 
+   Illuminate\Contracts\Container\BindingResolutionException 
+
+  Target class [view] does not exist.
+
+  at vendor/laravel/framework/src/Illuminate/Container/Container.php:1019
+    1015▕ 
+    1016▕         try {
+    1017▕             $reflector = new ReflectionClass($concrete);
+    1018▕         } catch (ReflectionException $e) {
+  ➜ 1019▕             throw new BindingResolutionException("Target class [$concrete] does not exist.", 0, $e);
+    1020▕         }
+    1021▕ 
+    1022▕         // If the type is not instantiable, the developer is attempting to resolve
+    1023▕         // an abstract type such as an Interface or Abstract Class and there is
+
+  1   [internal]:0
+      Illuminate\Foundation\Application::{closure:Illuminate\Foundation\Application::boot():1130}()
+      [2m+10 vendor frames [22m
+
+  12  app/Providers/SidebarServiceProvider.php:24
+      Illuminate\Support\Facades\Facade::__callStatic()
+
+
+2025-05-04 22:15:21.870 [error] 
+   Illuminate\Contracts\Container\BindingResolutionException 
+
+  Target class [view] does not exist.
+
+  at vendor/laravel/framework/src/Illuminate/Container/Container.php:1019
+    1015▕ 
+    1016▕         try {
+    1017▕             $reflector = new ReflectionClass($concrete);
+    1018▕         } catch (ReflectionException $e) {
+  ➜ 1019▕             throw new BindingResolutionException("Target class [$concrete] does not exist.", 0, $e);
+    1020▕         }
+    1021▕ 
+    1022▕         // If the type is not instantiable, the developer is attempting to resolve
+    1023▕         // an abstract type such as an Interface or Abstract Class and there is
+
+  1   [internal]:0
+      Illuminate\Foundation\Application::{closure:Illuminate\Foundation\Application::boot():1130}()
+      [2m+10 vendor frames [22m
+
+  12  app/Providers/SidebarServiceProvider.php:24
+      Illuminate\Support\Facades\Facade::__callStatic()
+
+
+2025-05-04 22:16:20.883 [error] [Extension Host] 
+   Illuminate\Contracts\Container\BindingResolutionException 
+
+  Target class [view] does not exist.
+
+  at vendor/laravel/framework/src/Illuminate/Container/Container.php:1019
+    1015▕ 
+    1016▕         try {
+    1017▕             $reflector = new ReflectionClass($concrete);
+    1018▕         } catch (ReflectionException $e) {
+  ➜ 1019▕             throw new BindingResolutionException("Target class [$concrete] does not exist.", 0, $e);
+    1020▕         }
+    1021▕ 
+    1022▕         // If the type is not instantiable, the developer is attempting to resolve
+    1023▕         // an abstract type such as an Interface or Abstract Class and there is
+
+  1   [internal]:0
+      Illuminate\Foundation\Application::{closure:Illuminate\Foundation\Application::boot():1130}()
+      [2m+10 vendor frames [22m
+
+  12  app/Providers/SidebarServiceProvider.php:24
+      Illuminate\Support\Facades\Facade::__callStatic()
+
+
+2025-05-04 22:16:21.938 [error] 
+   Illuminate\Contracts\Container\BindingResolutionException 
+
+  Target class [view] does not exist.
+
+  at vendor/laravel/framework/src/Illuminate/Container/Container.php:1019
+    1015▕ 
+    1016▕         try {
+    1017▕             $reflector = new ReflectionClass($concrete);
+    1018▕         } catch (ReflectionException $e) {
+  ➜ 1019▕             throw new BindingResolutionException("Target class [$concrete] does not exist.", 0, $e);
+    1020▕         }
+    1021▕ 
+    1022▕         // If the type is not instantiable, the developer is attempting to resolve
+    1023▕         // an abstract type such as an Interface or Abstract Class and there is
+
+  1   [internal]:0
+      Illuminate\Foundation\Application::{closure:Illuminate\Foundation\Application::boot():1130}()
+      [2m+10 vendor frames [22m
+
+  12  app/Providers/SidebarServiceProvider.php:24
+      Illuminate\Support\Facades\Facade::__callStatic()
+
+
+2025-05-04 22:20:20.855 [error] [Extension Host] 
+In ClassLoader.php line 576:
+                                                                               
+  include(/home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/vendor/compos  
+  er/../../app/Providers/AppServiceProvider.php): Failed to open stream: No s  
+  uch file or directory                                                        
+                                                                               
+
+
+2025-05-04 22:20:21.876 [error] 
+In ClassLoader.php line 576:
+                                                                               
+  include(/home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/vendor/compos  
+  er/../../app/Providers/AppServiceProvider.php): Failed to open stream: No s  
+  uch file or directory                                                        
+                                                                               
+
+
+2025-05-04 22:21:20.833 [error] [Extension Host] 
+In ClassLoader.php line 576:
+                                                                               
+  include(/home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/vendor/compos  
+  er/../../app/Providers/AppServiceProvider.php): Failed to open stream: No s  
+  uch file or directory                                                        
+                                                                               
+
+
+2025-05-04 22:21:21.837 [error] 
+In ClassLoader.php line 576:
+                                                                               
+  include(/home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/vendor/compos  
+  er/../../app/Providers/AppServiceProvider.php): Failed to open stream: No s  
+  uch file or directory                                                        
+                                                                               
+
+
+2025-05-04 22:22:20.914 [error] [Extension Host] 
+In ClassLoader.php line 576:
+                                                                               
+  include(/home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/vendor/compos  
+  er/../../app/Providers/AppServiceProvider.php): Failed to open stream: No s  
+  uch file or directory                                                        
+                                                                               
+
+
+2025-05-04 22:22:21.930 [error] 
+In ClassLoader.php line 576:
+                                                                               
+  include(/home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/vendor/compos  
+  er/../../app/Providers/AppServiceProvider.php): Failed to open stream: No s  
+  uch file or directory                                                        
+                                                                               
+
+
+2025-05-04 22:26:03.788 [error] BugIndicatingErrorRecovery: Transaction already finished!: Error: BugIndicatingErrorRecovery: Transaction already finished!
+    at RCt (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:31:18048)
+    at $V.updateObserver (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:31:17634)
+    at BV.set (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:31:18807)
+    at MZe.accept (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:1988:21795)
+2025-05-04 22:26:10.122 [error] 
+In ProviderRepository.php line 205:
+                                                       
+  Class "App\Providers\AuthServiceProvider" not found  
+                                                       
+
+
+2025-05-04 22:26:20.881 [error] [Extension Host] 
+In ProviderRepository.php line 205:
+                                                       
+  Class "App\Providers\AuthServiceProvider" not found  
+                                                       
+
+
+2025-05-04 22:26:21.877 [error] 
+In ProviderRepository.php line 205:
+                                                       
+  Class "App\Providers\AuthServiceProvider" not found  
+                                                       
+
+

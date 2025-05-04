@@ -105,3 +105,50 @@
 2025-05-04 18:59:57.058 [info] copilot token chat_enabled: true, sku: free_limited_copilot
 2025-05-04 18:59:58.669 [info] Fetched model metadata in 1619ms e4e13a91-b655-4f92-a8fa-3f91cacfb1e2
 2025-05-04 19:15:00.299 [info] Fetched model metadata in 1093ms afce842c-3b1b-4f82-aab0-d95a8c04bbda
+2025-05-04 19:30:00.355 [info] Logged in as wisdomEss
+2025-05-04 19:30:01.634 [info] Got Copilot token for wisdomEss
+2025-05-04 19:30:01.645 [info] copilot token chat_enabled: true, sku: free_limited_copilot
+2025-05-04 19:30:02.525 [info] Fetched model metadata in 886ms 1358f214-7eac-43ea-8416-2c49b2e1e056
+2025-05-04 20:00:02.875 [info] Logged in as wisdomEss
+2025-05-04 20:00:03.750 [info] Got Copilot token for wisdomEss
+2025-05-04 20:00:03.760 [info] copilot token chat_enabled: true, sku: free_limited_copilot
+2025-05-04 20:00:04.448 [info] Fetched model metadata in 694ms 216e0490-3349-4b3f-9233-ffbd4c2c94fe
+2025-05-04 20:15:06.438 [info] Fetched model metadata in 1943ms a416f787-107e-444d-bbec-fed707a3ea94
+2025-05-04 20:30:06.892 [info] Logged in as wisdomEss
+2025-05-04 20:30:08.415 [info] Got Copilot token for wisdomEss
+2025-05-04 20:30:08.425 [info] copilot token chat_enabled: true, sku: free_limited_copilot
+2025-05-04 20:30:09.334 [info] Fetched model metadata in 915ms 977aed95-ff16-457a-a6ef-b2efb6a382dd
+2025-05-04 20:45:10.401 [info] Fetched model metadata in 952ms 76df2da3-6957-41e7-a9c7-b172f4c2d312
+2025-05-04 21:00:10.472 [info] Logged in as wisdomEss
+2025-05-04 21:00:11.708 [info] Got Copilot token for wisdomEss
+2025-05-04 21:00:11.725 [info] copilot token chat_enabled: true, sku: free_limited_copilot
+2025-05-04 21:15:12.947 [info] Fetched model metadata in 1212ms 25789512-320f-4e44-b737-9650a8fb8131
+2025-05-04 21:30:13.007 [info] Logged in as wisdomEss
+2025-05-04 21:30:14.571 [info] Got Copilot token for wisdomEss
+2025-05-04 21:30:14.585 [info] copilot token chat_enabled: true, sku: free_limited_copilot
+2025-05-04 21:30:16.207 [info] Fetched model metadata in 1628ms 353924e1-9826-483d-9249-ce1b35a6c840
+2025-05-04 21:45:17.221 [info] Fetched model metadata in 907ms 67c3fee8-6cff-4eb6-84ad-d2578568224d
+2025-05-04 22:00:17.295 [info] Logged in as wisdomEss
+2025-05-04 22:00:18.421 [info] Got Copilot token for wisdomEss
+2025-05-04 22:00:18.439 [info] copilot token chat_enabled: true, sku: free_limited_copilot
+2025-05-04 22:00:19.364 [info] Fetched model metadata in 937ms 93176e13-ed23-40fc-95bb-ad0423038e0b
+2025-05-04 22:15:20.474 [info] Fetched model metadata in 1014ms 371b7366-3853-4a3d-9e48-d45326683b58
+2025-05-04 22:17:55.425 [info] message 0 returned. finish reason: [stop]
+2025-05-04 22:17:55.428 [info] request done: requestId: [3a6fa178-0ef3-4a58-bc6a-96024157fb37] model deployment ID: []
+2025-05-04 22:17:55.431 [info] [inline fix] Problems generating edits: No patch for input document: /home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/config/app.php, patches for /home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/app/Providers/RouteServiceProvider.php [other file], invalid patches: 0
+2025-05-04 22:24:42.279 [info] Logged in as wisdomEss
+2025-05-04 22:24:43.712 [info] Got Copilot token for wisdomEss
+2025-05-04 22:24:43.803 [info] copilot token chat_enabled: true, sku: free_limited_copilot
+2025-05-04 22:24:52.488 [info] message 0 returned. finish reason: [stop]
+2025-05-04 22:24:52.489 [info] request done: requestId: [c9a89013-6fa5-46ab-b3a4-f1730171d0b5] model deployment ID: []
+2025-05-04 22:24:52.490 [info] [inline fix] Problems generating edits: No patch for input document: /home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/config/app.php, patches for /home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/app/Providers/AuthServiceProvider.php [other file], invalid patches: 0
+2025-05-04 22:25:22.696 [info] message 0 returned. finish reason: [stop]
+2025-05-04 22:25:22.697 [info] request done: requestId: [3c3d8347-0bca-4e62-839d-d2ab7a0312a2] model deployment ID: []
+2025-05-04 22:25:22.698 [info] [inline fix] Problems generating edits: No patch for input document: /home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/config/app.php, patches for /home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/app/Providers/AuthServiceProvider.php [other file], invalid patches: 0
+2025-05-04 22:25:34.830 [info] Fetched model metadata in 551ms fd6ab2da-9a46-4f07-9640-1236f8c5f7eb
+2025-05-04 22:25:37.824 [info] message 0 returned. finish reason: [stop]
+2025-05-04 22:25:37.825 [info] request done: requestId: [30d9693f-34af-4d76-a05c-03e4d9dc64f6] model deployment ID: []
+2025-05-04 22:25:37.826 [info] [inline fix] Problems generating edits: No patch for input document: /home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/config/app.php, patches for /home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/app/Providers/AuthServiceProvider.php [other file], invalid patches: 0
+2025-05-04 22:26:02.808 [info] message 0 returned. finish reason: [stop]
+2025-05-04 22:26:02.812 [info] request done: requestId: [1122ec30-38c3-48b3-923c-0680e2d6692f] model deployment ID: []
+2025-05-04 22:26:02.815 [info] srequest done: chatRequestId: [undefined], speculationRequestId: [6a6d8608-3a8a-48de-ae29-1de0286d5086]

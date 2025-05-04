@@ -34,3 +34,433 @@
 2025-05-04 14:44:29.920 [info] ExtensionService#_doActivateExtension vscode.media-preview, startup: false, activationEvent: 'onCustomEditor:imagePreview.previewEditor'
 2025-05-04 14:45:05.947 [info] ExtensionService#_doActivateExtension vscode.css-language-features, startup: false, activationEvent: 'onLanguage:css'
 2025-05-04 17:09:06.815 [warning] GitHub.copilot-chat - Code actions of kind 'quickfix' requested but returned code action is of kind 'refactor.rewrite.review.copilot'. Code action will be dropped. Please check 'CodeActionContext.only' to only return requested code actions.
+2025-05-04 22:05:08.253 [error] 
+   Illuminate\Contracts\Container\BindingResolutionException 
+
+  Target class [view] does not exist.
+
+  at vendor/laravel/framework/src/Illuminate/Container/Container.php:1019
+    1015▕ 
+    1016▕         try {
+    1017▕             $reflector = new ReflectionClass($concrete);
+    1018▕         } catch (ReflectionException $e) {
+  ➜ 1019▕             throw new BindingResolutionException("Target class [$concrete] does not exist.", 0, $e);
+    1020▕         }
+    1021▕ 
+    1022▕         // If the type is not instantiable, the developer is attempting to resolve
+    1023▕         // an abstract type such as an Interface or Abstract Class and there is
+
+  1   [internal]:0
+      Illuminate\Foundation\Application::{closure:Illuminate\Foundation\Application::boot():1130}()
+      [2m+10 vendor frames [22m
+
+  12  app/Providers/SidebarServiceProvider.php:24
+      Illuminate\Support\Facades\Facade::__callStatic()
+
+
+2025-05-04 22:05:21.856 [error] 
+   Illuminate\Contracts\Container\BindingResolutionException 
+
+  Target class [view] does not exist.
+
+  at vendor/laravel/framework/src/Illuminate/Container/Container.php:1019
+    1015▕ 
+    1016▕         try {
+    1017▕             $reflector = new ReflectionClass($concrete);
+    1018▕         } catch (ReflectionException $e) {
+  ➜ 1019▕             throw new BindingResolutionException("Target class [$concrete] does not exist.", 0, $e);
+    1020▕         }
+    1021▕ 
+    1022▕         // If the type is not instantiable, the developer is attempting to resolve
+    1023▕         // an abstract type such as an Interface or Abstract Class and there is
+
+  1   [internal]:0
+      Illuminate\Foundation\Application::{closure:Illuminate\Foundation\Application::boot():1130}()
+      [2m+10 vendor frames [22m
+
+  12  app/Providers/SidebarServiceProvider.php:24
+      Illuminate\Support\Facades\Facade::__callStatic()
+
+
+2025-05-04 22:06:21.861 [error] 
+   Illuminate\Contracts\Container\BindingResolutionException 
+
+  Target class [view] does not exist.
+
+  at vendor/laravel/framework/src/Illuminate/Container/Container.php:1019
+    1015▕ 
+    1016▕         try {
+    1017▕             $reflector = new ReflectionClass($concrete);
+    1018▕         } catch (ReflectionException $e) {
+  ➜ 1019▕             throw new BindingResolutionException("Target class [$concrete] does not exist.", 0, $e);
+    1020▕         }
+    1021▕ 
+    1022▕         // If the type is not instantiable, the developer is attempting to resolve
+    1023▕         // an abstract type such as an Interface or Abstract Class and there is
+
+  1   [internal]:0
+      Illuminate\Foundation\Application::{closure:Illuminate\Foundation\Application::boot():1130}()
+      [2m+10 vendor frames [22m
+
+  12  app/Providers/SidebarServiceProvider.php:24
+      Illuminate\Support\Facades\Facade::__callStatic()
+
+
+2025-05-04 22:07:05.821 [error] 
+   Illuminate\Contracts\Container\BindingResolutionException 
+
+  Target class [view] does not exist.
+
+  at vendor/laravel/framework/src/Illuminate/Container/Container.php:1019
+    1015▕ 
+    1016▕         try {
+    1017▕             $reflector = new ReflectionClass($concrete);
+    1018▕         } catch (ReflectionException $e) {
+  ➜ 1019▕             throw new BindingResolutionException("Target class [$concrete] does not exist.", 0, $e);
+    1020▕         }
+    1021▕ 
+    1022▕         // If the type is not instantiable, the developer is attempting to resolve
+    1023▕         // an abstract type such as an Interface or Abstract Class and there is
+
+  1   [internal]:0
+      Illuminate\Foundation\Application::{closure:Illuminate\Foundation\Application::boot():1130}()
+      [2m+10 vendor frames [22m
+
+  12  app/Providers/SidebarServiceProvider.php:24
+      Illuminate\Support\Facades\Facade::__callStatic()
+
+
+2025-05-04 22:07:21.906 [error] 
+   Illuminate\Contracts\Container\BindingResolutionException 
+
+  Target class [view] does not exist.
+
+  at vendor/laravel/framework/src/Illuminate/Container/Container.php:1019
+    1015▕ 
+    1016▕         try {
+    1017▕             $reflector = new ReflectionClass($concrete);
+    1018▕         } catch (ReflectionException $e) {
+  ➜ 1019▕             throw new BindingResolutionException("Target class [$concrete] does not exist.", 0, $e);
+    1020▕         }
+    1021▕ 
+    1022▕         // If the type is not instantiable, the developer is attempting to resolve
+    1023▕         // an abstract type such as an Interface or Abstract Class and there is
+
+  1   [internal]:0
+      Illuminate\Foundation\Application::{closure:Illuminate\Foundation\Application::boot():1130}()
+      [2m+10 vendor frames [22m
+
+  12  app/Providers/SidebarServiceProvider.php:24
+      Illuminate\Support\Facades\Facade::__callStatic()
+
+
+2025-05-04 22:07:21.914 [error] 
+   Illuminate\Contracts\Container\BindingResolutionException 
+
+  Target class [view] does not exist.
+
+  at vendor/laravel/framework/src/Illuminate/Container/Container.php:1019
+    1015▕ 
+    1016▕         try {
+    1017▕             $reflector = new ReflectionClass($concrete);
+    1018▕         } catch (ReflectionException $e) {
+  ➜ 1019▕             throw new BindingResolutionException("Target class [$concrete] does not exist.", 0, $e);
+    1020▕         }
+    1021▕ 
+    1022▕         // If the type is not instantiable, the developer is attempting to resolve
+    1023▕         // an abstract type such as an Interface or Abstract Class and there is
+
+  1   [internal]:0
+      Illuminate\Foundation\Application::{closure:Illuminate\Foundation\Application::boot():1130}()
+      [2m+10 vendor frames [22m
+
+  12  app/Providers/SidebarServiceProvider.php:24
+      Illuminate\Support\Facades\Facade::__callStatic()
+
+
+2025-05-04 22:08:21.862 [error] 
+   Illuminate\Contracts\Container\BindingResolutionException 
+
+  Target class [view] does not exist.
+
+  at vendor/laravel/framework/src/Illuminate/Container/Container.php:1019
+    1015▕ 
+    1016▕         try {
+    1017▕             $reflector = new ReflectionClass($concrete);
+    1018▕         } catch (ReflectionException $e) {
+  ➜ 1019▕             throw new BindingResolutionException("Target class [$concrete] does not exist.", 0, $e);
+    1020▕         }
+    1021▕ 
+    1022▕         // If the type is not instantiable, the developer is attempting to resolve
+    1023▕         // an abstract type such as an Interface or Abstract Class and there is
+
+  1   [internal]:0
+      Illuminate\Foundation\Application::{closure:Illuminate\Foundation\Application::boot():1130}()
+      [2m+10 vendor frames [22m
+
+  12  app/Providers/SidebarServiceProvider.php:24
+      Illuminate\Support\Facades\Facade::__callStatic()
+
+
+2025-05-04 22:09:21.862 [error] 
+   Illuminate\Contracts\Container\BindingResolutionException 
+
+  Target class [view] does not exist.
+
+  at vendor/laravel/framework/src/Illuminate/Container/Container.php:1019
+    1015▕ 
+    1016▕         try {
+    1017▕             $reflector = new ReflectionClass($concrete);
+    1018▕         } catch (ReflectionException $e) {
+  ➜ 1019▕             throw new BindingResolutionException("Target class [$concrete] does not exist.", 0, $e);
+    1020▕         }
+    1021▕ 
+    1022▕         // If the type is not instantiable, the developer is attempting to resolve
+    1023▕         // an abstract type such as an Interface or Abstract Class and there is
+
+  1   [internal]:0
+      Illuminate\Foundation\Application::{closure:Illuminate\Foundation\Application::boot():1130}()
+      [2m+10 vendor frames [22m
+
+  12  app/Providers/SidebarServiceProvider.php:24
+      Illuminate\Support\Facades\Facade::__callStatic()
+
+
+2025-05-04 22:10:21.822 [error] 
+   Illuminate\Contracts\Container\BindingResolutionException 
+
+  Target class [view] does not exist.
+
+  at vendor/laravel/framework/src/Illuminate/Container/Container.php:1019
+    1015▕ 
+    1016▕         try {
+    1017▕             $reflector = new ReflectionClass($concrete);
+    1018▕         } catch (ReflectionException $e) {
+  ➜ 1019▕             throw new BindingResolutionException("Target class [$concrete] does not exist.", 0, $e);
+    1020▕         }
+    1021▕ 
+    1022▕         // If the type is not instantiable, the developer is attempting to resolve
+    1023▕         // an abstract type such as an Interface or Abstract Class and there is
+
+  1   [internal]:0
+      Illuminate\Foundation\Application::{closure:Illuminate\Foundation\Application::boot():1130}()
+      [2m+10 vendor frames [22m
+
+  12  app/Providers/SidebarServiceProvider.php:24
+      Illuminate\Support\Facades\Facade::__callStatic()
+
+
+2025-05-04 22:11:21.862 [error] 
+   Illuminate\Contracts\Container\BindingResolutionException 
+
+  Target class [view] does not exist.
+
+  at vendor/laravel/framework/src/Illuminate/Container/Container.php:1019
+    1015▕ 
+    1016▕         try {
+    1017▕             $reflector = new ReflectionClass($concrete);
+    1018▕         } catch (ReflectionException $e) {
+  ➜ 1019▕             throw new BindingResolutionException("Target class [$concrete] does not exist.", 0, $e);
+    1020▕         }
+    1021▕ 
+    1022▕         // If the type is not instantiable, the developer is attempting to resolve
+    1023▕         // an abstract type such as an Interface or Abstract Class and there is
+
+  1   [internal]:0
+      Illuminate\Foundation\Application::{closure:Illuminate\Foundation\Application::boot():1130}()
+      [2m+10 vendor frames [22m
+
+  12  app/Providers/SidebarServiceProvider.php:24
+      Illuminate\Support\Facades\Facade::__callStatic()
+
+
+2025-05-04 22:12:21.156 [error] 
+   Illuminate\Contracts\Container\BindingResolutionException 
+
+  Target class [view] does not exist.
+
+  at vendor/laravel/framework/src/Illuminate/Container/Container.php:1019
+    1015▕ 
+    1016▕         try {
+    1017▕             $reflector = new ReflectionClass($concrete);
+    1018▕         } catch (ReflectionException $e) {
+  ➜ 1019▕             throw new BindingResolutionException("Target class [$concrete] does not exist.", 0, $e);
+    1020▕         }
+    1021▕ 
+    1022▕         // If the type is not instantiable, the developer is attempting to resolve
+    1023▕         // an abstract type such as an Interface or Abstract Class and there is
+
+  1   [internal]:0
+      Illuminate\Foundation\Application::{closure:Illuminate\Foundation\Application::boot():1130}()
+      [2m+10 vendor frames [22m
+
+  12  app/Providers/SidebarServiceProvider.php:24
+      Illuminate\Support\Facades\Facade::__callStatic()
+
+
+2025-05-04 22:12:21.854 [error] 
+   Illuminate\Contracts\Container\BindingResolutionException 
+
+  Target class [view] does not exist.
+
+  at vendor/laravel/framework/src/Illuminate/Container/Container.php:1019
+    1015▕ 
+    1016▕         try {
+    1017▕             $reflector = new ReflectionClass($concrete);
+    1018▕         } catch (ReflectionException $e) {
+  ➜ 1019▕             throw new BindingResolutionException("Target class [$concrete] does not exist.", 0, $e);
+    1020▕         }
+    1021▕ 
+    1022▕         // If the type is not instantiable, the developer is attempting to resolve
+    1023▕         // an abstract type such as an Interface or Abstract Class and there is
+
+  1   [internal]:0
+      Illuminate\Foundation\Application::{closure:Illuminate\Foundation\Application::boot():1130}()
+      [2m+10 vendor frames [22m
+
+  12  app/Providers/SidebarServiceProvider.php:24
+      Illuminate\Support\Facades\Facade::__callStatic()
+
+
+2025-05-04 22:13:21.860 [error] 
+   Illuminate\Contracts\Container\BindingResolutionException 
+
+  Target class [view] does not exist.
+
+  at vendor/laravel/framework/src/Illuminate/Container/Container.php:1019
+    1015▕ 
+    1016▕         try {
+    1017▕             $reflector = new ReflectionClass($concrete);
+    1018▕         } catch (ReflectionException $e) {
+  ➜ 1019▕             throw new BindingResolutionException("Target class [$concrete] does not exist.", 0, $e);
+    1020▕         }
+    1021▕ 
+    1022▕         // If the type is not instantiable, the developer is attempting to resolve
+    1023▕         // an abstract type such as an Interface or Abstract Class and there is
+
+  1   [internal]:0
+      Illuminate\Foundation\Application::{closure:Illuminate\Foundation\Application::boot():1130}()
+      [2m+10 vendor frames [22m
+
+  12  app/Providers/SidebarServiceProvider.php:24
+      Illuminate\Support\Facades\Facade::__callStatic()
+
+
+2025-05-04 22:14:21.860 [error] 
+   Illuminate\Contracts\Container\BindingResolutionException 
+
+  Target class [view] does not exist.
+
+  at vendor/laravel/framework/src/Illuminate/Container/Container.php:1019
+    1015▕ 
+    1016▕         try {
+    1017▕             $reflector = new ReflectionClass($concrete);
+    1018▕         } catch (ReflectionException $e) {
+  ➜ 1019▕             throw new BindingResolutionException("Target class [$concrete] does not exist.", 0, $e);
+    1020▕         }
+    1021▕ 
+    1022▕         // If the type is not instantiable, the developer is attempting to resolve
+    1023▕         // an abstract type such as an Interface or Abstract Class and there is
+
+  1   [internal]:0
+      Illuminate\Foundation\Application::{closure:Illuminate\Foundation\Application::boot():1130}()
+      [2m+10 vendor frames [22m
+
+  12  app/Providers/SidebarServiceProvider.php:24
+      Illuminate\Support\Facades\Facade::__callStatic()
+
+
+2025-05-04 22:15:21.869 [error] 
+   Illuminate\Contracts\Container\BindingResolutionException 
+
+  Target class [view] does not exist.
+
+  at vendor/laravel/framework/src/Illuminate/Container/Container.php:1019
+    1015▕ 
+    1016▕         try {
+    1017▕             $reflector = new ReflectionClass($concrete);
+    1018▕         } catch (ReflectionException $e) {
+  ➜ 1019▕             throw new BindingResolutionException("Target class [$concrete] does not exist.", 0, $e);
+    1020▕         }
+    1021▕ 
+    1022▕         // If the type is not instantiable, the developer is attempting to resolve
+    1023▕         // an abstract type such as an Interface or Abstract Class and there is
+
+  1   [internal]:0
+      Illuminate\Foundation\Application::{closure:Illuminate\Foundation\Application::boot():1130}()
+      [2m+10 vendor frames [22m
+
+  12  app/Providers/SidebarServiceProvider.php:24
+      Illuminate\Support\Facades\Facade::__callStatic()
+
+
+2025-05-04 22:16:21.936 [error] 
+   Illuminate\Contracts\Container\BindingResolutionException 
+
+  Target class [view] does not exist.
+
+  at vendor/laravel/framework/src/Illuminate/Container/Container.php:1019
+    1015▕ 
+    1016▕         try {
+    1017▕             $reflector = new ReflectionClass($concrete);
+    1018▕         } catch (ReflectionException $e) {
+  ➜ 1019▕             throw new BindingResolutionException("Target class [$concrete] does not exist.", 0, $e);
+    1020▕         }
+    1021▕ 
+    1022▕         // If the type is not instantiable, the developer is attempting to resolve
+    1023▕         // an abstract type such as an Interface or Abstract Class and there is
+
+  1   [internal]:0
+      Illuminate\Foundation\Application::{closure:Illuminate\Foundation\Application::boot():1130}()
+      [2m+10 vendor frames [22m
+
+  12  app/Providers/SidebarServiceProvider.php:24
+      Illuminate\Support\Facades\Facade::__callStatic()
+
+
+2025-05-04 22:17:32.378 [warning] GitHub.copilot-chat - Code actions of kind 'quickfix' requested but returned code action is of kind 'refactor.rewrite.review.copilot'. Code action will be dropped. Please check 'CodeActionContext.only' to only return requested code actions.
+2025-05-04 22:17:46.143 [warning] GitHub.copilot-chat - Code actions of kind 'quickfix' requested but returned code action is of kind 'refactor.rewrite.review.copilot'. Code action will be dropped. Please check 'CodeActionContext.only' to only return requested code actions.
+2025-05-04 22:20:21.870 [error] 
+In ClassLoader.php line 576:
+                                                                               
+  include(/home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/vendor/compos  
+  er/../../app/Providers/AppServiceProvider.php): Failed to open stream: No s  
+  uch file or directory                                                        
+                                                                               
+
+
+2025-05-04 22:21:21.835 [error] 
+In ClassLoader.php line 576:
+                                                                               
+  include(/home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/vendor/compos  
+  er/../../app/Providers/AppServiceProvider.php): Failed to open stream: No s  
+  uch file or directory                                                        
+                                                                               
+
+
+2025-05-04 22:22:21.929 [error] 
+In ClassLoader.php line 576:
+                                                                               
+  include(/home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/vendor/compos  
+  er/../../app/Providers/AppServiceProvider.php): Failed to open stream: No s  
+  uch file or directory                                                        
+                                                                               
+
+
+2025-05-04 22:25:27.509 [warning] GitHub.copilot-chat - Code actions of kind 'quickfix' requested but returned code action is of kind 'refactor.rewrite.review.copilot'. Code action will be dropped. Please check 'CodeActionContext.only' to only return requested code actions.
+2025-05-04 22:25:28.798 [warning] GitHub.copilot-chat - Code actions of kind 'quickfix' requested but returned code action is of kind 'refactor.rewrite.review.copilot'. Code action will be dropped. Please check 'CodeActionContext.only' to only return requested code actions.
+2025-05-04 22:26:10.120 [error] 
+In ProviderRepository.php line 205:
+                                                       
+  Class "App\Providers\AuthServiceProvider" not found  
+                                                       
+
+
+2025-05-04 22:26:21.876 [error] 
+In ProviderRepository.php line 205:
+                                                       
+  Class "App\Providers\AuthServiceProvider" not found  
+                                                       
+
+
+2025-05-04 22:26:29.408 [warning] GitHub.copilot-chat - Code actions of kind 'quickfix' requested but returned code action is of kind 'refactor.rewrite.review.copilot'. Code action will be dropped. Please check 'CodeActionContext.only' to only return requested code actions.

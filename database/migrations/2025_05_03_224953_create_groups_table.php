@@ -18,7 +18,7 @@ return new class extends Migration
             $table->text('description')->nullable();
             $table->timestamp('createdAt')->useCurrent();
             $table->foreignId('user_id')->constrained('users')->onDelete('cascade'); // Clé étrangère pour le propiétaire du groupe lors de la création du groupe
-            $table->foreignId('quest_id')->nullable()->constrained('questions')->onDelete('set null');
+            // $table->foreignId('quest_id')->nullable()->constrained('questions')->onDelete('set null');
         });
         
     }
