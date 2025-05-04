@@ -1,0 +1,49 @@
+[Info  - 1:17:21 PM] Initialising intelephense 1.14.4
+[Info  - 1:17:21 PM] Initialised in 11 ms
+[Info  - 1:17:21 PM] Searching file:///root/.vscode/extensions/bmewburn.vscode-intelephense-client-1.14.4/node_modules/intelephense/lib/stub for files to index.
+[Info  - 1:17:21 PM] Searching file:///home/nika/Documents/ENSIASD/tec_web/miniprojet/forum for files to index.
+[Warn  - 1:17:21 PM] file:///home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/vendor/fakerphp/faker/src/Faker/Provider/nl_BE/Text.php is over the maximum file size of 1000000 bytes.
+[Info  - 1:17:21 PM] Indexing started.
+[Info  - 1:17:22 PM] Searching file:///home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/no%20sandbox/User/globalStorage/bmewburn.vscode-intelephense-client for files to index.
+[Info  - 1:17:22 PM] Searching file:///home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/no%20sandbox/User/workspaceStorage/afa7978eaf38794fbfdc3d45277b5a64/bmewburn.vscode-intelephense-client for files to index.
+[Info  - 1:17:30 PM] Indexing ended. 7464 files indexed in 8s.
+[Info  - 1:17:30 PM] Writing state to /home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/no sandbox/User/workspaceStorage/afa7978eaf38794fbfdc3d45277b5a64/bmewburn.vscode-intelephense-client/4f080b67.
+[Info  - 1:17:30 PM] Wrote state in 0.6s.
+[Info  - 1:19:02 PM] Indexing started.
+[Info  - 1:19:03 PM] Indexing ended. 1 files indexed in 0s.
+[Info  - 1:20:17 PM] Indexing started.
+[Info  - 1:20:17 PM] Indexing ended. 1 files indexed in 0s.
+[Info  - 1:21:06 PM] Indexing started.
+[Info  - 1:21:06 PM] Indexing ended. 1 files indexed in 0s.
+[Info  - 1:21:52 PM] Indexing started.
+[Info  - 1:21:52 PM] Indexing ended. 1 files indexed in 0s.
+[Info  - 1:22:04 PM] Searching file:///home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/no%20sandbox/User/History/-ba03c6c for files to index.
+[Info  - 1:22:04 PM] Indexing started.
+[Info  - 1:22:04 PM] Indexing ended. 2 files indexed in 0s.
+[Info  - 1:22:07 PM] Searching file:///home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/no%20sandbox/User/History/31d836f8 for files to index.
+[Info  - 1:22:07 PM] Indexing started.
+[Info  - 1:22:07 PM] Indexing ended. 2 files indexed in 0s.
+[Info  - 1:22:10 PM] Searching file:///home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/no%20sandbox/User/History/-6b8cc170 for files to index.
+[Info  - 1:22:10 PM] Indexing started.
+[Info  - 1:22:10 PM] Indexing ended. 2 files indexed in 0s.
+[Info  - 1:22:13 PM] Searching file:///home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/no%20sandbox/User/History/358c4269 for files to index.
+[Info  - 1:22:13 PM] Indexing started.
+[Info  - 1:22:13 PM] Indexing ended. 2 files indexed in 0s.
+[Info  - 1:22:16 PM] Searching file:///home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/no%20sandbox/User/History/473603f5 for files to index.
+[Info  - 1:22:16 PM] Indexing started.
+[Info  - 1:22:16 PM] Indexing ended. 2 files indexed in 0s.
+[Warn  - 1:22:18 PM] Error: ENOENT: no such file or directory, stat '/home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/no sandbox/User/globalStorage/state.vscdb-journal'
+[Warn  - 1:22:18 PM] Error: ENOENT: no such file or directory, stat '/home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/no sandbox/User/workspaceStorage/afa7978eaf38794fbfdc3d45277b5a64/state.vscdb-journal'
+[Warn  - 1:22:26 PM] Error: ENOENT: no such file or directory, stat '/home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/no sandbox/User/globalStorage/state.vscdb-journal'
+[Warn  - 1:22:26 PM] Error: ENOENT: no such file or directory, stat '/home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/no sandbox/User/workspaceStorage/afa7978eaf38794fbfdc3d45277b5a64/state.vscdb-journal'
+[Info  - 1:27:15 PM] Indexing started.
+[Info  - 1:27:15 PM] Indexing ended. 1 files indexed in 0s.
+[Info  - 1:27:31 PM] Searching file:///home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/no%20sandbox/User/History/-6c3a288d for files to index.
+[Info  - 1:27:31 PM] Indexing started.
+[Info  - 1:27:31 PM] Indexing ended. 2 files indexed in 0s.
+[Info  - 1:28:35 PM] Searching file:///home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/no%20sandbox/User/History/6540897a for files to index.
+[Info  - 1:28:35 PM] Indexing started.
+[Info  - 1:28:35 PM] Indexing ended. 2 files indexed in 0s.
+[Info  - 1:29:25 PM] Searching file:///home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/no%20sandbox/User/globalStorage/github.copilot-chat/logContextRecordings for files to index.
+[Info  - 1:29:25 PM] Searching file:///home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/no%20sandbox/User/globalStorage/github.vscode-pull-request-github/assignableUsers for files to index.
+[Info  - 1:29:25 PM] Searching file:///home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/no%20sandbox/User/globalStorage/github.vscode-pull-request-github/assignableUsers/Drak-01 for files to index.

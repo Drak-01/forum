@@ -1,0 +1,31 @@
+2025-05-04 13:07:59.375 [info] Extension host with pid 9546 started
+2025-05-04 13:07:59.375 [info] Skipping acquiring lock for /home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/no sandbox/User/workspaceStorage/afa7978eaf38794fbfdc3d45277b5a64.
+2025-05-04 13:07:59.477 [info] ExtensionService#_doActivateExtension vscode.github-authentication, startup: false, activationEvent: 'onAuthenticationRequest:github'
+2025-05-04 13:07:59.572 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*'
+2025-05-04 13:07:59.575 [info] ExtensionService#_doActivateExtension christian-kohler.path-intellisense, startup: true, activationEvent: '*'
+2025-05-04 13:07:59.584 [info] ExtensionService#_doActivateExtension vscode.npm, startup: true, activationEvent: 'workspaceContains:package.json'
+2025-05-04 13:07:59.982 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2025-05-04 13:08:00.028 [info] Eager extensions activated
+2025-05-04 13:08:00.045 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2025-05-04 13:08:00.050 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2025-05-04 13:08:00.078 [info] ExtensionService#_doActivateExtension esbenp.prettier-vscode, startup: false, activationEvent: 'onStartupFinished'
+2025-05-04 13:08:00.190 [info] ExtensionService#_doActivateExtension GitHub.vscode-pull-request-github, startup: false, activationEvent: 'onStartupFinished'
+2025-05-04 13:08:00.311 [info] ExtensionService#_doActivateExtension PKief.material-icon-theme, startup: false, activationEvent: 'onStartupFinished'
+2025-05-04 13:08:02.484 [info] ExtensionService#_doActivateExtension vscode.git, startup: false, activationEvent: 'api', root cause: vscode.github
+2025-05-04 13:08:02.583 [info] ExtensionService#_doActivateExtension bradlc.vscode-tailwindcss, startup: false, activationEvent: 'onStartupFinished'
+2025-05-04 13:08:02.625 [info] ExtensionService#_doActivateExtension GitHub.copilot, startup: false, activationEvent: 'onStartupFinished'
+2025-05-04 13:08:03.082 [info] ExtensionService#_doActivateExtension GitHub.copilot-chat, startup: false, activationEvent: 'onStartupFinished'
+2025-05-04 13:08:04.127 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2025-05-04 13:08:05.280 [info] ExtensionService#_doActivateExtension vscode.configuration-editing, startup: false, activationEvent: 'onLanguage:json'
+2025-05-04 13:08:05.292 [info] ExtensionService#_doActivateExtension vscode.extension-editing, startup: false, activationEvent: 'onLanguage:json'
+2025-05-04 13:08:05.311 [info] ExtensionService#_doActivateExtension vscode.json-language-features, startup: false, activationEvent: 'onLanguage:json'
+2025-05-04 13:08:19.969 [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2025-05-04 13:17:20.012 [info] ExtensionService#_doActivateExtension vscode.php-language-features, startup: false, activationEvent: 'onLanguage:php'
+2025-05-04 13:17:20.029 [info] ExtensionService#_doActivateExtension amiralizadeh9480.laravel-extra-intellisense, startup: false, activationEvent: 'onLanguage:php'
+2025-05-04 13:17:20.040 [info] ExtensionService#_doActivateExtension bmewburn.vscode-intelephense-client, startup: false, activationEvent: 'onLanguage:php'
+2025-05-04 13:17:20.105 [info] ExtensionService#_doActivateExtension codingyu.laravel-goto-view, startup: false, activationEvent: 'onLanguage:php'
+2025-05-04 13:17:20.115 [info] ExtensionService#_doActivateExtension neilbrayfield.php-docblocker, startup: false, activationEvent: 'onLanguage:php'
+2025-05-04 13:17:22.240 [error] Error: ENOENT: no such file or directory, scandir '/home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/lang'
+    at Object.readdirSync (node:fs:1509:26)
+    at Object.t.readdirSync (node:electron/js2c/node_init:2:13703)
+    at /root/.vscode/extensions/amiralizadeh9480.laravel-extra-intellisense-0.7.2/dist/extension.js:1:141340
