@@ -82,3 +82,15 @@
 2025-05-04 22:28:13.862 [info] [FolderRepositoryManager+0] Using in-memory cached assignable users.
 2025-05-04 22:28:13.895 [info] [Review+0] No matching pull request metadata found locally for current branch main
 2025-05-04 22:28:15.094 [info] [Review+0] No matching pull request metadata found on GitHub for current branch main
+2025-05-04 22:35:29.626 [info] [Review+0] Validate state in progress
+2025-05-04 22:35:29.626 [info] [Review+0] Validating state...
+2025-05-04 22:35:29.739 [info] [FolderRepositoryManager+0] Found GitHub remote for folder /home/nika/Documents/ENSIASD/tec_web/miniprojet/forum
+2025-05-04 22:35:29.739 [info] [FolderRepositoryManager+0] Using in-memory cached assignable users.
+2025-05-04 22:35:29.761 [info] [Review+0] No matching pull request metadata found locally for current branch main
+2025-05-04 22:35:31.565 [info] [Review+0] No matching pull request metadata found on GitHub for current branch main
+2025-05-04 22:35:52.919 [info] [Review+0] Validate state in progress
+2025-05-04 22:35:52.919 [info] [Review+0] Validating state...
+2025-05-04 22:35:53.028 [info] [FolderRepositoryManager+0] Found GitHub remote for folder /home/nika/Documents/ENSIASD/tec_web/miniprojet/forum
+2025-05-04 22:35:53.029 [info] [FolderRepositoryManager+0] Using in-memory cached assignable users.
+2025-05-04 22:35:53.092 [info] [Review+0] No matching pull request metadata found locally for current branch main
+2025-05-04 22:35:54.197 [info] [Review+0] No matching pull request metadata found on GitHub for current branch main

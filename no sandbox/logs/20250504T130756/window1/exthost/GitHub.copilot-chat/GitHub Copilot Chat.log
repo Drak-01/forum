@@ -152,3 +152,4 @@
 2025-05-04 22:26:02.808 [info] message 0 returned. finish reason: [stop]
 2025-05-04 22:26:02.812 [info] request done: requestId: [1122ec30-38c3-48b3-923c-0680e2d6692f] model deployment ID: []
 2025-05-04 22:26:02.815 [info] srequest done: chatRequestId: [undefined], speculationRequestId: [6a6d8608-3a8a-48de-ae29-1de0286d5086]
+2025-05-04 22:39:46.335 [info] Fetched model metadata in 2519ms 4af8740a-c447-4abb-9a14-6cc4c32dbaf5
