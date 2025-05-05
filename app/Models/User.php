@@ -21,7 +21,12 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'userPicture',
     ];
+    public function getAvatarAttribute($value)
+    {
+        return $value ?: null; // ou une URL par défaut
+    }
 
     /**
      * The attributes that should be hidden for serialization.

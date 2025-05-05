@@ -33,9 +33,14 @@ class LoginController extends Controller
         if (Auth::attempt($credentials, $request->boolean('remember'))) {
             $request->session()->regenerate();
             RateLimiter::clear($this->throttleKey($request));
-
-            // Redirection vers la page user.connecte après connexion
-            return redirect()->intended(route('questions.index'));
+    
+            $user = Auth::user();
+           
+            return redirect()->intended(route('questions.index'))
+                   ->with([
+                       'username' => $user->name,
+                       'userPicture' => $user->avatar
+                   ]);
         }
 
         RateLimiter::hit($this->throttleKey($request));

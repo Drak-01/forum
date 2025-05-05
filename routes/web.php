@@ -37,10 +37,14 @@ Route::get('/ranking', function () {
     return "it is not my part"; 
 })->name('ranking.index');
 
+Route::post('/set-theme', [UserController::class, 'setTheme']);
+
 // ========== Routes protégées (connecté) ==========
 Route::prefix('user')->name('user.')->middleware('auth')->group(function() {
+    Route::get('/questions', [QuestionController::class, 'index'])->name('questions.index');
     
     Route::get('/', [UserController::class, 'index'])->name('profile');
-
+    Route::get('/profile/edit', [UserController::class, 'edit'])->name('profile.edit');
+    Route::put('/profile/update', [UserController::class, 'update'])->name('profile.update'); Route::get('/profile/edit', [ProfileController::class, 'edit'])->name('profile.edit');
     
 });
