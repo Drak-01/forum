@@ -4,12 +4,7 @@
             <img src="{{ asset('images/logo.svg') }}" alt="Logo" class="logo">
         </a>
 
-        <nav>
-            <ul>
-                <li><a href="#" class="active">Questions</a></li>
-            </ul>
-        </nav>
-
+        
         <div class="auth-buttons">
             @guest
                 {{-- button non connecter  --}}
@@ -31,67 +26,51 @@
 
                 {{-- button connecter --}}
             @else
-                <!-- Bouton pour poser une question -->
-                <a href="" class="btn btn-primary" style="margin-right: 15px;">
-                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
-                        style="margin-right: 5px;">
-                        <path d="M12 5V19M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                    </svg>
-                    Poser une question
-                </a>
+                <form class="d-flex position-relative" method="GET">
+                    <input class="form-control rounded-pill pe-4" type="search" 
+                        placeholder="Rechercher..." name="q" style="width: 250px;">
+                    <button class="btn position-absolute end-0 border-0 bg-transparent" type="submit">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="currentColor" stroke-width="2"/>
+                            <path d="M21 21L16.65 16.65" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </button>
+                </form>
 
-                <!-- Cloche de notification -->
-                <div class="notification-icon" style="position: relative; margin-right: 15px;">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
-                        style="cursor: pointer;">
-                        <path
-                            d="M18 8C18 5.79086 16.2091 4 14 4H10C7.79086 4 6 5.79086 6 8V10C6 11.6569 5.32843 13 4.5 14H19.5C18.6716 13 18 11.6569 18 10V8Z"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                        <path
-                            d="M13.73 21C13.5544 21.3031 13.3041 21.5544 13.0011 21.73C12.6981 21.9056 12.3538 22 12 22C11.6462 22 11.3019 21.9056 10.9989 21.73C10.6959 21.5544 10.4456 21.3031 10.27 21"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                    <span class="notification-dot"
-                        style="position: absolute; top: 0; right: 0; background: blue; border-radius: 50%; width: 8px; height: 8px;"></span>
+                <div class="d-flex align-items-center">
+                    <!-- Notification bell -->
+                    <div class="position-relative me-3">
+                        <button class="btn p-0 border-0 bg-transparent">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18 8C18 5.79086 16.2091 4 14 4H10C7.79086 4 6 5.79086 6 8V10C6 11.6569 5.32843 13 4.5 14H19.5C18.6716 13 18 11.6569 18 10V8Z" stroke="currentColor" stroke-width="2"/>
+                                <path d="M13.73 21C13.5544 21.3031 13.3041 21.5544 13.0011 21.73C12.6981 21.9056 12.3538 22 12 22C11.6462 22 11.3019 21.9056 10.9989 21.73C10.6959 21.5544 10.4456 21.3031 10.27 21" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                            <span class="position-absolute top-0 start-100 translate-middle p-1 bg-primary border border-light rounded-circle"></span>
+                        </button>
                 </div>
 
-                <!-- Image de profil cliquable et l'icône à côté -->
-                <div style="display: flex; align-items: center; cursor: pointer;"
-                    onclick="document.getElementById('userModal').style.display = 'block';">
-                    <div class="profile-menu" style="position: relative;">
-                        <img src="{{ asset('storage/' . (optional(Auth::user())->userPicture ?? 'profile.png')) }}"
-                            alt="Profile" class="rounded-full"
-                            style="width: 40px; height: 40px; object-fit: cover; border-radius: 50%;">
-
-                    </div>
-                    <!-- down arrow -->
-                    <svg style="margin-left: 6px;" width="16" height="16" viewBox="0 0 24 24" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                    </svg>
-                </div>
-                <!-- Modal de profil -->
-                <div id="userModal" class="modal"
-                    style="display:none; position: absolute; top: 60px; right: 10px; background: white; border: 1px solid #ccc; border-radius: 8px; padding: 10px; z-index: 999;">
-                    <div style="text-align: center;">
-                        <img src="{{ asset('images/' . (optional(Auth::user())->userPicture ?? 'profile.png')) }}"
-                            alt="Profile Picture"
-                            style="width: 60px; height: 60px; object-fit: cover; border-radius: 50%; margin-bottom: 10px;">
-                        <p><strong>{{ Auth::user()->firstName }} {{ Auth::user()->lastName }}</strong></p>
-                        <p style="font-size: 0.9em;">{{ Auth::user()->univEmail }}</p>
-
-                        <form method="POST" action="{{ route('logout') }}">
-                            @csrf
-                            <button type="submit" class="btn btn-secondary" style="margin-top: 10px;">Déconnexion</button>
-                        </form>
-                    </div>
-                    <button onclick="document.getElementById('userModal').style.display = 'none';"
-                        style="position: absolute; top: 5px; right: 10px; background: none; border: none; font-size: 18px;">×</button>
+                <div class="dropdown">
+                    <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                        Profile
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li>
+                            <?php if(isset($_SESSION['user_avatar'])): ?>
+                                <img src="<?= htmlspecialchars($_SESSION['user_avatar']) ?>" 
+                                    class="rounded-circle me-2" 
+                                    width="32" height="32" 
+                                    alt="Photo de profil">
+                            <?php endif; ?>
+                            <span><?= isset($_SESSION['user_name']) ? htmlspecialchars($_SESSION['user_name']) : 'Profile' ?></span>
+                        </li>
+                        <li><a class="dropdown-item" href="{{ route('user.profile') }}">Paramètres</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Déconnexion</a></li>
+                    </ul>
                 </div>
             @endguest
 
         </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     </div>
 </header>

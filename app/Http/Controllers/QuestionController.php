@@ -55,7 +55,6 @@ class QuestionController extends Controller
         return view('home', compact('questions', 'filter'));
     }
 
-
     public function show(Question $question)
     {
         // Charge la question avec toutes les relations nécessaires

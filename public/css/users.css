@@ -1,0 +1,8 @@
+:root {
+    --text-color : #f48023;
+    
+}
+
+.text_color {
+    color: var(--text-color);
+}
