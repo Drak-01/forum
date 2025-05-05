@@ -20,8 +20,9 @@
                     Tags
                 </a>
             </li>
+        
             <li class="{{ Request::is('ranking*') ? 'active' : '' }}">
-                <a href="{{ route('ranking.index') }}">
+                <a href="{{ auth()->check() ? route('ranking.index') : route('login.index', ['intended' => 'ranking.index']) }}">
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M12 15c3 0 6-2 6-5s-3-5-6-5-6 2-6 5 3 5 6 5z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         <path d="M12 15v3m0 3v-3m-4 0h8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -29,6 +30,16 @@
                     Ranking
                 </a>
             </li>
+            
+            <li class="nav-item">
+                <a href="{{ auth()->check() ? route('user.user.groups') : route('login.index', ['intended' => 'user.user.groups']) }}" 
+                   class="nav-link d-flex align-items-center gap-2">
+                    <i class="bi bi-people-fill flex-shrink-0" style="font-size: 1.1rem;"></i>
+                    <span class="flex-grow-1">Mes Groupes</span>
+                </a>
+            </li>
+            
+       
         </ul>
     </nav>
 
@@ -52,3 +63,21 @@
         </a>
     </div>
 </aside>
+
+<script>
+    document.querySelectorAll('.nav-item > .nav-link[aria-haspopup="true"]').forEach(link => {
+    link.addEventListener('click', function(e) {
+        if (this.getAttribute('href') === '#') {
+            e.preventDefault();
+        }
+        
+        const submenu = this.nextElementSibling;
+        const isExpanded = this.getAttribute('aria-expanded') === 'true';
+        
+        // Basculer l'état
+        this.setAttribute('aria-expanded', !isExpanded);
+        submenu.style.display = isExpanded ? 'none' : 'block';
+        this.querySelector('.bi-chevron-down').style.transform = isExpanded ? 'rotate(0deg)' : 'rotate(180deg)';
+    });
+});
+</script>

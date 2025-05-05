@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\RateLimiter;
 use Illuminate\Support\Str;
 use Illuminate\Validation\ValidationException;
+use Illuminate\Support\Facades\Route;
 
 class LoginController extends Controller
 {
@@ -21,33 +22,59 @@ class LoginController extends Controller
     /**
      * Traite la tentative de connexion
      */
+
+    /**
+     * Traite la tentative de connexion et redirige vers la route voulue
+     */
+    // public function check(Request $request)
+    // {
+    //     // 1. Validation des identifiants
+    //     $credentials = $request->validate([
+    //         'univEmail' => 'required|email',
+    //         'password' => 'required|string'
+    //     ]);
+
+    //     // 2. Tentative d'authentification
+    //     if (!Auth::attempt($credentials, $request->boolean('remember'))) {
+    //         return back()->withErrors([
+    //             'email' => 'Identifiants incorrects.',
+    //         ])->onlyInput('email');
+    //     }
+
+    //     // 3. Régénération de session
+    //     $request->session()->regenerate();
+
+    //     // 4. Gestion de la redirection
+    //     $intendedRoute = $request->input('intended');
+    //     dd($request->all());
+    //     if ($intendedRoute && Route::has($intendedRoute)) {
+    //         return redirect()->route($intendedRoute);
+    //     }
+
+    //     // 5. Redirection par défaut si aucune route spécifiée ou invalide
+    //     return redirect()->route('ranking.index');
+    // }
     public function check(Request $request)
     {
-        $this->ensureIsNotRateLimited($request);
-
-        $credentials = $request->validate([
+        // 1. Validation
+        $request->validate([
             'univEmail' => 'required|email',
             'password' => 'required'
         ]);
-
-        if (Auth::attempt($credentials, $request->boolean('remember'))) {
-            $request->session()->regenerate();
-            RateLimiter::clear($this->throttleKey($request));
     
-            $user = Auth::user();
-           
-            return redirect()->intended(route('questions.index'))
-                   ->with([
-                       'username' => $user->name,
-                       'userPicture' => $user->avatar
-                   ]);
+        // 2. Tentative de connexion
+        if (!Auth::attempt(['univEmail' => $request->univEmail, 'password' => $request->password])) {
+            return back()->withErrors(['univEmail' => 'Identifiants incorrects']);
         }
-
-        RateLimiter::hit($this->throttleKey($request));
-
-        return back()->withErrors([
-            'univEmail' => 'Les identifiants fournis ne correspondent pas à nos enregistrements.',
-        ]);
+    
+        // 3. Récupération de la route intended
+        $intendedRoute = $request->intended ?? session('intended');
+        // dd( $request->intended);
+        // 4. Redirection
+        if ($intendedRoute && Route::has($intendedRoute)) {
+            return redirect()->route($intendedRoute);
+        }
+        return redirect()->route('ranking.index'); // Redirection par défaut
     }
 
     /**

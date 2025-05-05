@@ -47,11 +47,6 @@ class QuestionController extends Controller
         }
 
         $questions = $query->paginate(10);
-        // $groups = Group::withCount('users') // Ajoutez le nombre de membres
-        //     ->orderBy('createdAt', 'desc')
-        //     ->limit(5) // Limitez à 5 groupes
-        //     ->get();
-
         return view('home', compact('questions', 'filter'));
     }
 

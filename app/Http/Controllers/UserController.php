@@ -49,14 +49,4 @@ class UserController extends Controller
                ->with('success', 'Profil mis à jour avec succès');
     }
 
-    public function setTheme(Request $request)
-    {
-        $validated = $request->validate([
-            'theme' => 'required|in:light,dark,auto'
-        ]);
-        
-        // Sauvegarde en session
-        session(['theme' => $validated['theme']]);       
-        return response()->json(['success' => true]);
-    }
 }

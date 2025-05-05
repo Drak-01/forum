@@ -50,34 +50,6 @@
                 </div>
 
                 <div class="dropdown">
-                    <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
-                        <i class="bi 
-                            @if(session('theme', 'auto') === 'light') bi-sun 
-                            @elseif(session('theme', 'auto') === 'dark') bi-moon 
-                            @else bi-circle-half 
-                            @endif
-                        "></i>
-                    </button>
-                    <ul class="dropdown-menu dropdown-menu-end">
-                        <li>
-                            <a class="dropdown-item d-flex align-items-center" href="#" data-bs-theme-value="light">
-                                <i class="bi bi-sun-fill me-2"></i> Clair
-                            </a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item d-flex align-items-center" href="#" data-bs-theme-value="dark">
-                                <i class="bi bi-moon-stars-fill me-2"></i> Sombre
-                            </a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item d-flex align-items-center" href="#" data-bs-theme-value="auto">
-                                <i class="bi bi-circle-half me-2"></i> Auto
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="dropdown">
                     <button class="btn btn-primary dropdown-toggle d-flex align-items-center" type="button" data-bs-toggle="dropdown">
                         <img src="{{ asset('storage/' . Auth::user()->userPicture) }}" 
                         class="rounded-circle me-2" 
@@ -101,31 +73,3 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     </div>
 </header>
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const themeSwitcher = document.querySelectorAll('[data-bs-theme-value]');
-        const savedTheme = localStorage.getItem('bsTheme') || 'auto';
-        
-        // Appliquer le thème sauvegardé au chargement
-        document.documentElement.setAttribute('data-bs-theme', savedTheme);
-        
-        // Mettre à jour l'état actif
-        document.querySelectorAll('[data-bs-theme-value]').forEach(el => {
-            el.classList.toggle('active', el.getAttribute('data-bs-theme-value') === savedTheme);
-        });
-        
-        // Gérer les clics sur les options de thème
-        themeSwitcher.forEach(item => {
-            item.addEventListener('click', function() {
-                const theme = this.getAttribute('data-bs-theme-value');
-                document.documentElement.setAttribute('data-bs-theme', theme);
-                localStorage.setItem('bsTheme', theme);
-                
-                // Mettre à jour l'état actif
-                document.querySelectorAll('[data-bs-theme-value]').forEach(el => {
-                    el.classList.toggle('active', el.getAttribute('data-bs-theme-value') === theme);
-                });
-            });
-        });
-    });
-</script>

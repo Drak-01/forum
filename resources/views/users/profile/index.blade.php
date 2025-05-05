@@ -3,12 +3,6 @@
 @section('content')
 <div class="container">
     <h1>Modifier Mon Profil</h1>
-    
-    @if(session('success'))
-        <div class="alert alert-success mt-4">
-            {{ session('success') }}
-        </div>
-    @endif
 
     <div class="card mt-4">
         <div class="card-body">

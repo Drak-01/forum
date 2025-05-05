@@ -17,6 +17,7 @@ Route::middleware('guest')->group(function() {
     Route::post('/register', [RegisterController::class, 'store'])->name('register.store');
     Route::get('/login', [LoginController::class, 'index'])->name('login.index');
     Route::post('/login', [LoginController::class, 'check'])->name('login.check'); 
+    Route::get('/login/redirect', [LoginController::class, 'redirect'])->name('login.redirect');
 });
 
 Route::post('/logout', [LoginController::class, 'logout'])->name('logout'); 
@@ -33,18 +34,31 @@ Route::get('/tags', function () {
      return "it is not my part";
 })->name('tags.index');
 
-Route::get('/ranking', function () {
-    return "it is not my part"; 
-})->name('ranking.index');
-
-Route::post('/set-theme', [UserController::class, 'setTheme']);
+// Route::get('/ranking', function () {
+//     return "it is not my part"; 
+// })->name('ranking.index');
+Route::middleware('auth')->group(function () {
+    Route::get('/ranking', function () {
+        return "it is not my part"; 
+    })->name('ranking.index');
+});
 
 // ========== Routes protégées (connecté) ==========
 Route::prefix('user')->name('user.')->middleware('auth')->group(function() {
+    // ------------------Question tu peut ajouter le reste ici
     Route::get('/questions', [QuestionController::class, 'index'])->name('questions.index');
-    
+    Route::get('/questions/{question}', [QuestionController::class, 'show'])->name('questions.show');
+  
+    // Question Fin
+ 
+    // ---------------------------------------User ici
     Route::get('/', [UserController::class, 'index'])->name('profile');
     Route::get('/profile/edit', [UserController::class, 'edit'])->name('profile.edit');
-    Route::put('/profile/update', [UserController::class, 'update'])->name('profile.update'); Route::get('/profile/edit', [ProfileController::class, 'edit'])->name('profile.edit');
+    Route::put('/profile/update', [UserController::class, 'update'])->name('profile.update'); 
     
+    // --------------- Groupe ------------------------
+    Route::get('/mes-groupes', [GroupController::class, 'mesGroupes'])->name('user.groups');
+    Route::get('/creer-groupe', [GroupController::class, 'creerpage'])->name('user.groups.creer');
+    Route::post('/groups', [GroupController::class, 'store'])->name('groups.store'); //Pour créer de nouvelles groupes
+
 });
