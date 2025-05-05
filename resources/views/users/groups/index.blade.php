@@ -3,7 +3,7 @@
 @section('content')
 <div class="container py-4">
     <div class="row">
-        <div class="col-md-8 mx-auto">
+        <div class="col-md mx-auto">
             <!-- En-tête avec bouton de création -->
             <div class="d-flex justify-content-between align-items-center mb-4">
                 <h1 class="h3 mb-0">Mes Groupes</h1>

@@ -13,8 +13,7 @@ class UserController extends Controller
         return view('users.profile.index');
     }
 
-    public function update(Request $request)
-    {
+    public function update(Request $request){
         $user = Auth::user();
 
         $request->validate([
@@ -49,4 +48,8 @@ class UserController extends Controller
                ->with('success', 'Profil mis à jour avec succès');
     }
 
+    public function ranking(){ //Lister des utilisateurs les plus note
+        return view('users.profile.ranking'); 
+    }
+ 
 }

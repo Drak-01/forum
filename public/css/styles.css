@@ -88,13 +88,13 @@ nav ul li a.active {
 
 .main-container {
     display: flex;
-    max-width: 1440px;
+    max-width: 1500px;
     margin: 0 auto;
-    padding: 40px;
+    padding: 15px 30px;
 }
 
 .sidebar {
-    width: 310px;
+    width: 250px;
     background-color: var(--white);
     padding: 30px;
     border-right: 1px solid var(--app-border);
@@ -245,7 +245,7 @@ nav ul li a.active {
     font-family: Arial, sans-serif;
 }
 .right-sidebar {
-    width: 280px;
+    width: 250px;
     padding: 30px;
     background-color: var(--white);
     border-left: 1px solid var(--app-border);

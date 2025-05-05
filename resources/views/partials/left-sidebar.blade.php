@@ -22,7 +22,7 @@
             </li>
         
             <li class="{{ Request::is('ranking*') ? 'active' : '' }}">
-                <a href="{{ auth()->check() ? route('ranking.index') : route('login.index', ['intended' => 'ranking.index']) }}">
+                <a href="{{ route('ranking.index') }}">
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M12 15c3 0 6-2 6-5s-3-5-6-5-6 2-6 5 3 5 6 5z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         <path d="M12 15v3m0 3v-3m-4 0h8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>

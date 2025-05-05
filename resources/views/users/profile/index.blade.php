@@ -80,7 +80,7 @@
 
                 <div class="d-flex justify-content-between">
                     <button type="submit" class="btn btn-primary">Enregistrer les modifications</button>
-                    <a href="" class="btn btn-outline-secondary">Annuler</a>
+                    <a href="{{ route('user.questions.index') }}" class="btn btn-outline-secondary">Annuler</a>
                 </div>
             </form>
         </div>

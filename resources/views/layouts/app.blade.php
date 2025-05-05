@@ -19,7 +19,7 @@
     <div class="main-container">
         @include('partials.left-sidebar')
 
-        <main class="content">
+        <main class="content p-2">
             @yield('content')
         </main>
 

@@ -34,14 +34,9 @@ Route::get('/tags', function () {
      return "it is not my part";
 })->name('tags.index');
 
-// Route::get('/ranking', function () {
-//     return "it is not my part"; 
-// })->name('ranking.index');
-Route::middleware('auth')->group(function () {
-    Route::get('/ranking', function () {
-        return "it is not my part"; 
-    })->name('ranking.index');
-});
+// Utilisateurs 
+Route::get('/ranking', [UserController::class, 'ranking'])->name('ranking.index');
+
 
 // ========== Routes protégées (connecté) ==========
 Route::prefix('user')->name('user.')->middleware('auth')->group(function() {
@@ -50,8 +45,7 @@ Route::prefix('user')->name('user.')->middleware('auth')->group(function() {
     Route::get('/questions/{question}', [QuestionController::class, 'show'])->name('questions.show');
   
     // Question Fin
- 
-    // ---------------------------------------User ici
+    // --------------------------------------- User ici
     Route::get('/', [UserController::class, 'index'])->name('profile');
     Route::get('/profile/edit', [UserController::class, 'edit'])->name('profile.edit');
     Route::put('/profile/update', [UserController::class, 'update'])->name('profile.update'); 
