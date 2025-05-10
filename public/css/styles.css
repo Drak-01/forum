@@ -8,6 +8,7 @@
     --subtitle-text-color: #808080;
     --title-text-color: #000000;
     --white: #ffffff;
+    --rouge: red;
 }
 
 body {
@@ -18,13 +19,6 @@ body {
     color: var(--title-text-color);
 }
 
-.navbar {
-    background-color: var(--white);
-    border-bottom: 1px solid var(--app-border);
-    height: 86px;
-    display: flex;
-    align-items: center;
-}
 
 .navbar-content {
     display: flex;
@@ -34,10 +28,6 @@ body {
     max-width: 1440px;
     margin: 0 auto;
     padding: 0 48px;
-}
-
-.logo {
-    height: 30px;
 }
 
 nav ul {
@@ -104,16 +94,7 @@ nav ul li a.active {
     margin-bottom: 60px;
 }
 
-.search-input {
-    width: 100%;
-    padding: 10px 10px 10px 30px;
-    border: 1px solid var(--app-border);
-    border-radius: 5px;
-    font-size: 13px;
-    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="%23808080" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>');
-    background-repeat: no-repeat;
-    background-position: 8px center;
-}
+
 
 .sidebar-nav h3 {
     font-size: 12px;
@@ -290,4 +271,17 @@ nav ul li a.active {
     font-size: 11px;
     line-height: 1.5;
 }
+
+/* css pour utilisateurs */
+
+.text_orange {
+    color: var(--primary-2);
+}
  
+.text_rouge {
+    color : var(--rouge);
+}
+.btn_color {
+    background-color: #f48023;
+}
+

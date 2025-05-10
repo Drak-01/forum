@@ -6,6 +6,8 @@ use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\QuestionController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\UserActiviteController;
+
 
 Route::get('/', function () {
     return redirect()->route('questions.index');
@@ -50,6 +52,11 @@ Route::prefix('user')->name('user.')->middleware('auth')->group(function() {
     Route::get('/profile/edit', [UserController::class, 'edit'])->name('profile.edit');
     Route::put('/profile/update', [UserController::class, 'update'])->name('profile.update'); 
     
+    // --------------------------------------- Activites de l'utilisateurs 
+    Route::get('/activites', [UserActiviteController::class, 'index'])->name('activites');
+    Route::get('/activites/Questions', [UserActiviteController::class, 'useQuestions'])->name('activites.questions');
+    Route::get('/activites/Responses', [UserActiviteController::class, 'useResponses'])->name('activites.responses');
+
     // --------------- Groupe ------------------------
     Route::get('/mes-groupes', [GroupController::class, 'mesGroupes'])->name('user.groups');
     Route::get('/creer-groupe', [GroupController::class, 'creerpage'])->name('user.groups.creer');

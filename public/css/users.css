@@ -6,3 +6,86 @@
 .text_color {
     color: var(--text-color);
 }
+
+.post-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    padding: 16px;
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.post-header div {
+    line-height: 1.4;
+}
+
+.post-header strong {
+    font-weight: 600;
+}
+
+.post-header small {
+    font-size: 12px;
+    color: #777;
+}
+
+.post-title {
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: #3b82f6;
+    text-decoration: none;
+    display: block;
+}
+
+.post-title:hover {
+    text-decoration: underline;
+}
+
+.post-content {
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 12px;
+}
+
+.post-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin: 12px 0;
+}
+
+.tag {
+    display: inline-block;
+    background: #f0f5ff;
+    color: #3b82f6;
+    border-radius: 20px;
+    padding: 4px 10px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.post-footer {
+    display: flex;
+    gap: 20px;
+    font-size: 14px;
+    color: #777;
+}
+
+.post-footer span {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}

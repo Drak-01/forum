@@ -55,6 +55,7 @@ class QuestionController extends Controller
         // Charge la question avec toutes les relations nécessaires
         $question->load(['user', 'tags', 'reponses.user', 'reponses.votes']);
 
-        return view('questions.show', compact('question'));
+        return view('users.Questions.show', compact('question'));
     }
+
 }
