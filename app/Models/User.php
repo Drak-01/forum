@@ -51,10 +51,19 @@ class User extends Authenticatable
         ];
     }
 
-    public function groups()
-    {
-        return $this->belongsToMany(Group::class)->withTimestamps();
-    }
+   public function groups()
+{
+    return $this->belongsToMany(Group::class, 'group_user', 'user_id', 'group_id');
+    // 'group_user' = table pivot,
+    // user_id = clé étrangère vers users dans pivot,
+    // group_id = clé étrangère vers groups dans pivot
+}
+    public function createdGroups()
+{
+    return $this->hasMany(Group::class, 'user_id'); 
+    // 'user_id' est la clé étrangère dans la table groups qui référence l'auteur/créateur
+}
+
 
     public function questions()
     {

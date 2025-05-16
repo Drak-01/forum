@@ -7,7 +7,7 @@ use App\Http\Controllers\LoginController;
 use App\Http\Controllers\QuestionController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\UserActiviteController;
-
+use App\Http\Controllers\MessageController;
 
 Route::get('/', function () {
     return redirect()->route('questions.index');
@@ -61,5 +61,13 @@ Route::prefix('user')->name('user.')->middleware('auth')->group(function() {
     Route::get('/mes-groupes', [GroupController::class, 'mesGroupes'])->name('user.groups');
     Route::get('/creer-groupe', [GroupController::class, 'creerpage'])->name('user.groups.creer');
     Route::post('/groups', [GroupController::class, 'store'])->name('groups.store'); //Pour créer de nouvelles groupes
+   
+
+
+Route::post('/groups/{group}/messages', [MessageController::class, 'store'])->name('groups.messages.store');
+
+
+Route::get('/groups', [GroupController::class, 'index'])->name('users.groups');
+
 
 });

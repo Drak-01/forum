@@ -44,7 +44,7 @@
                                     <div>
                                         <h5 class="mb-1">{{ $group->name }}</h5>
                                         <small class="text-muted">
-                                            Créé le {{ $group->created_at->format('d/m/Y') }} • 
+                                            Créé le {{-- {{ $group->created_at->format('d/m/Y') }} •  --}}
                                             {{ $group->members_count }} membres
                                         </small>
                                     </div>
@@ -53,7 +53,7 @@
                                     <a href="{{ route('groups.show', $group->id) }}" class="btn btn-sm btn-outline-primary">
                                         <i class="bi bi-eye"></i> Voir
                                     </a>
-                                    <a href="{{ route('groups.edit', $group->id) }}" class="btn btn-sm btn-outline-secondary">
+                                    <a href="" class="btn btn-sm btn-outline-secondary">
                                         <i class="bi bi-pencil"></i> Modifier
                                     </a>
                                 </div>

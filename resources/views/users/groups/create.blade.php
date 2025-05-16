@@ -10,7 +10,7 @@
                 </div>
 
                 <div class="card-body">
-                    <form action="{{ route('user.user.groups.creer') }}" method="POST" enctype="multipart/form-data">
+                    <form action="{{ route('user.groups.store') }}" method="POST" enctype="multipart/form-data">
                         @csrf
 
                         <!-- Nom du groupe -->

@@ -6,6 +6,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class Group extends Model
 {
+    protected $fillable = [
+    'name', 'description', 'groupPicture','user_id',
+    ];
+
     public $timestamps = false;
 
     public function user()
@@ -28,4 +32,11 @@ class Group extends Model
     {
         return $this->created_at;
     }
+
+  public function messages()
+{
+    return $this->hasMany(Message::class);
+}
+
+
 }

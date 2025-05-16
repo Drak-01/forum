@@ -12,14 +12,15 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('groups', function (Blueprint $table) {
-            $table->id();
+             $table->id();
             $table->string('name')->unique();
             $table->string('groupPicture')->nullable();
             $table->text('description')->nullable();
             $table->timestamp('createdAt')->useCurrent();
-            $table->foreignId('user_id')->constrained('users')->onDelete('cascade'); // Clé étrangère pour le propiétaire du groupe lors de la création du groupe
+            $table->foreignId('user_id')->constrained('users')->onDelete('cascade');
             // $table->foreignId('quest_id')->nullable()->constrained('questions')->onDelete('set null');
         });
+        
         
     }
 
@@ -30,4 +31,5 @@ return new class extends Migration
     {
         Schema::dropIfExists('groups');
     }
+
 };
