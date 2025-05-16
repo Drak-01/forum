@@ -59,15 +59,26 @@ Route::prefix('user')->name('user.')->middleware('auth')->group(function() {
 
     // --------------- Groupe ------------------------
     Route::get('/mes-groupes', [GroupController::class, 'mesGroupes'])->name('user.groups');
-    Route::get('/creer-groupe', [GroupController::class, 'creerpage'])->name('user.groups.creer');
-    Route::post('/groups', [GroupController::class, 'store'])->name('groups.store'); //Pour créer de nouvelles groupes
-   
-
-
-Route::post('/groups/{group}/messages', [MessageController::class, 'store'])->name('groups.messages.store');
-
-
-Route::get('/groups', [GroupController::class, 'index'])->name('users.groups');
-
+    Route::get('/creer-groupe', [GroupController::class, 'creerpage'])->name('user.groups.creer'); //Pour afficher  le formulaire de création de
+    Route::post('/groups', [GroupController::class, 'store'])->name('groups.store'); // Pour créer de nouvelles groupes
+    
+    //Pour gérer un groupe spécifiques   
+    Route::prefix('group')->group(function() {
+        Route::get('/{group}', [GroupController::class, 'show'])->name('group.show'); //on affichera les questions par défaut
+        Route::get('/{group}/edit', [GroupController::class, 'edit'])->name('group.edit');
+        Route::put('/{group}', [GroupController::class, 'update'])->name('group.update');
+        Route::delete('/{group}', [GroupController::class, 'destroy'])->name('group.destroy');
+        
+        // Messages dans un groupe spécifique
+        Route::get('/{group}/messages', [GroupController::class, 'showMessages'])->name('group.messages');
+        Route::post('/{group}/messages', [MessageController::class, 'store'])->name('group.messages.store');
+        
+        // Gestion des membres
+        Route::get('/{group}/membres', [GroupController::class, 'gmembres'])->name('group.membres');
+        Route::post('/{group}/join', [GroupController::class, 'join'])->name('group.join');
+        Route::post('/{group}/leave', [GroupController::class, 'leave'])->name('group.leave');
+        Route::post('/{group}/invite', [GroupController::class, 'invite'])->name('group.invite');
+        
+    });
 
 });

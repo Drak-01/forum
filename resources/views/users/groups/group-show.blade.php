@@ -1,33 +1,42 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container py-4">
-    <div class="card shadow-sm">
-        <div class="card-header bg-primary text-white">
-            <h4 class="mb-0">{{ $group->name }}</h4>
+<div class="container-fluid px-0">
+    <!-- Header avec navigation -->
+    <header class="bg-primary text-white shadow-sm">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center py-3">
+                <h1 class="h4 mb-0 text-center w-100">{{ $group->name }}</h1>
+            </div>
+            
+            <nav class="navbar navbar-expand navbar-dark bg-primary p-0">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="{{ route('user.group.show', $group) }}">
+                            <i class="fas fa-question-circle me-1"></i> Questions
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('user.group.messages', $group) }}">
+                            <i class="fas fa-comments me-1"></i> Discussion
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('user.group.membres', $group) }}">
+                            <i class="fas fa-users me-1"></i> Membres
+                        </a>
+                    </li>
+                </ul>
+            </nav>
         </div>
+    </header>
 
-        <div class="card-body" style="height: 400px; overflow-y: auto;">
-            @forelse ($messages as $message)
-                <div class="mb-2">
-                    <strong>{{ $message->user->username }}:</strong> {{ $message->content }}
-                    <small class="text-muted float-end">{{ $message->created_at->diffForHumans() }}</small>
-                </div>
-            @empty
-                <p class="text-muted">Aucun message pour le moment.</p>
-            @endforelse
+    <!-- Contenu principal - Questions par défaut -->
+    <main class="container py-4">
+        <div class="bg-white rounded shadow-sm p-3 mb-4">
+            @yield('content-group')
+
         </div>
-
-        <div class="card-footer">
-           <form action="{{ route('user.groups.messages.store', $group->id) }}" method="POST">
-
-                @csrf
-                <div class="input-group">
-                    <input type="text" name="content" class="form-control" placeholder="Écrire un message..." required>
-                    <button class="btn btn-primary" type="submit">Envoyer</button>
-                </div>
-            </form>
-        </div>
-    </div>
+    </main>
 </div>
 @endsection

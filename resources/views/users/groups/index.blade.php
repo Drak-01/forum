@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container py-4">
+<div class="container p-0 m-0">
     <div class="row">
         <div class="col-md mx-auto">
             <!-- En-tête avec bouton de création -->
@@ -13,8 +13,8 @@
             </div>
 
             <!-- Liste des groupes -->
-            <div class="card shadow-sm">
-                <div class="card-body">
+            <div class="card shadow-sm m-4" >
+                <div class="card-body" >
                     @if($groups->isEmpty())
                         <div class="text-center py-5">
                             <i class="bi bi-people display-4 text-muted"></i>
@@ -44,18 +44,14 @@
                                     <div>
                                         <h5 class="mb-1">{{ $group->name }}</h5>
                                         <small class="text-muted">
-                                            Créé le {{-- {{ $group->created_at->format('d/m/Y') }} •  --}}
-                                            {{ $group->members_count }} membres
+                                            Créé le {{ $group->createdAt->format('d/m/Y') }}
                                         </small>
                                     </div>
                                 </div>
                                 <div class="btn-group">
                                     <a href="{{ route('groups.show', $group->id) }}" class="btn btn-sm btn-outline-primary">
                                         <i class="bi bi-eye"></i> Voir
-                                    </a>
-                                    <a href="" class="btn btn-sm btn-outline-secondary">
-                                        <i class="bi bi-pencil"></i> Modifier
-                                    </a>
+                                    </a>                            
                                 </div>
                             </div>
                             @endforeach

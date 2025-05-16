@@ -1,4 +1,4 @@
-<aside class="right-sidebar">
+<aside class="right-sidebar m-0">
     <section class="sidebar-section">
         <h3>Must-read posts</h3>
         <ul>
