@@ -8,6 +8,17 @@ class Reponse extends Model
 {
     public $timestamps = false;
 
+    protected $fillable = [
+        'content',
+        'description',
+        'datePost',
+        'contentType',
+        'question_id',
+        'user_id'
+    ];
+
+
+
     public function question()
     {
         return $this->belongsTo(Question::class);
@@ -24,4 +35,8 @@ class Reponse extends Model
     public function datePost(){
         return date('d/m/Y', strtotime($this->created_at));
     }
+
+    protected $casts = [
+        'datePost' => 'datetime',
+    ];
 }

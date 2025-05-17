@@ -5,14 +5,13 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
-
 class UserActiviteController extends Controller
 {
     //
     public function index()
     { // Le groupe qui sera afficher par défaut
 
-        return view('users.groups.useGroupe');
+        return view('users.profile.useGroupe');
     }
 
     public function useQuestions()
@@ -32,4 +31,6 @@ class UserActiviteController extends Controller
         $total = $reponses->count();
         return view('users.reponse.userReponse', compact('reponses', 'total'));
     }
+
+    
 }

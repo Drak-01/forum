@@ -25,7 +25,7 @@
                     </div>
                 </div>
                 
-                <a href="{{ route('questions.show', $question) }}" class="post-title">
+                <a href="{{ route('user.profile.question', $question) }}" class="post-title">
                     {{ $question->title }}
                 </a>
                 

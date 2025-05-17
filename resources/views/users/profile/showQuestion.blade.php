@@ -1,6 +1,6 @@
-@extends('layouts.app')
+@extends('users.profile.activite')
 
-@section('content')
+@section('content-Activites')
     <style>
         .post-container {
             max-width: 800px;
@@ -164,45 +164,6 @@
                 <span>💬 {{ $question->reponses->count() }} réponses</span>
             </div>
         </div>
-        
-        <!-- Réponses -->
-        <h2 class="responses-title">Réponses ({{ $question->reponses->count() }})</h2>
-        
-        @forelse($question->reponses as $reponse)
-            <div class="response-card">
-                <div class="post-header">
-                    <img src="{{ $question->user->userPicture 
-                    ? asset('storage/' . $question->user->userPicture) 
-                    : 'https://i.pravatar.cc/40?img=' . $question->user->id }}"  
-                         alt="Avatar de {{ $reponse->user->username }}" class="avatar">
-                    <div>
-                        <strong>{{ $reponse->user->username }}</strong>
-                        <small>{{ $reponse->datePost() }}</small>
-                    </div>
-                </div>
-                
-                <div class="response-content">{{ $reponse->content }}</div>
-                
-                <div class="post-footer">
-                    <button class="vote-btn">⬆️</button>
-                    <span>{{ $reponse->votes->sum('nbreVote') }} votes</span>
-                </div>
-            </div>
-        @empty
-            <div class="response-card">
-                <p>Aucune réponse pour le moment. Soyez le premier à répondre !</p>
-            </div>
-        @endforelse
-        
-        <!-- Formulaire de réponse -->
-        <div class="response-form">
-            <h3>Poster une réponse</h3>
-            <form action="{{ route('user.reponses.store', $question) }}" method="POST">
-                @csrf
-                <textarea name="content" rows="5" placeholder="Votre réponse..." required></textarea>
-                <textarea name="description" rows="3" placeholder="Description supplémentaire (optionnelle)"></textarea>
-                <button type="submit">Envoyer</button>
-            </form>
-        </div>
+            
     </div>
 @endsection

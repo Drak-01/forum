@@ -58,4 +58,11 @@ class QuestionController extends Controller
         return view('users.Questions.show', compact('question'));
     }
 
+    public function showQuestion(Question $question)  // dans le profile de user
+    {
+        $question->load(['user', 'tags', 'reponses.user', 'reponses.votes']);
+
+        return view('users.profile.showQuestion', compact('question'));
+    }
+
 }

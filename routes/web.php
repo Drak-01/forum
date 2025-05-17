@@ -8,6 +8,7 @@ use App\Http\Controllers\QuestionController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\UserActiviteController;
 use App\Http\Controllers\MessageController;
+use App\Http\Controllers\ReponseController;
 
 Route::get('/', function () {
     return redirect()->route('questions.index');
@@ -45,12 +46,19 @@ Route::prefix('user')->name('user.')->middleware('auth')->group(function() {
     // ------------------Question tu peut ajouter le reste ici
     Route::get('/questions', [QuestionController::class, 'index'])->name('questions.index');
     Route::get('/questions/{question}', [QuestionController::class, 'show'])->name('questions.show');
-  
-    // Question Fin
+    Route::post('/questions/{question}/reponses', [ReponseController::class, 'store'])->name('reponses.store');
+    Route::get('/questions/{question}', [QuestionController::class, 'showQuestion'])->name('profile.question');
+
+    //Route pour la reponses
+    Route::get('/reponses/{reponse}', [ReponseController::class, 'show'])->name('reponses.show');
+    Route::put('/reponses/{reponse}', [ReponseController::class, 'update'])->name('reponses.update');
+    Route::delete('/reponses/{reponse}', [ReponseController::class, 'destroy'])->name('reponses.destroy');
+
     // --------------------------------------- User ici
     Route::get('/', [UserController::class, 'index'])->name('profile');
     Route::get('/profile/edit', [UserController::class, 'edit'])->name('profile.edit');
-    Route::put('/profile/update', [UserController::class, 'update'])->name('profile.update'); 
+    Route::put('/profile/update', [UserController::class, 'update'])->name('profile.update');
+ 
     
     // --------------------------------------- Activites de l'utilisateurs 
     Route::get('/activites', [UserActiviteController::class, 'index'])->name('activites');
@@ -79,6 +87,10 @@ Route::prefix('user')->name('user.')->middleware('auth')->group(function() {
         Route::post('/{group}/leave', [GroupController::class, 'leave'])->name('group.leave');
         Route::post('/{group}/invite', [GroupController::class, 'invite'])->name('group.invite');
         
+        // Reponses
+        
     });
+
+
 
 });

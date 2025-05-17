@@ -23,13 +23,21 @@
                     </div>
                 </div>
                 
-                <a href="#" class="post-title">
-                    qestions
+                <a href="{{ route('user.reponses.show', $reponse) }}" class="post-title">
+                    {{ $reponse->question->title }}
                 </a>
                 
-                <p class="post-content">{{ Str::limit($reponse->content, 150) }}</p>
-                        
+                <p class="post-content">{{ Str::limit($reponse->content, 150) }}</p>           
+            </div>
+            <div class="post-footer">
+                <span>👁️ {{ rand(50, 200) }}</span>
+                <span>💬 {{ $reponses->count() }}</span>
+                <span>⬆️ {{ $reponses->sum(function($reponse) { return $reponse->votes->sum('nbreVote'); }) }}</span>
             </div>
         @endforeach
+
+        @if($reponses instanceof \Illuminate\Pagination\AbstractPaginator)
+            {{ $reponses->links() }}
+        @endif
     </div>
 @endsection

@@ -13,10 +13,6 @@ class Question extends Model
         return $this->belongsTo(User::class);
     }
 
-    public function reponses()
-    {
-        return $this->hasMany(Reponse::class);
-    }
 
     public function votes()
     {
@@ -31,7 +27,12 @@ class Question extends Model
     }
 
     public function group()
-{
-    return $this->belongsTo(Group::class);
-}
+    {
+        return $this->belongsTo(Group::class);
+    }
+
+    public function reponses()
+    {
+        return $this->hasMany(Reponse::class)->latest('datePost');
+    }
 }
