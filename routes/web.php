@@ -30,7 +30,7 @@ Route::get('/questions/{question}', [QuestionController::class, 'show'])->name('
 
 // ========== GROUPS ==========
 Route::get('/groups', [GroupController::class, 'index'])->name('groups.index');
-Route::get('/groups/{group}', [GroupController::class, 'show'])->name('groups.show');
+//Route::get('/groups/{group}', [GroupController::class, 'show'])->name('groups.show');
 
 Route::get('/tags', function () {
      return "it is not my part";

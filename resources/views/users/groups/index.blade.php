@@ -49,7 +49,7 @@
                                     </div>
                                 </div>
                                 <div class="btn-group">
-                                    <a href="{{ route('groups.show', $group->id) }}" class="btn btn-sm btn-outline-primary">
+                                    <a href="{{ route('user.group.show', $group->id) }}" class="btn btn-sm btn-outline-primary">
                                         <i class="bi bi-eye"></i> Voir
                                     </a>                            
                                 </div>

@@ -80,6 +80,7 @@ class GroupController extends Controller
 
     public function show($id)
     {
+        //dd("icu");
         $group = Group::with('messages.user')->findOrFail($id);
         $messages = Message::where('group_id', $group->id)->with('user')->latest()->get();
 
