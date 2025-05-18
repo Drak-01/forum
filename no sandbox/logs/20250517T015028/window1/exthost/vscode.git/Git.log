@@ -1,0 +1,82 @@
+2025-05-17 01:50:31.052 [info] [main] Log level: Info
+2025-05-17 01:50:31.052 [info] [main] Validating found git in: "git"
+2025-05-17 01:50:31.052 [info] [main] Using git "2.47.2" from "git"
+2025-05-17 01:50:31.052 [info] [Model][doInitialScan] Initial repository scan started
+2025-05-17 01:50:31.052 [info] > git rev-parse --show-toplevel [2ms]
+2025-05-17 01:50:31.052 [info] > git rev-parse --git-dir --git-common-dir [1ms]
+2025-05-17 01:50:31.052 [info] [Model][openRepository] Opened repository (path): /home/nika/Documents/ENSIASD/tec_web/miniprojet/forum
+2025-05-17 01:50:31.052 [info] [Model][openRepository] Opened repository (real path): /home/nika/Documents/ENSIASD/tec_web/miniprojet/forum
+2025-05-17 01:50:31.054 [info] > git config --get commit.template [3ms]
+2025-05-17 01:50:31.061 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-05-17 01:50:31.069 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/.git/refs/remotes/origin/main'
+2025-05-17 01:50:31.075 [info] > git rev-parse refs/remotes/origin/main [6ms]
+2025-05-17 01:50:31.959 [info] > git status -z -uall [880ms]
+2025-05-17 01:50:31.966 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [879ms]
+2025-05-17 01:50:31.990 [info] > git rev-parse --show-toplevel [916ms]
+2025-05-17 01:50:32.215 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [227ms]
+2025-05-17 01:50:32.304 [info] > git config --get --local branch.main.vscode-merge-base [77ms]
+2025-05-17 01:50:32.316 [info] > git rev-parse --show-toplevel [103ms]
+2025-05-17 01:50:32.316 [info] > git config --get commit.template [115ms]
+2025-05-17 01:50:32.330 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/origin/main refs/remotes/origin/main [15ms]
+2025-05-17 01:50:32.479 [info] > git merge-base refs/heads/main refs/remotes/origin/main [139ms]
+2025-05-17 01:50:32.490 [info] > git rev-parse --show-toplevel [161ms]
+2025-05-17 01:50:32.504 [info] > git diff --name-status -z --diff-filter=ADMR c61fc1c9efbd2d7948c1097f49f82ecfd5a366da...refs/remotes/origin/main [15ms]
+2025-05-17 01:50:32.505 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [28ms]
+2025-05-17 01:50:32.519 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/.git/refs/remotes/origin/main'
+2025-05-17 01:50:32.519 [info] > git rev-parse --show-toplevel [16ms]
+2025-05-17 01:50:32.541 [info] > git check-ignore -v -z --stdin [11ms]
+2025-05-17 01:50:32.542 [info] > git rev-parse refs/remotes/origin/main [23ms]
+2025-05-17 01:50:32.571 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [8ms]
+2025-05-17 01:50:32.571 [info] > git rev-parse --show-toplevel [30ms]
+2025-05-17 01:50:32.583 [info] > git rev-parse --show-toplevel [1ms]
+2025-05-17 01:50:32.819 [info] > git status -z -uall [266ms]
+2025-05-17 01:50:32.819 [info] > git rev-parse --show-toplevel [3ms]
+2025-05-17 01:50:32.840 [info] > git rev-parse --show-toplevel [1ms]
+2025-05-17 01:50:32.854 [info] > git rev-parse --show-toplevel [1ms]
+2025-05-17 01:50:32.868 [info] > git rev-parse --show-toplevel [2ms]
+2025-05-17 01:50:32.884 [info] > git rev-parse --show-toplevel [1ms]
+2025-05-17 01:50:32.885 [info] [Model][doInitialScan] Initial repository scan completed - repositories (1), closed repositories (0), parent repositories (0), unsafe repositories (0)
+2025-05-17 01:50:33.006 [info] > git config --get --local branch.main.github-pr-owner-number [2ms]
+2025-05-17 01:50:33.006 [warning] [Git][config] git config failed: Failed to execute git
+2025-05-17 01:50:33.224 [info] > git config --get commit.template [2ms]
+2025-05-17 01:50:33.258 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [6ms]
+2025-05-17 01:50:33.270 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/.git/refs/remotes/origin/main'
+2025-05-17 01:50:33.291 [info] > git rev-parse refs/remotes/origin/main [21ms]
+2025-05-17 01:50:33.314 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2025-05-17 01:50:33.528 [info] > git status -z -uall [226ms]
+2025-05-17 01:50:35.509 [info] > git config --get commit.template [12ms]
+2025-05-17 01:50:35.509 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
+2025-05-17 01:50:35.519 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/.git/refs/remotes/origin/main'
+2025-05-17 01:50:35.520 [info] > git rev-parse refs/remotes/origin/main [1ms]
+2025-05-17 01:50:35.542 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2025-05-17 01:50:35.752 [info] > git status -z -uall [222ms]
+2025-05-17 01:50:40.798 [info] > git config --get commit.template [19ms]
+2025-05-17 01:50:40.798 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
+2025-05-17 01:50:40.810 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/.git/refs/remotes/origin/main'
+2025-05-17 01:50:40.811 [info] > git rev-parse refs/remotes/origin/main [1ms]
+2025-05-17 01:50:40.835 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2025-05-17 01:50:41.049 [info] > git status -z -uall [227ms]
+2025-05-17 01:51:41.147 [info] > git config --get commit.template [2ms]
+2025-05-17 01:51:41.164 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
+2025-05-17 01:51:41.176 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/.git/refs/remotes/origin/main'
+2025-05-17 01:51:41.177 [info] > git rev-parse refs/remotes/origin/main [1ms]
+2025-05-17 01:51:41.206 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2025-05-17 01:51:41.421 [info] > git status -z -uall [231ms]
+2025-05-17 01:51:46.447 [info] > git config --get commit.template [1ms]
+2025-05-17 01:51:46.464 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-05-17 01:51:46.478 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/.git/refs/remotes/origin/main'
+2025-05-17 01:51:46.478 [info] > git rev-parse refs/remotes/origin/main [1ms]
+2025-05-17 01:51:46.503 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [0ms]
+2025-05-17 01:51:46.706 [info] > git status -z -uall [216ms]
+2025-05-17 01:52:11.824 [info] > git config --get commit.template [16ms]
+2025-05-17 01:52:11.825 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-05-17 01:52:11.838 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/.git/refs/remotes/origin/main'
+2025-05-17 01:52:11.839 [info] > git rev-parse refs/remotes/origin/main [0ms]
+2025-05-17 01:52:11.865 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2025-05-17 01:52:12.079 [info] > git status -z -uall [229ms]
+2025-05-17 02:05:17.544 [info] > git config --get commit.template [1ms]
+2025-05-17 02:05:17.558 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
+2025-05-17 02:05:17.570 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/.git/refs/remotes/origin/main'
+2025-05-17 02:05:17.570 [info] > git rev-parse refs/remotes/origin/main [0ms]
+2025-05-17 02:05:17.594 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2025-05-17 02:05:17.807 [info] > git status -z -uall [226ms]

@@ -1,0 +1,11 @@
+2025-05-17 01:46:42.370 [info] Started local extension host with pid 2521770.
+2025-05-17 01:46:42.600 [info] ComputeTargetPlatform: linux-x64
+2025-05-17 01:46:43.198 [info] ChatSessionStore: Migrating 0 chat sessions from storage service to file system
+2025-05-17 01:46:43.607 [info] Settings Sync: Account status changed from uninitialized to unavailable
+2025-05-17 01:46:45.265 [info] [perf] Render performance baseline is 18ms
+2025-05-17 01:47:38.241 [error] No registered selector for ID: copilot-chat.fixWithCopilot
+2025-05-17 01:47:38.241 [error] No registered selector for ID: copilot-chat.generateCommitMessage
+2025-05-17 01:47:38.248 [error] No registered selector for ID: copilot-chat.terminalToDebugging
+2025-05-17 01:47:38.248 [error] No registered selector for ID: copilot-chat.terminalToDebuggingSuccess
+2025-05-17 01:48:36.477 [error] An unknown error occurred. Please consult the log for more details.
+2025-05-17 01:49:56.498 [warning] [File Watcher] Watcher shutdown because watched path got deleted (path: /home/nika/Documents/ENSIASD/tec_web/miniprojet/v2/forum)

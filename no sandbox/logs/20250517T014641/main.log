@@ -1,0 +1,15 @@
+2025-05-17 01:46:41.311 [info] update#setState idle
+2025-05-17 01:47:11.311 [info] update#setState checking for updates
+2025-05-17 01:47:11.507 [info] update#setState available for download
+2025-05-17 01:49:57.006 [error] [storage state.vscdb] prepare(): Error: SQLITE_READONLY_DBMOVED: attempt to write a readonly database (INSERT INTO ItemTable VALUES (?,?),(?,?)). Details: Keys: terminal.history.entries.commands, terminal.history.timestamp.commands Length: 2316
+2025-05-17 01:50:11.791 [info] Extension host with pid 2521770 exited with code: 0, signal: unknown.
+2025-05-17 01:50:11.817 [error] [storage state.vscdb] prepare(): Error: SQLITE_READONLY_DBMOVED: attempt to write a readonly database (INSERT INTO ItemTable VALUES (?,?),(?,?),(?,?)). Details: Keys: __$__targetStorageMarker, editorFontInfo, editorGroupWatermark.whenConditions Length: 3969
+2025-05-17 01:50:11.817 [error] [storage state.vscdb] prepare(): Error: SQLITE_READONLY_DBMOVED: attempt to write a readonly database (INSERT INTO ItemTable VALUES (?,?),(?,?),(?,?),(?,?),(?,?),(?,?)). Details: Keys: __$__targetStorageMarker, terminal.integrated.bufferState, lifecyle.lastShutdownReason, history.entries, workbench.explorer.treeViewState, codelens/cache2 Length: 23708
+2025-05-17 01:50:11.820 [error] Error: ENOENT: no such file or directory, unlink '/home/nika/Documents/ENSIASD/tec_web/miniprojet/v2/forum/no sandbox/User/workspaceStorage/349b9fdb98db9eba6ac329785c1240e9/state.vscdb'
+    at async Object.unlink (node:internal/fs/promises:1079:10)
+    at async c9.y (file:///usr/share/code/resources/app/out/main.js:35:68714)
+    at async ld.w (file:///usr/share/code/resources/app/out/main.js:35:91111)
+    at async ld.close (file:///usr/share/code/resources/app/out/main.js:35:90535)
+    at async Promise.all (index 2)
+    at async Object.e [as settled] (file:///usr/share/code/resources/app/out/main.js:30:112116)
+    at async file:///usr/share/code/resources/app/out/main.js:35:63122

@@ -1,0 +1,82 @@
+2025-05-18 01:10:03.996 [info] Using the Electron fetcher.
+2025-05-18 01:10:03.996 [info] Initializing Git extension service.
+2025-05-18 01:10:03.996 [info] Successfully activated the vscode.git extension.
+2025-05-18 01:10:03.996 [info] Enablement state of the vscode.git extension: true.
+2025-05-18 01:10:03.996 [info] Successfully registered Git commit message provider.
+2025-05-18 01:10:04.666 [warning] GitHub login failed
+2025-05-18 01:10:04.666 [info] copilot token chat_enabled: undefined, sku: 
+2025-05-18 01:10:05.679 [warning] GitHub login failed
+2025-05-18 01:10:05.680 [error] Error: GitHubLoginFailed
+    at d6._authShowWarnings (/root/.vscode/extensions/github.copilot-chat-0.27.1/dist/extension.js:481:49285)
+    at d6.getCopilotToken (/root/.vscode/extensions/github.copilot-chat-0.27.1/dist/extension.js:481:47813)
+    at b5.getCopilotToken (/root/.vscode/extensions/github.copilot-chat-0.27.1/dist/extension.js:423:3583)
+    at lE.waitForChatEnabled (/root/.vscode/extensions/github.copilot-chat-0.27.1/dist/extension.js:441:18705)
+    at lE.run (/root/.vscode/extensions/github.copilot-chat-0.27.1/dist/extension.js:441:18589)
+    at D4.askToUpgradeAuthPermissions (/root/.vscode/extensions/github.copilot-chat-0.27.1/dist/extension.js:441:17960): Failed to get copilot token
+2025-05-18 01:10:05.680 [error] You are not signed in to GitHub. Please sign in to use Copilot.
+2025-05-18 01:10:05.680 [warning] [LanguageModelAccess] LanguageModel/Embeddings are not available without auth token
+2025-05-18 01:10:05.680 [error] Error: GitHubLoginFailed
+    at d6._authShowWarnings (/root/.vscode/extensions/github.copilot-chat-0.27.1/dist/extension.js:481:49285)
+    at d6.getCopilotToken (/root/.vscode/extensions/github.copilot-chat-0.27.1/dist/extension.js:481:47813)
+    at b5.getCopilotToken (/root/.vscode/extensions/github.copilot-chat-0.27.1/dist/extension.js:423:3583)
+    at YL._getAuthSession (/root/.vscode/extensions/github.copilot-chat-0.27.1/dist/extension.js:478:3643)
+    at Object.n [as task] (/root/.vscode/extensions/github.copilot-chat-0.27.1/dist/extension.js:478:730)
+    at mp._processQueue (/root/.vscode/extensions/github.copilot-chat-0.27.1/dist/extension.js:471:15854)
+2025-05-18 01:10:05.680 [warning] [LanguageModelAccess] LanguageModel/Embeddings are not available without auth token
+2025-05-18 01:10:05.680 [error] Error: GitHubLoginFailed
+    at d6._authShowWarnings (/root/.vscode/extensions/github.copilot-chat-0.27.1/dist/extension.js:481:49285)
+    at d6.getCopilotToken (/root/.vscode/extensions/github.copilot-chat-0.27.1/dist/extension.js:481:47813)
+    at b5.getCopilotToken (/root/.vscode/extensions/github.copilot-chat-0.27.1/dist/extension.js:423:3583)
+    at YL._getAuthSession (/root/.vscode/extensions/github.copilot-chat-0.27.1/dist/extension.js:478:3643)
+    at t (/root/.vscode/extensions/github.copilot-chat-0.27.1/dist/extension.js:478:3106)
+    at YL._registerEmbeddings (/root/.vscode/extensions/github.copilot-chat-0.27.1/dist/extension.js:478:3605)
+    at async Promise.all (index 1)
+    at async Promise.allSettled (index 0)
+    at Hb.waitForActivationBlockers (/root/.vscode/extensions/github.copilot-chat-0.27.1/dist/extension.js:423:2184)
+    at /root/.vscode/extensions/github.copilot-chat-0.27.1/dist/extension.js:2382:7090
+    at tln (/root/.vscode/extensions/github.copilot-chat-0.27.1/dist/extension.js:2382:6903)
+    at Nb.n (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:119:13382)
+    at Nb.m (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:119:13345)
+    at Nb.l (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:119:12801)
+2025-05-18 01:10:05.680 [info] activationBlocker from 'languageModelAccess' took for 113ms
+2025-05-18 01:10:30.811 [info] Logged in as wisdomEss
+2025-05-18 01:10:31.911 [info] Got Copilot token for wisdomEss
+2025-05-18 01:10:31.962 [info] copilot token chat_enabled: true, sku: free_limited_copilot
+2025-05-18 01:10:31.975 [info] Registering default platform agent...
+2025-05-18 01:10:31.977 [info] Successfully activated the GitHub.vscode-pull-request-github extension.
+2025-05-18 01:10:31.977 [info] [githubTitleAndDescriptionProvider] Initializing GitHub PR title and description provider provider.
+2025-05-18 01:10:31.977 [info] Successfully registered GitHub PR title and description provider.
+2025-05-18 01:10:31.977 [info] Successfully registered GitHub PR reviewer comments provider.
+2025-05-18 01:10:32.060 [info] BYOK: Copilot Chat known models list fetched successfully.
+2025-05-18 01:10:32.558 [info] Fetched model metadata in 570ms e0f22937-42b1-42c1-9c7a-d49a8868d1b1
+2025-05-18 01:40:33.597 [info] Logged in as wisdomEss
+2025-05-18 01:40:35.177 [info] Got Copilot token for wisdomEss
+2025-05-18 01:40:35.190 [info] copilot token chat_enabled: true, sku: free_limited_copilot
+2025-05-18 01:40:35.278 [info] BYOK: Copilot Chat known models list fetched successfully.
+2025-05-18 12:09:22.799 [info] Logged in as wisdomEss
+2025-05-18 12:09:25.379 [info] Got Copilot token for wisdomEss
+2025-05-18 12:09:25.398 [info] copilot token chat_enabled: true, sku: free_limited_copilot
+2025-05-18 12:09:25.467 [info] BYOK: Copilot Chat known models list fetched successfully.
+2025-05-18 12:39:25.912 [info] Logged in as wisdomEss
+2025-05-18 12:39:27.414 [info] Got Copilot token for wisdomEss
+2025-05-18 12:39:27.431 [info] copilot token chat_enabled: true, sku: free_limited_copilot
+2025-05-18 12:39:27.569 [info] BYOK: Copilot Chat known models list fetched successfully.
+2025-05-18 12:39:29.516 [info] Fetched model metadata in 2096ms 2c6c151b-a009-4e87-96a0-2579216bc888
+2025-05-18 12:54:30.616 [info] Fetched model metadata in 920ms eff2e1bd-aea3-4c80-af42-db75a6c89fca
+2025-05-18 13:09:30.835 [info] Logged in as wisdomEss
+2025-05-18 13:09:32.854 [info] Got Copilot token for wisdomEss
+2025-05-18 13:09:32.874 [info] copilot token chat_enabled: true, sku: free_limited_copilot
+2025-05-18 13:09:33.567 [info] BYOK: Copilot Chat known models list fetched successfully.
+2025-05-18 13:24:33.726 [info] Fetched model metadata in 838ms 6b2f9962-b023-4d5d-ac0e-25bb59602142
+2025-05-18 13:39:33.878 [info] Logged in as wisdomEss
+2025-05-18 13:39:35.393 [info] Got Copilot token for wisdomEss
+2025-05-18 13:39:35.410 [info] copilot token chat_enabled: true, sku: free_limited_copilot
+2025-05-18 13:39:35.593 [info] BYOK: Copilot Chat known models list fetched successfully.
+2025-05-18 13:39:36.477 [info] Fetched model metadata in 1077ms 146b96fa-21e5-4919-85fe-25d002dce2c8
+2025-05-18 14:09:36.503 [info] Logged in as wisdomEss
+2025-05-18 14:09:38.489 [info] Got Copilot token for wisdomEss
+2025-05-18 14:09:38.496 [info] copilot token chat_enabled: true, sku: free_limited_copilot
+2025-05-18 14:09:38.591 [info] BYOK: Copilot Chat known models list fetched successfully.
+2025-05-18 14:21:59.383 [info] Fetched model metadata in 978ms e4f4df5d-05a2-4b86-880c-81b6d0ead3cb
+2025-05-18 14:22:00.591 [info] message 0 returned. finish reason: [stop]
+2025-05-18 14:22:00.591 [info] request done: requestId: [c6a07d37-bd25-4f5e-b597-cfa7bc07b672] model deployment ID: []

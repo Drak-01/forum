@@ -1,0 +1,24 @@
+[Info  - 1:48:35 AM] Initialising intelephense 1.14.4
+[Info  - 1:48:35 AM] Initialised in 10 ms
+[Info  - 1:48:35 AM] Searching file:///root/.vscode/extensions/bmewburn.vscode-intelephense-client-1.14.4/node_modules/intelephense/lib/stub for files to index.
+[Info  - 1:48:35 AM] Searching file:///home/nika/Documents/ENSIASD/tec_web/miniprojet/v2/forum for files to index.
+[Warn  - 1:48:36 AM] file:///home/nika/Documents/ENSIASD/tec_web/miniprojet/v2/forum/vendor/fakerphp/faker/src/Faker/Provider/nl_BE/Text.php is over the maximum file size of 1000000 bytes.
+[Info  - 1:48:36 AM] Indexing started.
+[Info  - 1:48:36 AM] Searching file:///home/nika/Documents/ENSIASD/tec_web/miniprojet/v2/forum/no%20sandbox/User/globalStorage/bmewburn.vscode-intelephense-client for files to index.
+[Info  - 1:48:36 AM] Searching file:///home/nika/Documents/ENSIASD/tec_web/miniprojet/v2/forum/no%20sandbox/User/workspaceStorage/349b9fdb98db9eba6ac329785c1240e9/bmewburn.vscode-intelephense-client for files to index.
+[Info  - 1:48:36 AM] Searching file:///home/nika/Documents/ENSIASD/tec_web/miniprojet/v2/forum/no%20sandbox/User/workspaceStorage/349b9fdb98db9eba6ac329785c1240e9/bmewburn.vscode-intelephense-client/6f35578e for files to index.
+[Info  - 1:48:42 AM] Indexing ended. 7745 files indexed in 6s.
+[Info  - 1:48:42 AM] Writing state to /home/nika/Documents/ENSIASD/tec_web/miniprojet/v2/forum/no sandbox/User/workspaceStorage/349b9fdb98db9eba6ac329785c1240e9/bmewburn.vscode-intelephense-client/6f35578e.
+[Info  - 1:48:42 AM] Wrote state in 0.5s.
+[Info  - 1:48:53 AM] Indexing started.
+[Info  - 1:48:54 AM] Indexing ended. 1 files indexed in 0s.
+[Info  - 1:48:57 AM] Indexing started.
+[Info  - 1:48:57 AM] Indexing ended. 2 files indexed in 0s.
+[Info  - 1:49:56 AM] Indexing started.
+[Warn  - 1:49:56 AM] Error: ENOENT: no such file or directory, stat '/home/nika/Documents/ENSIASD/tec_web/miniprojet/v2/forum/no sandbox/logs/20250517T014641/window1/renderer.log'
+[Info  - 1:49:57 AM] Indexing ended. 7603 files indexed in 0s.
+[Warn  - 1:49:57 AM] Error: ENOENT: no such file or directory, stat '/home/nika/Documents/ENSIASD/tec_web/miniprojet/v2/forum/no sandbox/logs/20250517T014641/window1/exthost/output_logging_20250517T014642/2-Tailwind CSS IntelliSense.log'
+[Warn  - 1:49:57 AM] Error: ENOENT: no such file or directory, stat '/home/nika/Documents/ENSIASD/tec_web/miniprojet/v2/forum/no sandbox/logs/20250517T014641/main.log'
+[Warn  - 1:49:57 AM] Error: ENOENT: no such file or directory, stat '/home/nika/Documents/ENSIASD/tec_web/miniprojet/v2/forum/no sandbox/logs/20250517T014641/window1/exthost/output_logging_20250517T014642/4-intelephense.log'
+[Warn  - 1:49:57 AM] Error: ENOENT: no such file or directory, stat '/home/nika/Documents/ENSIASD/tec_web/miniprojet/v2/forum/no sandbox/logs/20250517T014641/window1/exthost/output_logging_20250517T014642/2-Tailwind CSS IntelliSense.log'
+[Info  - 1:50:01 AM] Searching file:///home/nika/Documents/ENSIASD/tec_web/miniprojet/v2/forum for files to index.

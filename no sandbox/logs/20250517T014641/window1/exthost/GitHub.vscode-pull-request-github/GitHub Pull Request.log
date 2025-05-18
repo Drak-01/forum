@@ -1,0 +1,30 @@
+2025-05-17 01:46:43.810 [warning] /root/.ssh/config: ENOENT: no such file or directory, open '/root/.ssh/config'
+2025-05-17 01:46:43.810 [info] [Activation] Extension version: 0.110.0
+2025-05-17 01:46:43.810 [info] [TemporaryState] Error in initialization: Unable to delete nonexistent file 'vscode-userdata:/home/nika/Documents/ENSIASD/tec_web/miniprojet/v2/forum/no sandbox/User/globalStorage/github.vscode-pull-request-github/temp'
+2025-05-17 01:46:43.827 [info] [Activation] Looking for git repository
+2025-05-17 01:46:43.827 [info] [Activation] Found 0 repositories during activation
+2025-05-17 01:46:43.827 [info] [Activation] Git repository found, initializing review manager and pr tree view.
+2025-05-17 01:46:53.310 [info] [GitAPI] Registering git provider
+2025-05-17 01:46:53.558 [info] [GitAPI] Repository file:///home/nika/Documents/ENSIASD/tec_web/miniprojet/v2/forum has been opened
+2025-05-17 01:46:54.220 [info] [Activation] Git initialization state changed: state=initialized
+2025-05-17 01:46:54.220 [info] [Review+0] Validate state in progress
+2025-05-17 01:46:54.220 [info] [Review+0] Validating state...
+2025-05-17 01:46:54.224 [info] [FolderRepositoryManager+0] Found GitHub remote for folder /home/nika/Documents/ENSIASD/tec_web/miniprojet/v2/forum
+2025-05-17 01:46:54.228 [info] [FolderRepositoryManager+0] Trying to use globalState for assignableUsers.
+2025-05-17 01:46:54.259 [info] [FolderRepositoryManager+0] Using globalState assignableUsers for 0.
+2025-05-17 01:46:54.261 [info] [Review+0] No matching pull request metadata found locally for current branch main
+2025-05-17 01:46:54.262 [info] [Review+0] No matching pull request metadata found on GitHub for current branch main
+2025-05-17 01:46:54.306 [info] [Review+0] Validate state in progress
+2025-05-17 01:46:54.306 [info] [Review+0] Validating state...
+2025-05-17 01:46:54.306 [info] [Activation] Repo state for file:///home/nika/Documents/ENSIASD/tec_web/miniprojet/v2/forum changed.
+2025-05-17 01:46:54.306 [info] [Activation] Repo file:///home/nika/Documents/ENSIASD/tec_web/miniprojet/v2/forum has already been setup.
+2025-05-17 01:46:54.362 [info] [FolderRepositoryManager+0] Found GitHub remote for folder /home/nika/Documents/ENSIASD/tec_web/miniprojet/v2/forum
+2025-05-17 01:46:54.363 [info] [FolderRepositoryManager+0] Using in-memory cached assignable users.
+2025-05-17 01:46:54.384 [info] [Review+0] No matching pull request metadata found locally for current branch main
+2025-05-17 01:46:54.384 [info] [Review+0] No matching pull request metadata found on GitHub for current branch main
+2025-05-17 01:47:37.094 [info] [Authentication] Creating hub for .com
+2025-05-17 01:47:37.096 [info] [Authentication] Creating hub for .com
+2025-05-17 01:47:37.098 [info] [Authentication] Creating hub for .com
+2025-05-17 01:47:37.232 [info] [FolderRepositoryManager+0] Found GitHub remote for folder /home/nika/Documents/ENSIASD/tec_web/miniprojet/v2/forum
+2025-05-17 01:47:37.846 [info] [FolderRepositoryManager+0] Trying to use globalState for assignableUsers.
+2025-05-17 01:47:37.877 [info] [FolderRepositoryManager+0] Using globalState assignableUsers for 1.

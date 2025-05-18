@@ -1,0 +1,187 @@
+[Info  - 1:12:11 AM] Initialising intelephense 1.14.4
+[Info  - 1:12:11 AM] Initialised in 7 ms
+[Info  - 1:12:11 AM] Searching file:///root/.vscode/extensions/bmewburn.vscode-intelephense-client-1.14.4/node_modules/intelephense/lib/stub for files to index.
+[Info  - 1:12:11 AM] Searching file:///home/nika/Documents/ENSIASD/tec_web/miniprojet/forum for files to index.
+[Warn  - 1:12:11 AM] file:///home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/vendor/fakerphp/faker/src/Faker/Provider/nl_BE/Text.php is over the maximum file size of 1000000 bytes.
+[Info  - 1:12:11 AM] Indexing started.
+[Info  - 1:12:12 AM] Searching file:///home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/no%20sandbox/User/workspaceStorage/6c693476214a78b9c9725f103b965754/bmewburn.vscode-intelephense-client for files to index.
+[Info  - 1:12:18 AM] Indexing ended. 7785 files indexed in 6s.
+[Info  - 1:12:18 AM] Writing state to /home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/no sandbox/User/workspaceStorage/6c693476214a78b9c9725f103b965754/bmewburn.vscode-intelephense-client/4f080b67.
+[Info  - 1:12:19 AM] Wrote state in 0.5s.
+[Info  - 1:16:26 AM] Searching file:///home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/no%20sandbox/Backups/aafafb34dd19ed880a1f94015ed6fcf4/file for files to index.
+[Info  - 1:16:26 AM] Searching file:///home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/no%20sandbox/Backups/aafafb34dd19ed880a1f94015ed6fcf4 for files to index.
+[Info  - 1:19:57 AM] Searching file:///home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/storage for files to index.
+[Info  - 1:19:57 AM] Searching file:///home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/storage/app for files to index.
+[Info  - 1:19:57 AM] Searching file:///home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/storage/app/private for files to index.
+[Info  - 1:19:57 AM] Searching file:///home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/storage/framework for files to index.
+[Info  - 1:19:57 AM] Searching file:///home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/storage/framework/cache for files to index.
+[Info  - 1:19:57 AM] Searching file:///home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/storage/framework/cache/data for files to index.
+[Info  - 1:19:57 AM] Searching file:///home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/storage/framework/sessions for files to index.
+[Info  - 1:19:57 AM] Searching file:///home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/storage/framework/testing for files to index.
+[Info  - 1:19:57 AM] Searching file:///home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/storage/framework/views for files to index.
+[Info  - 1:19:57 AM] Searching file:///home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/storage/logs for files to index.
+[Info  - 1:19:57 AM] Indexing started.
+[Info  - 1:19:57 AM] Indexing ended. 196 files indexed in 0s.
+[Warn  - 1:20:23 AM] Error: ENOENT: no such file or directory, stat '/home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/public/storage'
+[Info  - 1:20:23 AM] Searching file:///home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/storage for files to index.
+[Info  - 1:20:23 AM] Searching file:///home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/storage/app for files to index.
+[Info  - 1:20:23 AM] Searching file:///home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/storage/app/private for files to index.
+[Info  - 1:20:23 AM] Searching file:///home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/storage/framework for files to index.
+[Info  - 1:20:23 AM] Searching file:///home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/storage/framework/cache for files to index.
+[Info  - 1:20:23 AM] Searching file:///home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/storage/framework/cache/data for files to index.
+[Info  - 1:20:23 AM] Searching file:///home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/storage/framework/sessions for files to index.
+[Info  - 1:20:23 AM] Searching file:///home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/storage/framework/testing for files to index.
+[Info  - 1:20:23 AM] Searching file:///home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/storage/framework/views for files to index.
+[Info  - 1:20:23 AM] Searching file:///home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/storage/logs for files to index.
+[Info  - 1:20:23 AM] Indexing started.
+[Info  - 1:20:23 AM] Indexing ended. 196 files indexed in 0s.
+[Warn  - 1:22:28 AM] Error: ENOENT: no such file or directory, stat '/home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/public/storage'
+[Info  - 1:23:59 AM] Indexing started.
+[Info  - 1:23:59 AM] Indexing ended. 1 files indexed in 0s.
+[Info  - 1:27:09 AM] Searching file:///home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/resources/views/questions for files to index.
+[Warn  - 1:30:40 AM] Error: ENOENT: no such file or directory, stat '/home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/no sandbox/User/globalStorage/storage.json.vsctmp'
+[Warn  - 1:30:42 AM] Error: ENOENT: no such file or directory, stat '/home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/no sandbox/User/globalStorage/state.vscdb-journal'
+[Warn  - 1:30:42 AM] Error: ENOENT: no such file or directory, stat '/home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/no sandbox/User/workspaceStorage/6c693476214a78b9c9725f103b965754/state.vscdb-journal'
+[Warn  - 1:46:58 AM] Error: ENOENT: no such file or directory, stat '/home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/no sandbox/User/globalStorage/state.vscdb-journal'
+[Warn  - 1:46:58 AM] Error: ENOENT: no such file or directory, stat '/home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/no sandbox/User/workspaceStorage/6c693476214a78b9c9725f103b965754/state.vscdb-journal'
+[Warn  - 1:47:01 AM] Error: ENOENT: no such file or directory, stat '/home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/no sandbox/User/workspaceStorage/6c693476214a78b9c9725f103b965754/state.vscdb-journal'
+[Info  - 1:48:09 AM] Indexing started.
+[Info  - 1:48:09 AM] Indexing ended. 1 files indexed in 0s.
+[Info  - 1:52:59 AM] Indexing started.
+[Info  - 1:52:59 AM] Indexing ended. 2 files indexed in 0s.
+[Info  - 1:53:02 AM] Indexing started.
+[Info  - 1:53:02 AM] Indexing ended. 1 files indexed in 0s.
+[Info  - 1:53:03 AM] Indexing started.
+[Info  - 1:53:03 AM] Indexing ended. 1 files indexed in 0s.
+[Info  - 1:53:57 AM] Indexing started.
+[Info  - 1:53:57 AM] Indexing ended. 1 files indexed in 0s.
+[Info  - 12:34:28 PM] Indexing started.
+[Info  - 12:34:29 PM] Indexing ended. 1 files indexed in 0s.
+[Info  - 12:39:08 PM] Searching file:///home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/no%20sandbox/User/History/-22574c25 for files to index.
+[Info  - 12:39:08 PM] Indexing started.
+[Info  - 12:39:09 PM] Indexing ended. 3 files indexed in 0s.
+[Warn  - 12:39:13 PM] Error: ENOENT: no such file or directory, stat '/home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/no sandbox/User/globalStorage/state.vscdb-journal'
+[Warn  - 12:39:13 PM] Error: ENOENT: no such file or directory, stat '/home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/no sandbox/User/workspaceStorage/6c693476214a78b9c9725f103b965754/state.vscdb-journal'
+[Warn  - 12:44:58 PM] Error: ENOENT: no such file or directory, stat '/home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/no sandbox/User/globalStorage/state.vscdb-journal'
+[Warn  - 12:44:58 PM] Error: ENOENT: no such file or directory, stat '/home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/no sandbox/User/workspaceStorage/6c693476214a78b9c9725f103b965754/state.vscdb-journal'
+[Info  - 12:45:18 PM] Indexing started.
+[Info  - 12:45:18 PM] Indexing ended. 1 files indexed in 0s.
+[Warn  - 12:52:33 PM] Error: ENOENT: no such file or directory, stat '/home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/no sandbox/User/globalStorage/state.vscdb-journal'
+[Warn  - 12:52:33 PM] Error: ENOENT: no such file or directory, stat '/home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/no sandbox/User/workspaceStorage/6c693476214a78b9c9725f103b965754/state.vscdb-journal'
+[Warn  - 12:52:37 PM] Error: ENOENT: no such file or directory, stat '/home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/no sandbox/User/globalStorage/state.vscdb-journal'
+[Warn  - 12:52:37 PM] Error: ENOENT: no such file or directory, stat '/home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/no sandbox/User/workspaceStorage/6c693476214a78b9c9725f103b965754/state.vscdb-journal'
+[Info  - 12:52:45 PM] Indexing started.
+[Info  - 12:52:45 PM] Indexing ended. 2 files indexed in 0s.
+[Info  - 12:52:48 PM] Indexing started.
+[Info  - 12:52:48 PM] Indexing ended. 1 files indexed in 0s.
+[Info  - 12:53:12 PM] Indexing started.
+[Info  - 12:53:12 PM] Indexing ended. 2 files indexed in 0s.
+[Info  - 12:53:14 PM] Indexing started.
+[Info  - 12:53:14 PM] Indexing ended. 1 files indexed in 0s.
+[Info  - 12:54:52 PM] Indexing started.
+[Info  - 12:54:52 PM] Indexing ended. 2 files indexed in 0s.
+[Info  - 12:54:55 PM] Indexing started.
+[Info  - 12:54:55 PM] Indexing ended. 1 files indexed in 0s.
+[Warn  - 12:57:15 PM] Error: ENOENT: no such file or directory, stat '/home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/no sandbox/Backups/aafafb34dd19ed880a1f94015ed6fcf4/file/e848fe9'
+[Info  - 12:57:15 PM] Indexing started.
+[Info  - 12:57:15 PM] Indexing ended. 2 files indexed in 0s.
+[Info  - 12:57:17 PM] Indexing started.
+[Info  - 12:57:17 PM] Indexing ended. 1 files indexed in 0s.
+[Info  - 12:57:40 PM] Indexing started.
+[Info  - 12:57:40 PM] Indexing ended. 2 files indexed in 0s.
+[Info  - 12:57:43 PM] Indexing started.
+[Info  - 12:57:44 PM] Indexing ended. 1 files indexed in 0s.
+[Warn  - 12:59:06 PM] Error: ENOENT: no such file or directory, stat '/home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/no sandbox/Backups/aafafb34dd19ed880a1f94015ed6fcf4/file/e848fe9'
+[Info  - 12:59:06 PM] Indexing started.
+[Info  - 12:59:07 PM] Indexing ended. 2 files indexed in 0s.
+[Info  - 12:59:09 PM] Indexing started.
+[Info  - 12:59:10 PM] Indexing ended. 1 files indexed in 0s.
+[Warn  - 1:00:04 PM] Error: ENOENT: no such file or directory, stat '/home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/no sandbox/Backups/aafafb34dd19ed880a1f94015ed6fcf4/file/e848fe9'
+[Info  - 1:00:04 PM] Indexing started.
+[Info  - 1:00:05 PM] Indexing ended. 2 files indexed in 0s.
+[Info  - 1:00:07 PM] Indexing started.
+[Info  - 1:00:07 PM] Indexing ended. 1 files indexed in 0s.
+[Info  - 1:01:43 PM] Indexing started.
+[Info  - 1:01:44 PM] Indexing ended. 2 files indexed in 0s.
+[Info  - 1:01:48 PM] Indexing started.
+[Info  - 1:01:48 PM] Indexing ended. 1 files indexed in 0s.
+[Info  - 1:02:50 PM] Indexing started.
+[Info  - 1:02:50 PM] Indexing ended. 2 files indexed in 0s.
+[Info  - 1:02:53 PM] Indexing started.
+[Info  - 1:02:53 PM] Indexing ended. 1 files indexed in 0s.
+[Info  - 1:19:18 PM] Indexing started.
+[Info  - 1:19:18 PM] Indexing ended. 1 files indexed in 0s.
+[Info  - 1:19:57 PM] Indexing started.
+[Info  - 1:19:57 PM] Indexing ended. 1 files indexed in 0s.
+[Info  - 1:21:09 PM] Indexing started.
+[Info  - 1:21:09 PM] Indexing ended. 3 files indexed in 0s.
+[Info  - 1:21:19 PM] Indexing started.
+[Info  - 1:21:19 PM] Indexing ended. 1 files indexed in 0s.
+[Info  - 1:23:48 PM] Indexing started.
+[Info  - 1:23:48 PM] Indexing ended. 1 files indexed in 0s.
+[Info  - 1:24:21 PM] Indexing started.
+[Info  - 1:24:22 PM] Indexing ended. 2 files indexed in 0s.
+[Warn  - 1:26:32 PM] Error: ENOENT: no such file or directory, stat '/home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/no sandbox/User/globalStorage/state.vscdb-journal'
+[Warn  - 1:26:32 PM] Error: ENOENT: no such file or directory, stat '/home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/no sandbox/User/workspaceStorage/6c693476214a78b9c9725f103b965754/state.vscdb-journal'
+[Info  - 1:26:52 PM] Indexing started.
+[Info  - 1:26:52 PM] Indexing ended. 1 files indexed in 0s.
+[Info  - 1:27:19 PM] Indexing started.
+[Info  - 1:27:20 PM] Indexing ended. 1 files indexed in 0s.
+[Info  - 1:27:49 PM] Indexing started.
+[Info  - 1:27:49 PM] Indexing ended. 1 files indexed in 0s.
+[Info  - 1:29:07 PM] Indexing started.
+[Info  - 1:29:07 PM] Indexing ended. 1 files indexed in 0s.
+[Info  - 1:30:15 PM] Indexing started.
+[Info  - 1:30:16 PM] Indexing ended. 1 files indexed in 0s.
+[Info  - 1:30:19 PM] Indexing started.
+[Info  - 1:30:19 PM] Indexing ended. 1 files indexed in 0s.
+[Info  - 1:39:41 PM] Indexing started.
+[Info  - 1:39:41 PM] Indexing ended. 1 files indexed in 0s.
+[Info  - 1:40:11 PM] Indexing started.
+[Info  - 1:40:12 PM] Indexing ended. 1 files indexed in 0s.
+[Warn  - 1:40:36 PM] Error: ENOENT: no such file or directory, stat '/home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/no sandbox/Backups/aafafb34dd19ed880a1f94015ed6fcf4/file/227c2187'
+[Info  - 1:40:36 PM] Indexing started.
+[Info  - 1:40:37 PM] Indexing ended. 2 files indexed in 0s.
+[Info  - 1:40:40 PM] Indexing started.
+[Info  - 1:40:40 PM] Indexing ended. 1 files indexed in 0s.
+[Info  - 1:41:28 PM] Indexing started.
+[Info  - 1:41:28 PM] Indexing ended. 1 files indexed in 0s.
+[Warn  - 1:43:00 PM] Error: ENOENT: no such file or directory, stat '/home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/no sandbox/User/workspaceStorage/6c693476214a78b9c9725f103b965754/state.vscdb-journal'
+[Warn  - 1:43:00 PM] Error: ENOENT: no such file or directory, stat '/home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/no sandbox/User/globalStorage/state.vscdb-journal'
+[Info  - 2:01:35 PM] Indexing started.
+[Info  - 2:01:35 PM] Indexing ended. 1 files indexed in 0s.
+[Info  - 2:01:48 PM] Searching file:///home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/no%20sandbox/User/History/-359549ba for files to index.
+[Info  - 2:01:48 PM] Indexing started.
+[Info  - 2:01:48 PM] Indexing ended. 2 files indexed in 0s.
+[Info  - 2:04:33 PM] Indexing started.
+[Info  - 2:04:33 PM] Indexing ended. 1 files indexed in 0s.
+[Info  - 2:05:32 PM] Indexing started.
+[Info  - 2:05:32 PM] Indexing ended. 1 files indexed in 0s.
+[Info  - 2:08:25 PM] Indexing started.
+[Info  - 2:08:26 PM] Indexing ended. 2 files indexed in 0s.
+[Info  - 2:08:29 PM] Indexing started.
+[Info  - 2:08:29 PM] Indexing ended. 1 files indexed in 0s.
+[Warn  - 2:09:59 PM] Error: ENOENT: no such file or directory, stat '/home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/no sandbox/User/globalStorage/state.vscdb-journal'
+[Warn  - 2:09:59 PM] Error: ENOENT: no such file or directory, stat '/home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/no sandbox/User/workspaceStorage/6c693476214a78b9c9725f103b965754/state.vscdb-journal'
+[Info  - 2:11:27 PM] Indexing started.
+[Info  - 2:11:28 PM] Indexing ended. 1 files indexed in 0s.
+[Info  - 2:11:37 PM] Indexing started.
+[Info  - 2:11:37 PM] Indexing ended. 1 files indexed in 0s.
+[Warn  - 2:15:55 PM] Error: ENOENT: no such file or directory, stat '/home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/no sandbox/Backups/aafafb34dd19ed880a1f94015ed6fcf4/file/-797e7ece'
+[Info  - 2:15:55 PM] Indexing started.
+[Info  - 2:15:55 PM] Indexing ended. 1 files indexed in 0s.
+[Info  - 2:16:04 PM] Indexing started.
+[Info  - 2:16:04 PM] Indexing ended. 1 files indexed in 0s.
+[Warn  - 2:16:31 PM] Error: ENOENT: no such file or directory, stat '/home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/no sandbox/Backups/aafafb34dd19ed880a1f94015ed6fcf4/file/6995f03c'
+[Info  - 2:16:32 PM] Indexing started.
+[Info  - 2:16:32 PM] Indexing ended. 1 files indexed in 0s.
+[Warn  - 2:21:02 PM] Error: ENOENT: no such file or directory, stat '/home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/no sandbox/User/workspaceStorage/6c693476214a78b9c9725f103b965754/state.vscdb-journal'
+[Warn  - 2:21:09 PM] Error: ENOENT: no such file or directory, stat '/home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/no sandbox/Backups/aafafb34dd19ed880a1f94015ed6fcf4/file/-5733c647'
+[Info  - 2:21:09 PM] Indexing started.
+[Info  - 2:21:09 PM] Indexing ended. 2 files indexed in 0s.
+[Info  - 2:21:14 PM] Indexing started.
+[Info  - 2:21:15 PM] Indexing ended. 1 files indexed in 0s.
+[Warn  - 2:21:39 PM] Error: ENOENT: no such file or directory, stat '/home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/no sandbox/User/globalStorage/state.vscdb-journal'
+[Warn  - 2:21:39 PM] Error: ENOENT: no such file or directory, stat '/home/nika/Documents/ENSIASD/tec_web/miniprojet/forum/no sandbox/User/workspaceStorage/6c693476214a78b9c9725f103b965754/state.vscdb-journal'
+[Info  - 2:21:47 PM] Indexing started.
+[Info  - 2:21:48 PM] Indexing ended. 1 files indexed in 0s.

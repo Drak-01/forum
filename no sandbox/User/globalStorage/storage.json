@@ -14,7 +14,8 @@
     "windowControlHeight": 35,
     "profileAssociations": {
         "workspaces": {
-            "file:///home/nika/Documents/ENSIASD/tec_web/miniprojet/forum": "__default__profile__"
+            "file:///home/nika/Documents/ENSIASD/tec_web/miniprojet/forum": "__default__profile__",
+            "file:///home/nika/Documents/ENSIASD/tec_web/miniprojet/v2/forum": "__default__profile__"
         },
         "emptyWindows": {}
     },
@@ -56,10 +57,26 @@
             "editorPartMinWidth": 220,
             "titleBarHeight": 35,
             "activityBarWidth": 48,
-            "sideBarWidth": 349,
+            "sideBarWidth": 332,
             "auxiliarySideBarWidth": 0,
             "statusBarHeight": 22,
             "windowBorder": false
+        }
+    },
+    "windowSplashWorkspaceOverride": {
+        "layoutInfo": {
+            "sideBarWidth": 332,
+            "auxiliaryBarWidth": 300,
+            "workspaces": {
+                "349b9fdb98db9eba6ac329785c1240e9": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": false
+                },
+                "6c693476214a78b9c9725f103b965754": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": false
+                }
+            }
         }
     }
 }

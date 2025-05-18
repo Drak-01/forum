@@ -1,0 +1,1 @@
+[Error - 1:27:32 AM] Notification handler 'workspace/didChangeConfiguration' failed with message: emmetExtensionsPath.trim is not a function

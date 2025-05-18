@@ -1,0 +1,205 @@
+2025-05-18 01:10:01.199 [info] Started local extension host with pid 180307.
+2025-05-18 01:10:01.231 [info] ComputeTargetPlatform: linux-x64
+2025-05-18 01:10:02.520 [info] Settings Sync: Account status changed from uninitialized to unavailable
+2025-05-18 01:10:03.786 [info] [perf] Render performance baseline is 22ms
+2025-05-18 01:12:12.188 [error] An unknown error occurred. Please consult the log for more details.
+2025-05-18 12:57:28.685 [error] [Extension Host] [default] Error sending telemetry FetchError: read ECONNRESET
+    at fetch (/root/.vscode/extensions/github.copilot-1.322.0/node_modules/@adobe/helix-fetch/src/fetch/index.js:99:11)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at cachingFetch (/root/.vscode/extensions/github.copilot-1.322.0/node_modules/@adobe/helix-fetch/src/fetch/index.js:288:16)
+    at aI.fetch (/root/.vscode/extensions/github.copilot-1.322.0/lib/src/network/helix.ts:94:22) {
+  type: 'system',
+  _name: 'FetchError',
+  code: 'ECONNRESET',
+  errno: -104,
+  erroredSysCall: 'read'
+}
+2025-05-18 13:23:54.486 [error] 
+   TypeError 
+
+  trim(): Argument #1 ($string) must be of type string, Closure given
+
+  at vendor/laravel/framework/src/Illuminate/Routing/Router.php:684
+    680▕      * @return string
+    681▕      */
+    682▕     protected function prefix($uri)
+    683▕     {
+  ➜ 684▕         return trim(trim($this->getLastGroupPrefix(), '/').'/'.trim($uri, '/'), '/') ?: '/';
+    685▕     }
+    686▕ 
+    687▕     /**
+    688▕      * Add the necessary where clauses to the route based on its initial registration.
+
+      [2m+5 vendor frames [22m
+
+  6   routes/web.php:52
+      Illuminate\Support\Facades\Facade::__callStatic()
+      [2m+3 vendor frames [22m
+
+  10  routes/web.php:45
+      Illuminate\Routing\RouteRegistrar::group()
+
+
+2025-05-18 13:23:59.506 [error] [Extension Host] 
+   TypeError 
+
+  trim(): Argument #1 ($string) must be of type string, Closure given
+
+  at vendor/laravel/framework/src/Illuminate/Routing/Router.php:684
+    680▕      * @return string
+    681▕      */
+    682▕     protected function prefix($uri)
+    683▕     {
+  ➜ 684▕         return trim(trim($this->getLastGroupPrefix(), '/').'/'.trim($uri, '/'), '/') ?: '/';
+    685▕     }
+    686▕ 
+    687▕     /**
+    688▕      * Add the necessary where clauses to the route based on its initial registration.
+
+      [2m+5 vendor frames [22m
+
+  6   routes/web.php:52
+      Illuminate\Support\Facades\Facade::__callStatic()
+      [2m+3 vendor frames [22m
+
+  10  routes/web.php:45
+      Illuminate\Routing\RouteRegistrar::group()
+
+
+2025-05-18 13:24:00.524 [error] 
+   TypeError 
+
+  trim(): Argument #1 ($string) must be of type string, Closure given
+
+  at vendor/laravel/framework/src/Illuminate/Routing/Router.php:684
+    680▕      * @return string
+    681▕      */
+    682▕     protected function prefix($uri)
+    683▕     {
+  ➜ 684▕         return trim(trim($this->getLastGroupPrefix(), '/').'/'.trim($uri, '/'), '/') ?: '/';
+    685▕     }
+    686▕ 
+    687▕     /**
+    688▕      * Add the necessary where clauses to the route based on its initial registration.
+
+      [2m+5 vendor frames [22m
+
+  6   routes/web.php:52
+      Illuminate\Support\Facades\Facade::__callStatic()
+      [2m+3 vendor frames [22m
+
+  10  routes/web.php:45
+      Illuminate\Routing\RouteRegistrar::group()
+
+
+2025-05-18 13:24:59.524 [error] [Extension Host] 
+   TypeError 
+
+  trim(): Argument #1 ($string) must be of type string, Closure given
+
+  at vendor/laravel/framework/src/Illuminate/Routing/Router.php:684
+    680▕      * @return string
+    681▕      */
+    682▕     protected function prefix($uri)
+    683▕     {
+  ➜ 684▕         return trim(trim($this->getLastGroupPrefix(), '/').'/'.trim($uri, '/'), '/') ?: '/';
+    685▕     }
+    686▕ 
+    687▕     /**
+    688▕      * Add the necessary where clauses to the route based on its initial registration.
+
+      [2m+5 vendor frames [22m
+
+  6   routes/web.php:52
+      Illuminate\Support\Facades\Facade::__callStatic()
+      [2m+3 vendor frames [22m
+
+  10  routes/web.php:45
+      Illuminate\Routing\RouteRegistrar::group()
+
+
+2025-05-18 13:25:00.519 [error] 
+   TypeError 
+
+  trim(): Argument #1 ($string) must be of type string, Closure given
+
+  at vendor/laravel/framework/src/Illuminate/Routing/Router.php:684
+    680▕      * @return string
+    681▕      */
+    682▕     protected function prefix($uri)
+    683▕     {
+  ➜ 684▕         return trim(trim($this->getLastGroupPrefix(), '/').'/'.trim($uri, '/'), '/') ?: '/';
+    685▕     }
+    686▕ 
+    687▕     /**
+    688▕      * Add the necessary where clauses to the route based on its initial registration.
+
+      [2m+5 vendor frames [22m
+
+  6   routes/web.php:52
+      Illuminate\Support\Facades\Facade::__callStatic()
+      [2m+3 vendor frames [22m
+
+  10  routes/web.php:45
+      Illuminate\Routing\RouteRegistrar::group()
+
+
+2025-05-18 13:25:59.578 [error] [Extension Host] 
+   TypeError 
+
+  trim(): Argument #1 ($string) must be of type string, Closure given
+
+  at vendor/laravel/framework/src/Illuminate/Routing/Router.php:684
+    680▕      * @return string
+    681▕      */
+    682▕     protected function prefix($uri)
+    683▕     {
+  ➜ 684▕         return trim(trim($this->getLastGroupPrefix(), '/').'/'.trim($uri, '/'), '/') ?: '/';
+    685▕     }
+    686▕ 
+    687▕     /**
+    688▕      * Add the necessary where clauses to the route based on its initial registration.
+
+      [2m+5 vendor frames [22m
+
+  6   routes/web.php:52
+      Illuminate\Support\Facades\Facade::__callStatic()
+      [2m+3 vendor frames [22m
+
+  10  routes/web.php:45
+      Illuminate\Routing\RouteRegistrar::group()
+
+
+2025-05-18 13:26:00.588 [error] 
+   TypeError 
+
+  trim(): Argument #1 ($string) must be of type string, Closure given
+
+  at vendor/laravel/framework/src/Illuminate/Routing/Router.php:684
+    680▕      * @return string
+    681▕      */
+    682▕     protected function prefix($uri)
+    683▕     {
+  ➜ 684▕         return trim(trim($this->getLastGroupPrefix(), '/').'/'.trim($uri, '/'), '/') ?: '/';
+    685▕     }
+    686▕ 
+    687▕     /**
+    688▕      * Add the necessary where clauses to the route based on its initial registration.
+
+      [2m+5 vendor frames [22m
+
+  6   routes/web.php:52
+      Illuminate\Support\Facades\Facade::__callStatic()
+      [2m+3 vendor frames [22m
+
+  10  routes/web.php:45
+      Illuminate\Routing\RouteRegistrar::group()
+
+
+2025-05-18 14:03:46.328 [error] Cannot read properties of undefined (reading 'toLowerCase'): TypeError: Cannot read properties of undefined (reading 'toLowerCase')
+    at new cJi (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:435:28330)
+    at p (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:435:30987)
+    at vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:435:31734
+    at async Promise.all (index 4)
+    at async xce (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:435:31462)
+    at async Promise.all (index 0)
