@@ -11,7 +11,7 @@
                     Questions
                 </a>
             </li>
-            <li class="{{ Request::is('tags*') ? 'active' : '' }}">
+            {{-- <li class="{{ Request::is('tags*') ? 'active' : '' }}">
                 <a href="{{ route('tags.index') }}">
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -19,7 +19,7 @@
                     </svg>
                     Tags
                 </a>
-            </li>
+            </li> --}}
         
             <li class="{{ Request::is('ranking*') ? 'active' : '' }}">
                 <a href="{{ route('ranking.index') }}">
@@ -32,13 +32,20 @@
             </li>
             
             <li class="nav-item">
-                <a href="{{ auth()->check() ? route('user.user.groups') : route('login.index', ['intended' => 'user.user.groups']) }}" 
+                <a href="{{ route('groups') }}" 
                    class="nav-link d-flex align-items-center gap-2">
                     <i class="bi bi-people-fill flex-shrink-0" style="font-size: 1.1rem;"></i>
-                    <span class="flex-grow-1">Mes Groupes</span>
+                    <span class="flex-grow-1">Groupes</span>
                 </a>
             </li>
-            
+
+            <li class="nav-item">
+                <a href="{{ auth()->check() ? route('user.activites') : route('login.index', ['intended' => 'user.user.groups']) }}" 
+                   class="nav-link d-flex align-items-center gap-2">
+                    <i class="bi-activity flex-shrink-0" style="font-size: 1.1rem;"></i>
+                    <span class="flex-grow-1">Activités</span>
+                </a>
+            </li>
        
         </ul>
     </nav>

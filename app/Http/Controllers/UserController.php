@@ -6,6 +6,12 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Storage;
+use App\Models\Question;
+use App\Models\User;
+use App\Models\Group;
+use App\Models\Reponse;
+use App\Models\Tag;
+
 class UserController extends Controller
 {
     //
@@ -48,8 +54,60 @@ class UserController extends Controller
                ->with('success', 'Profil mis à jour avec succès');
     }
 
-    public function ranking(){ //Lister des utilisateurs les plus note
-        return view('users.profile.ranking'); 
+    public function ranking()
+    {
+        // Classement des utilisateurs
+        $topUsersByQuestions = User::withCount('questions')
+                                  ->orderByDesc('questions_count')
+                                  ->limit(10)
+                                  ->get();
+
+        $topUsersByAnswers = User::withCount('reponses')
+                                ->orderByDesc('reponses_count')
+                                ->limit(10)
+                                ->get();
+
+        // Classement des questions
+        $topQuestions = Question::withCount('reponses')
+                               ->with('user')
+                               ->orderByDesc('reponses_count')
+                               ->limit(10)
+                               ->get();
+
+        // Classement des groupes
+        $topGroupsByActivity = Group::withCount('questions')
+                                   ->orderByDesc('questions_count')
+                                   ->limit(10)
+                                   ->get();
+
+        $topGroupsByMembers = Group::withCount('users')
+                                  ->orderByDesc('users_count')
+                                  ->limit(10)
+                                  ->get();
+
+        // Classement des réponses
+        $topAnswers = Reponse::select('reponses.*')
+                    ->join('votes', 'votes.reponse_id', '=', 'reponses.id')
+                    ->orderByDesc('votes.nbreVote')
+                    ->with(['user', 'question'])
+                    ->limit(10)
+                    ->get();
+
+        // Classement des tags (si vous avez cette table)
+        $popularTags = Tag::withCount('questions')
+                         ->orderByDesc('questions_count')
+                         ->limit(10)
+                         ->get();
+
+        return view('users.profile.ranking', [
+            'topUsersByQuestions' => $topUsersByQuestions,
+            'topUsersByAnswers' => $topUsersByAnswers,
+            'topQuestions' => $topQuestions,
+            'topGroupsByActivity' => $topGroupsByActivity,
+            'topGroupsByMembers' => $topGroupsByMembers,
+            'topAnswers' => $topAnswers,
+            'popularTags' => $popularTags
+        ]);
     }
  
 }

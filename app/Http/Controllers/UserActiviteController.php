@@ -11,7 +11,21 @@ class UserActiviteController extends Controller
     public function index()
     { // Le groupe qui sera afficher par défaut
 
-        return view('users.profile.useGroupe');
+        $user = auth()->user();
+
+        $groups = $user->createdGroups()
+            ->withCount('users')
+            ->orderBy('id', 'desc')
+            ->paginate(10);
+
+        $memberGroups = $user->groups()
+            ->withCount('users')
+            ->orderBy('id', 'desc')
+            ->paginate(10);
+
+        return view('users.groups.index', compact('groups', 'memberGroups'));
+
+        // return view('users.profile.activite', compact('groups', 'memberGroups'));
     }
 
     public function useQuestions()

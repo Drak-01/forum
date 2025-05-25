@@ -13,16 +13,16 @@
         <div class="collapse navbar-collapse" id="navbarContent">
             <!-- Liens de navigation -->
             <ul class="navbar-nav me-auto">
-                <li class="nav-item">
+                {{-- <li class="nav-item">
                     <a href="#" class="nav-link">About</a>
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link">Contact</a>
-                </li>
+                </li> --}}
             </ul>
             
             <!-- Barre de recherche (visible sur desktop) -->
-            <form class="d-none d-md-flex position-relative mx-3" method="GET" style="width: 400px;">
+            <form class="d-none d-md-flex position-relative mx-3" action="{{ route('questions.search') }}" method="GET" style="width: 400px;">
                 <input class="form-control rounded-pill pe-5" 
                        type="search" 
                        placeholder="Rechercher..." 
@@ -76,7 +76,7 @@
                         </button>
                         <ul class="dropdown-menu dropdown-menu-end">
                             <li><a class="dropdown-item text_color" href="{{ route('user.profile') }}">Profil</a></li>
-                            <li><a class="dropdown-item text_color" href="{{ route('user.activites') }}">Activité</a></li>
+                            {{-- <li><a class="dropdown-item text_color" href="{{ route('user.activites') }}">Activité</a></li> --}}
                             <li><hr class="dropdown-divider"></li>
                             <li>
                                 <form method="POST" action="{{ route('logout') }}">

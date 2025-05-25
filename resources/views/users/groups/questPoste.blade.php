@@ -1,50 +1,37 @@
-@extends('layouts.app')
+@extends('users.groups.group-show')
 
-@section('content')
+@section('content-group')
 <div class="container py-5">
     <div class="mx-auto bg-white p-4 rounded shadow-sm" style="max-width: 720px;">
-        <h1 class="h4 fw-bold text-primary mb-4">Poser une nouvelle question</h1>
-
-        <form action="{{ route('user.questions.store') }}" method="POST">
+    
+        <form action="{{ route('user.group.questions.store', $group->id) }}" method="POST">
             @csrf
-
-            {{-- Titre --}}
+            <input type="hidden" name="contentType" value="question">
+            <!-- Titre -->
             <div class="mb-3">
-                <label for="title" class="form-label">Titre de la question</label>
-                <input type="text" id="title" name="title" required class="form-control @error('title') is-invalid @enderror"
-                    placeholder="Quelle est votre question ?">
+                <label for="title" class="form-label">Titre *</label>
+                <input type="text" id="title" name="title" required 
+                       class="form-control @error('title') is-invalid @enderror"
+                       placeholder="Quelle est votre question ?"
+                       value="{{ old('title') }}">
                 @error('title')
                     <div class="invalid-feedback">{{ $message }}</div>
                 @enderror
             </div>
 
-            {{-- Contenu --}}
+            <!-- Contenu -->
             <div class="mb-3">
-                <label for="content" class="form-label">Détails de la question</label>
+                <label for="content" class="form-label">Détails *</label>
                 <textarea id="content" name="content" rows="6" required
                     class="form-control @error('content') is-invalid @enderror"
-                    placeholder="Décrivez votre question en détails..."></textarea>
+                    placeholder="Décrivez votre question en détails...">{{ old('content') }}</textarea>
                 @error('content')
                     <div class="invalid-feedback">{{ $message }}</div>
                 @enderror
             </div>
 
-            {{-- Type de question --}}
-            <div class="mb-3">
-                <label for="contentType" class="form-label">Type de question</label>
-                <select id="contentType" name="contentType" class="form-select @error('contentType') is-invalid @enderror" required>
-                    <option value="">Sélectionnez un type</option>
-                    <option value="question">Question générale</option>
-                    <option value="help">Demande d'aide</option>
-                    <option value="discussion">Discussion</option>
-                </select>
-                @error('contentType')
-                    <div class="invalid-feedback">{{ $message }}</div>
-                @enderror
-            </div>
-
-            {{-- Tags --}}
-            <div class="mb-3">
+            <!-- Tags -->
+            <div class="mb-3 position-relative">
                 <label class="form-label">Tags</label>
                 <div class="d-flex flex-wrap gap-2 mb-2" id="selected-tags-container">
                     {{-- Tags sélectionnés --}}
@@ -60,30 +47,18 @@
                 @enderror
             </div>
 
-            {{-- Groupe --}}
-            <div class="mb-3">
-                <label for="group_id" class="form-label">Groupe (optionnel)</label>
-                <select id="group_id" name="group_id" class="form-select">
-                    <option value="">Aucun groupe</option>
-                    @foreach ($groups as $group)
-                        <option value="{{ $group->id }}">{{ $group->name }}</option>
-                    @endforeach
-                </select>
-            </div>
-
-            {{-- Bouton --}}
-            <div class="text-end">
+            <!-- Boutons -->
+            <div class="d-flex justify-content-between">
                 <button type="submit" class="btn btn-primary">
-                    Publier la question
+                    <i class="fas fa-paper-plane me-1"></i> Publier
                 </button>
             </div>
         </form>
     </div>
 </div>
 
-{{-- Script tags Bootstrap --}}
 <script>
-    document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function () {
         const tagSearch = document.getElementById('tag-search');
         const tagSuggestions = document.getElementById('tag-suggestions');
         const selectedTagsContainer = document.getElementById('selected-tags-container');

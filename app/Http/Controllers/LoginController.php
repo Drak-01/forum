@@ -19,41 +19,6 @@ class LoginController extends Controller
         return view('auth.forms.login');
     }
 
-    /**
-     * Traite la tentative de connexion
-     */
-
-    /**
-     * Traite la tentative de connexion et redirige vers la route voulue
-     */
-    // public function check(Request $request)
-    // {
-    //     // 1. Validation des identifiants
-    //     $credentials = $request->validate([
-    //         'univEmail' => 'required|email',
-    //         'password' => 'required|string'
-    //     ]);
-
-    //     // 2. Tentative d'authentification
-    //     if (!Auth::attempt($credentials, $request->boolean('remember'))) {
-    //         return back()->withErrors([
-    //             'email' => 'Identifiants incorrects.',
-    //         ])->onlyInput('email');
-    //     }
-
-    //     // 3. Régénération de session
-    //     $request->session()->regenerate();
-
-    //     // 4. Gestion de la redirection
-    //     $intendedRoute = $request->input('intended');
-    //     dd($request->all());
-    //     if ($intendedRoute && Route::has($intendedRoute)) {
-    //         return redirect()->route($intendedRoute);
-    //     }
-
-    //     // 5. Redirection par défaut si aucune route spécifiée ou invalide
-    //     return redirect()->route('ranking.index');
-    // }
     public function check(Request $request)
     {
         // 1. Validation
@@ -74,7 +39,7 @@ class LoginController extends Controller
         if ($intendedRoute && Route::has($intendedRoute)) {
             return redirect()->route($intendedRoute);
         }
-        return redirect()->route('ranking.index'); // Redirection par défaut
+        return redirect()->route('user.questions.index'); // Redirection par défaut
     }
 
     /**

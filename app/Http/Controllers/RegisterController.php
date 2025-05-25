@@ -49,5 +49,7 @@ class RegisterController extends Controller
         // Rediriger vers la page d'accueil avec un message de succès
         return redirect()->route('questions.index')->with('success', 'Inscription réussie ! Vous êtes maintenant connecté.');
     }
+
+    
    
 }

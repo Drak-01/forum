@@ -171,10 +171,10 @@
         @forelse($question->reponses as $reponse)
             <div class="response-card">
                 <div class="post-header">
-                    <img src="{{ $question->user->userPicture 
-                    ? asset('storage/' . $question->user->userPicture) 
-                    : 'https://i.pravatar.cc/40?img=' . $question->user->id }}"  
-                         alt="Avatar de {{ $reponse->user->username }}" class="avatar">
+                    <img src="{{ $reponse->user->userPicture 
+                    ? asset('storage/' . $reponse->user->userPicture) 
+                    : 'https://i.pravatar.cc/40?img=' . $reponse->user->id }}"  
+                     alt="Avatar de {{ $reponse->user->username }}" class="avatar">
                     <div>
                         <strong>{{ $reponse->user->username }}</strong>
                         <small>{{ $reponse->datePost() }}</small>
@@ -184,8 +184,12 @@
                 <div class="response-content">{{ $reponse->content }}</div>
                 
                 <div class="post-footer">
-                    <button class="vote-btn">⬆️</button>
-                    <span>{{ $reponse->votes->sum('nbreVote') }} votes</span>
+                    <button class="vote-btn {{ $reponse->userHasVoted() ? 'voted' : '' }}" 
+                            data-reponse-id="{{ $reponse->id }}"
+                            ondblclick="voteForResponse(this)">
+                        ⬆️
+                    </button>
+                    <span class="vote-count">{{ $reponse->votesCount() }}</span> votes
                 </div>
             </div>
         @empty
@@ -200,9 +204,47 @@
             <form action="{{ route('user.reponses.store', $question) }}" method="POST">
                 @csrf
                 <textarea name="content" rows="5" placeholder="Votre réponse..." required></textarea>
-                <textarea name="description" rows="3" placeholder="Description supplémentaire (optionnelle)"></textarea>
                 <button type="submit">Envoyer</button>
             </form>
         </div>
     </div>
 @endsection
+
+<script>
+    function voteForResponse(button) {
+    if (!{{ auth()->check() ? 'true' : 'false' }}) {
+        window.location.href = '{{ route('login.index') }}';
+        return;
+    }
+
+    const reponseId = button.dataset.reponseId;
+    button.disabled = true;
+
+    fetch(`/reponses/${reponseId}/vote`, {
+        method: 'POST',
+        headers: {
+            'X-CSRF-TOKEN': '{{ csrf_token() }}',
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+        }
+    })
+    .then(response => {
+        if (!response.ok) throw new Error('Erreur: ' + response.statusText);
+        return response.json();
+    })
+    .then(data => {
+        if (data.success) {
+            const voteCount = button.nextElementSibling;
+            voteCount.textContent = data.votes_count + ' votes';
+            button.classList.toggle('voted', data.has_voted);
+        }
+    })
+    .catch(error => {
+        console.error('Erreur:', error);
+        alert(error.message);
+    })
+    .finally(() => {
+        button.disabled = false;
+    });
+}
+</script>

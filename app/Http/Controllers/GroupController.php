@@ -8,6 +8,10 @@ use Illuminate\Support\Facades\DB;
 use App\Models\User;
 use Illuminate\Support\Facades\Auth;
 use App\Models\Message;
+use App\Models\Question;
+use App\Models\Reponse;
+
+
 class GroupController extends Controller
 {
     // Liste complète des groupes
@@ -32,21 +36,10 @@ class GroupController extends Controller
         return view('users.groups.create');
     }
     
-    public function mesGroupes()
+    public function all()
     {
-        $user = auth()->user();
-
-        $groups = $user->createdGroups()
-            ->withCount('users')
-            ->orderBy('id', 'desc')
-            ->paginate(10);
-
-        $memberGroups = $user->groups()
-            ->withCount('users')
-            ->orderBy('id', 'desc')
-            ->paginate(10);
-
-        return view('users.groups.index', compact('groups', 'memberGroups'));
+        $groups = Group::paginate(10);;
+        return view('users.groups.all-group', compact('groups'));
     }
 
 
@@ -78,13 +71,16 @@ class GroupController extends Controller
                         ->with('success', 'Groupe créé avec succès !');    
     }
 
-    public function show($id)
+    public function show($groupId)
     {
-        //dd("icu");
-        $group = Group::with('messages.user')->findOrFail($id);
-        $messages = Message::where('group_id', $group->id)->with('user')->latest()->get();
+        $group = Group::findOrFail($groupId);
+        
+        $questions = Question::where('group_id', $groupId)
+                        ->selectRaw('questions.*, (SELECT COUNT(*) FROM reponses WHERE questions.id = reponses.question_id) as reponses_count')
+                        ->with(['user', 'tags', 'reponses.user'])
+                        ->get();
 
-        return view('users.groups.questions', compact('group', 'messages'));
+        return view('users.groups.questions', compact('group', 'questions'));
     }
    
     public function showMessages($groupId)
@@ -105,4 +101,115 @@ class GroupController extends Controller
     
         return view('users.groups.membres', compact('group'));
     }
+
+    public function join($groupId)
+    {
+        // Vérifie si l'utilisateur est connecté
+        if (!Auth::check()) {
+            return redirect()->route('login.index')->with('error', 'You must be logged in to join a group.');
+        }
+
+        $user = Auth::user();
+
+        $group = Group::findOrFail($groupId);
+
+        $isMember = $group->users()->where('user_id', $user->id)->exists();
+
+        if (!$isMember) {
+            $group->users()->attach($user->id);
+        }
+
+        return redirect()->back()->with('success', 'You have joined the group successfully.');
+    }
+
+
+    public function showQuestion($groupId, $questionId)
+    {
+        $group = Group::findOrFail($groupId);
+        $question = Question::with(['user', 'tags', 'reponses.user'])
+                          ->withCount('reponses')
+                          ->findOrFail($questionId);
+
+        return view('groups.question-show', compact('group', 'question'));
+    }
+
+    public function storeReponse(Request $request, $groupId, $questionId)
+    {
+        $request->validate([
+            'content' => 'required|string'
+        ]);
+
+        Reponse::create([
+            'content' => $request->content,
+            'question_id' => $questionId,
+            'user_id' => auth()->id()
+        ]);
+
+        return redirect()->back();
+    }
+
+    public function leave(Group $group)
+    {
+        // Vérifier que l'utilisateur est membre du groupe
+        if (!Auth::user()->groups->contains($group->id)) {
+            return redirect()->back()
+                ->with('error', "Vous n'êtes pas membre de ce groupe");
+        }
+
+        // Vérifier si l'utilisateur est le créateur du groupe
+        if ($group->user_id === Auth::id()) {
+            return redirect()->back()
+                ->with('error', "Le créateur ne peut pas quitter le groupe");
+        }
+
+        // Retirer l'utilisateur du groupe
+        Auth::user()->groups()->detach($group->id);
+
+        return redirect()->back()->with('success', 'You have joined the group successfully.');
+
+    }
+
+
+    public function createQuestion($groupId)
+    {
+        $group = Group::findOrFail($groupId); 
+        
+        return view('users.groups.questPoste', [
+            'group' => $group 
+        ]);
+    }
+
+    public function storeQuestion(Request $request, $groupId = null)
+    {
+        $validated = $request->validate([
+            'title' => 'required|string|max:255',
+            'content' => 'required|string',
+            'contentType' => 'required|in:question,help,discussion',
+            'tags' => 'required|json'
+        ]);
+    
+        $questionData = [
+            'title' => $validated['title'],
+            'content' => $validated['content'],
+            'contentType' => $validated['contentType'],
+            'user_id' => Auth::id()
+        ];
+    
+        if ($groupId) {
+            $questionData['group_id'] = $groupId;
+        }
+    
+        $question = Question::create($questionData);
+        
+        // ... gestion des tags ...
+    
+        $redirectRoute = $groupId ? 
+            route('user.group.show', $groupId) : 
+            route('questions.index');
+        
+        return redirect($redirectRoute)->with('success', 'Question publiée!');
+    }
+
+    
+
 }

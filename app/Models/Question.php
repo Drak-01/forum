@@ -43,4 +43,5 @@ class Question extends Model
     {
         return $this->hasMany(Reponse::class)->latest('datePost');
     }
+
 }

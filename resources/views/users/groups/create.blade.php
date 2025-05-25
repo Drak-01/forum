@@ -1,6 +1,6 @@
-@extends('layouts.app')
+@extends('users.profile.activite')
 
-@section('content')
+@section('content-Activites')
 <div class="container py-4 w-100">
     <div class="row justify-content-center">
         <div class="col-md">

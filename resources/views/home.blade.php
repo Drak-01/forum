@@ -210,6 +210,7 @@
         @endforeach
     </div>
 
+
     <div class="pagination">
         {{ $questions->links() }}
     </div>

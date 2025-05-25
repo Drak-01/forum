@@ -1,20 +1,5 @@
 <aside class="right-sidebar m-0">
-    <section class="sidebar-section">
-        <h3>Must-read posts</h3>
-        <ul>
-            <li><a href="#">Please read rules before you start working on a platform</a></li>
-            <li><a href="#">Vision & Strategy of Alemhelp</a></li>
-        </ul>
-    </section>
-    <section class="sidebar-section">
-        <h3>Featured links</h3>
-        <ul>
-            <li><a href="#">Alemhelp source-code on GitHub</a></li>
-            <li><a href="#">Golang best-practices</a></li>
-            <li><a href="#">Alem.School dashboard</a></li>
-        </ul>
-    </section>
-
+    
     <section class="collectives-section">
         <div class="section-header">
             <h3>Collectives</h3>
@@ -41,15 +26,18 @@
                         </p>
 
                         <div class="collective-actions">
-                            <a href="#" class="view-link">View</a>
+                            <a href="{{ route('group.show', $group->id) }}" class="view-link">Voir</a>
                             @if (Auth::check())
                                 @if (!$group->users->contains(Auth::id()))
-                                    <button class="join-btn">Join</button>
+                                    <form action="{{ route('user.group.join', $group->id) }}" method="POST">
+                                        @csrf
+                                        <button type="submit" class="join-btn">Join</button>
+                                    </form>
                                 @else
                                     <span class="member-badge">Member</span>
                                 @endif
                             @else
-                                <button class="join-btn">Join</button>
+                                <a href="{{ route('login.index') }}" class="join-btn">Join</a>
                             @endif
                         </div>
                     </div>

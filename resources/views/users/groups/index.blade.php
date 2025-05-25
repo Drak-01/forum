@@ -1,6 +1,6 @@
-@extends('layouts.app')
+@extends('users.profile.activite')
 
-@section('content')
+@section('content-Activites')
 <div class="container p-0 m-0">
     <div class="row">
         <div class="col-md mx-auto">
@@ -49,7 +49,7 @@
                                     </div>
                                 </div>
                                 <div class="btn-group">
-                                    <a href="{{ route('user.group.show', $group->id) }}" class="btn btn-sm btn-outline-primary">
+                                    <a href="{{ route('group.show', $group->id) }}" class="btn btn-sm btn-outline-primary">
                                         <i class="bi bi-eye"></i> Voir
                                     </a>                            
                                 </div>

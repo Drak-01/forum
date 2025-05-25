@@ -13,12 +13,10 @@ class ReponseController extends Controller
     {
         $validated = $request->validate([
             'content' => 'required|string|min:10|max:5000',
-            'description' => 'nullable|string|max:1000',
         ]);
 
         $reponse = $question->reponses()->create([
             'content' => $validated['content'],
-            'description' => $validated['description'],
             'datePost' => now(),
             'contentType' => 'text', // ou selon votre logique
             'user_id' => Auth::id()

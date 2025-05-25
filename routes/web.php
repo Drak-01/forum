@@ -10,6 +10,7 @@ use App\Http\Controllers\UserActiviteController;
 use App\Http\Controllers\MessageController;
 use App\Http\Controllers\ReponseController;
 use App\Http\Controllers\TagController;
+use App\Http\Controllers\VoteController;
 
 Route::get('/', function () {
     return redirect()->route('questions.index');
@@ -32,14 +33,16 @@ Route::get('/questions/{question}', [QuestionController::class, 'show'])->name('
 
 // ========== GROUPS ==========
 Route::get('/groups', [GroupController::class, 'index'])->name('groups.index');
-//Route::get('/groups/{group}', [GroupController::class, 'show'])->name('groups.show');
+Route::get('/groups/{group}', [GroupController::class, 'show'])->name('group.show');
+Route::get('/all-groupes', [GroupController::class, 'all'])->name('groups');
 
-Route::get('/tags', function () {
-     return "it is not my part";
-})->name('tags.index');
+// Route::get('/tags', function () {
+//      return "it is not my part";
+// })->name('tags.index');
 
 // Utilisateurs 
 Route::get('/ranking', [UserController::class, 'ranking'])->name('ranking.index');
+Route::get('/recherche', [QuestionController::class, 'search'])->name('questions.search');
 
 
 // ========== Routes protégées (connecté) ==========
@@ -52,10 +55,11 @@ Route::prefix('user')->name('user.')->middleware('auth')->group(function() {
     Route::post('/questions/ask/store', [QuestionController::class, 'store'])->name('questions.store');
 
     //Route pour la reponses
-        Route::post('/questions/{question}/reponses', [ReponseController::class, 'store'])->name('reponses.store');
+    Route::post('/questions/{question}/reponses', [ReponseController::class, 'store'])->name('reponses.store');
     Route::get('/reponses/{reponse}', [ReponseController::class, 'show'])->name('reponses.show');
     Route::put('/reponses/{reponse}', [ReponseController::class, 'update'])->name('reponses.update');
     Route::delete('/reponses/{reponse}', [ReponseController::class, 'destroy'])->name('reponses.destroy');
+    Route::post('/reponses/{reponse}/vote', [VoteController::class, 'toggleVote'])->name('reponses.vote');
 
     // --------------------------------------- User ici
     Route::get('/', [UserController::class, 'index'])->name('profile');
@@ -69,13 +73,13 @@ Route::prefix('user')->name('user.')->middleware('auth')->group(function() {
     Route::get('/activites/Responses', [UserActiviteController::class, 'useResponses'])->name('activites.responses');
 
     // --------------- Groupe ------------------------
-    Route::get('/mes-groupes', [GroupController::class, 'mesGroupes'])->name('user.groups');
+    // Route::get('/all-groupes', [GroupController::class, 'all'])->name('user.groups');
     Route::get('/creer-groupe', [GroupController::class, 'creerpage'])->name('user.groups.creer'); //Pour afficher  le formulaire de création de
-    Route::post('/groups', [GroupController::class, 'store'])->name('groups.store'); // Pour créer de nouvelles groupes
+    Route::post('/groupes', [GroupController::class, 'store'])->name('groups.store'); // Pour créer de nouvelles groupes
     
     //Pour gérer un groupe spécifiques   
     Route::prefix('group')->group(function() {
-        Route::get('/{group}', [GroupController::class, 'show'])->name('group.show'); //on affichera les questions par défaut
+        // Route::get('/{group}', [GroupController::class, 'show'])->name('group.show'); //on affichera les questions par défaut
         Route::get('/{group}/edit', [GroupController::class, 'edit'])->name('group.edit');
         Route::put('/{group}', [GroupController::class, 'update'])->name('group.update');
         Route::delete('/{group}', [GroupController::class, 'destroy'])->name('group.destroy');
@@ -90,8 +94,12 @@ Route::prefix('user')->name('user.')->middleware('auth')->group(function() {
         Route::post('/{group}/leave', [GroupController::class, 'leave'])->name('group.leave');
         Route::post('/{group}/invite', [GroupController::class, 'invite'])->name('group.invite');
         
-        // Reponses
-        
+        // Reponses et questions
+        Route::get('/{group}/posteQuestions', [GroupController::class, 'createQuestion'])->name('group.questions.create');
+        Route::post('/{group}/questions', [GroupController::class, 'storeQuestion'])->name('group.questions.store');
+        Route::get('/{group}/questions/{question}', [GroupController::class, 'showQuestion'])->name('group.questions.show');
+        Route::post('/{group}/questions/{question}/reponses', [GroupController::class, 'storeReponse'])->name('group.questions.reponses.store');
+    
     });
 
 
