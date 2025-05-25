@@ -12,11 +12,11 @@ class SampleDataSeeder extends Seeder
     {
         // USERS
         DB::table('users')->insert([
-            ['id' => 1, 'username' => 'johndoe', 'univEmail' => 'johndoe@example.com', 'password' => Hash::make('password123'), 'lastName' => 'Doe', 'firstName' => 'John', 'userPicture' => 'profile_pictures/man1.jpeg', 'created_at' => now(), 'updated_at' => now()],
-            ['id' => 2, 'username' => 'janedoe', 'univEmail' => 'janedoe@example.com', 'password' => Hash::make('password123'), 'lastName' => 'Doe', 'firstName' => 'Jane', 'userPicture' => 'profile_pictures/man2.jpeg', 'created_at' => now(), 'updated_at' => now()],
-            ['id' => 3, 'username' => 'michael', 'univEmail' => 'michael@example.com', 'password' => Hash::make('password123'), 'lastName' => 'Smith', 'firstName' => 'Michael', 'userPicture' => 'profile_pictures/woman1.jpeg', 'created_at' => now(), 'updated_at' => now()],
-            ['id' => 4, 'username' => 'emily', 'univEmail' => 'emily@example.com', 'password' => Hash::make('password123'), 'lastName' => 'Johnson', 'firstName' => 'Emily', 'userPicture' => 'profile_pictures/woman2.jpeg', 'created_at' => now(), 'updated_at' => now()],
-            ['id' => 5, 'username' => 'david', 'univEmail' => 'david@example.com', 'password' => Hash::make('password123'), 'lastName' => 'Brown', 'firstName' => 'David', 'userPicture' => 'profile_pictures/man1.jpeg', 'created_at' => now(), 'updated_at' => now()],
+            ['id' => 1, 'username' => 'johndoe', 'univEmail' => 'johndoe@example.com', 'password' => Hash::make('password123'), 'lastName' => 'Doe', 'firstName' => 'John', 'userPicture' => 'profile_pictures/1GTqRv3b3vmVsbaZ8Qs9tDNW5ViaH0TdLMsN3W8j.jpeg', 'created_at' => now(), 'updated_at' => now()],
+            ['id' => 2, 'username' => 'janedoe', 'univEmail' => 'janedoe@example.com', 'password' => Hash::make('password123'), 'lastName' => 'Doe', 'firstName' => 'Jane', 'userPicture' => 'profile_pictures/q5UWYixkx9ae4XEuG8iho26JlOhjNQ8FGh7MG20K.jpeg', 'created_at' => now(), 'updated_at' => now()],
+            ['id' => 3, 'username' => 'michael', 'univEmail' => 'michael@example.com', 'password' => Hash::make('password123'), 'lastName' => 'Smith', 'firstName' => 'Michael', 'userPicture' => 'profile_pictures/XhtioWWHwl0HhPc5w3A6sbJkKrHnVGKs7QJio0Y8.jpeg', 'created_at' => now(), 'updated_at' => now()],
+            ['id' => 4, 'username' => 'emily', 'univEmail' => 'emily@example.com', 'password' => Hash::make('password123'), 'lastName' => 'Johnson', 'firstName' => 'Emily', 'userPicture' => 'profile_pictures/WKX4Xh9I8ZJLY67qwxPP2wiYOK7rlO8aLbRYGZYX.jpeg', 'created_at' => now(), 'updated_at' => now()],
+            ['id' => 5, 'username' => 'david', 'univEmail' => 'david@example.com', 'password' => Hash::make('password123'), 'lastName' => 'Brown', 'firstName' => 'David', 'userPicture' => 'profile_pictures/l3rYVNzDfb5Vtp0rTbrD7ClDyZuERRPhym1iYXwB.jpeg', 'created_at' => now(), 'updated_at' => now()],
         ]);
    // GROUPS
    DB::table('groups')->insert([
