@@ -1,0 +1,14 @@
+.git
+.env
+.env.*
+!.env.example
+no sandbox
+vendor
+node_modules
+public/storage
+public/build
+public/hot
+storage/logs/*.log
+storage/framework/cache/data/*
+storage/framework/sessions/*
+storage/framework/views/*
